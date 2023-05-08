@@ -18,7 +18,5 @@ class Solution {
             k--;
             j--;
         }
-        // while(i>=0)
-        //     nums1[k--]=nums1[i--];
     }
 }
