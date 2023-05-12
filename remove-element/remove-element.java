@@ -11,7 +11,6 @@ class Solution {
                 }else{
                     rear--;
                 }
-                // counter++; 
             }
             else{
                 front++;
