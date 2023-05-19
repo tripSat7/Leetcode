@@ -27,7 +27,7 @@ class Solution {
             result=rem+result;
             len1--;
         }
-        if(carry==1){
+        if(carry!=0){
             result=carry+result;
         }
         
