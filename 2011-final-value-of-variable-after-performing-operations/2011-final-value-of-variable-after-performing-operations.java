@@ -3,11 +3,11 @@ class Solution {
         int x=0;
         List<String> inc = new ArrayList<String>(Arrays.asList("X++","++X"));
         List<String> dec = new ArrayList<String>(Arrays.asList("X--","--X"));
-        for(int i=0;i<operations.length;i++){
-            if(inc.contains(operations[i])){
+        for(String s:operations){
+            if(inc.contains(s)){
                 x=++x;
             }
-            if(dec.contains(operations[i])){
+            if(dec.contains(s)){
                 x=--x;
             }
         }
