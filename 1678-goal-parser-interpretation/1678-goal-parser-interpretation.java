@@ -14,11 +14,7 @@ class Solution {
                     i=i+3;
                 }  
             }
-//             if(command.charAt(i)=='('&&command.charAt(i+1)=='a'){
-                
-//             }
         }
-        
         return sb.toString();
     }
 }
