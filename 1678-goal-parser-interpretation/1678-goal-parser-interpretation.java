@@ -5,14 +5,18 @@ class Solution {
             if(command.charAt(i)=='G'){
                 sb.append("G");
             }
-            if(command.charAt(i)=='('&&command.charAt(i+1)==')'){
-                sb.append("o");
-                i++;
+            if(command.charAt(i)=='('){
+                if(command.charAt(i+1)==')'){
+                    sb.append("o");
+                    i++;  
+                }else{
+                    sb.append("al");
+                    i=i+3;
+                }  
             }
-            if(command.charAt(i)=='('&&command.charAt(i+1)=='a'){
-                sb.append("al");
-                i++;
-            }
+//             if(command.charAt(i)=='('&&command.charAt(i+1)=='a'){
+                
+//             }
         }
         
         return sb.toString();
