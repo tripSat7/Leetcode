@@ -10,11 +10,7 @@ class Solution {
                 i++;
             }
             if(command.charAt(i)=='('&&command.charAt(i+1)=='a'){
-                sb.append("a");
-                i++;
-            }
-            if(command.charAt(i)=='l'&&command.charAt(i+1)==')'){
-                sb.append("l");
+                sb.append("al");
                 i++;
             }
         }
