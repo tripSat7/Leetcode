@@ -1,12 +1,14 @@
 class Solution {
     public List<String> cellsInRange(String s) {
-        List<String> res = new ArrayList<String>();
+        char[] str = s.toCharArray();
+        List<String> result = new ArrayList<>();
         
-        for(char c = s.charAt(0);c<=s.charAt(3);c++){
-            for(int j=s.charAt(1)-'0';j<=s.charAt(4)-'0';j++){
-                res.add(c+String.valueOf(j));
+        for (char c1 = str[0]; c1 <= str[3]; c1++) {
+            for (char c2 = str[1]; c2 <= str[4]; c2++) {
+                result.add("" + c1 + c2);
             }
         }
-        return res;
+        
+        return result;
     }
 }
