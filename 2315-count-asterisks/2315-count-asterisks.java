@@ -1,14 +1,15 @@
 class Solution {
     public int countAsterisks(String s) {
-        int res = 0, counter = 0;
-        for (int i = 0; i < s.length(); ++i) {
-            if (s.charAt(i) == '*' && counter % 2 == 0){
-                res++;                
+        boolean count = true;
+        int cnt = 0;
+        for (char ch: s.toCharArray()){
+            if (ch == '|'){
+                count = !count;
             }
-            if (s.charAt(i) == '|'){
-                counter++;
-            }     
+            if (count && ch == '*'){
+                cnt++;
+            }
         }
-        return res;
+        return cnt;
     }
 }
