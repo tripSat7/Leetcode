@@ -2,8 +2,9 @@ class Solution {
     public int countSeniors(String[] details) {
         int count=0;
         for(String str:details){
-            if(Integer.parseInt(str.substring(11,13))>60){
-                //System.out.println((int)str.substring(11,13));
+            if(str.charAt(11)-'0'>=6 && str.charAt(12)-'0'>0){
+                count++; 
+            }else if(str.charAt(11)-'0'>6){
                 count++;
             }
         }
