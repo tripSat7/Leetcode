@@ -10,9 +10,10 @@ class Solution {
     }
     
     public static boolean checkPallindrome(String word){
-        int left = 0, right = word.length()-1;
-        while(left<right){
-            if(word.charAt(left++)!=word.charAt(right--)){
+        int left = (word.length()) / 2;
+        int right = (word.length() - 1) / 2;
+        while(left>=0){
+            if(word.charAt(left--)!=word.charAt(right++)){
                 return false;
             }
         }
