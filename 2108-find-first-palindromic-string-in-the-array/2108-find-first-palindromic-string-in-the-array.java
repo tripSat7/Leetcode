@@ -10,13 +10,11 @@ class Solution {
     }
     
     public static boolean checkPallindrome(String word){
-        char ch[] = word.toCharArray();
-        int left = 0, right = ch.length-1;
+        int left = 0, right = word.length()-1;
         while(left<right){
-            if(ch[left]!=ch[right]){
+            if(word.charAt(left++)!=word.charAt(right--)){
                 return false;
             }
-            left++;right--;
         }
         return true;
     }
