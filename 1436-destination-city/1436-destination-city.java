@@ -1,18 +1,17 @@
 class Solution {
-    public String destCity(List<List<String>> paths) { 
+    public String destCity(List<List<String>> paths) {
+        if(paths.size()==1){
+           return paths.get(0).get(1);
+        } 
         Map<String,String> map = new HashMap<String,String>();
-        
         for(List<String> lists:paths){
             map.put(lists.get(0),lists.get(1));
         }
-        
-        for(List<String> list:paths){
-            String res = list.get(1); 
-            if (!map.containsKey(res)) {
-                return res; 
-            }
+        String start=paths.get(0).get(0),res = start;
+        while(map.containsKey(start)){
+            res=map.get(start);
+            start=res;
         }
-        
-        return "";
+        return res;
     }
 }
