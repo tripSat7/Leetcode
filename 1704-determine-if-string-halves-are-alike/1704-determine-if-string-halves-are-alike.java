@@ -1,18 +1,17 @@
 class Solution {
     public boolean halvesAreAlike(String s) {
-        char ch[] = s.toCharArray();
-        int lc=0,rc=0,left=(ch.length/2)-1,right=left+1;
-        System.out.println(right);
+        // char ch[] = s.toCharArray();
+        int count=0,left=(s.length()/2)-1,right=left+1;
         List<Character> vowels = new ArrayList<Character>(Arrays.asList('a','e','i','o','u','A','E','I','O','U'));
         while(left>=0){
-            if(vowels.contains(ch[left])){
-                lc++;
+            if(vowels.contains(s.charAt(left))){
+                count++;
             }
-            if(vowels.contains(ch[right])){
-                rc++;
+            if(vowels.contains(s.charAt(right))){
+                count--;
             }
             left--;right++;
         }
-        return lc==rc;
+        return count==0;
     }
 }
