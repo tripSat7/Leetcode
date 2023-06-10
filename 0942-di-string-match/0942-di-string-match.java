@@ -15,12 +15,7 @@ class Solution {
             i++;
         }
         
-        if(s.charAt(i-1)=='I'){
-            res[i] = ic;
-        }else{
-            res[i] = dc;
-        }
-        
+        res[i]=ic;
         return res;
     }
 }
