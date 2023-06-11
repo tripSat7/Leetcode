@@ -1,17 +1,13 @@
 class Solution {
     public boolean areOccurrencesEqual(String s) {
         char ch[] = s.toCharArray();
-        Map<Character,Integer> map = new HashMap<Character,Integer>();
+        int count[] = new int[26];
         for(char c:ch){
-            if(map.containsKey(c)){
-                map.put(c,map.get(c)+1);
-            }else{
-                map.put(c,1);
-            }
+            count[c-'a']+=1;
         }
-        int count = map.get(ch[0]);
-        for(char ch1:ch){
-            if(map.get(ch1)!=count){
+        int cv=count[ch[0]-'a'];
+        for(int i=0;i<count.length;i++){
+            if(count[i]!=0 && count[i]!=cv){
                 return false;
             }
         }
