@@ -5,22 +5,21 @@ class Solution {
         for(int i=0; i<ch.length;i++){
             count[ch[i]-'a']+=1;
         }
-        boolean fc=true;
         int sc = s.length();
-        String res = "";
-        int i=0;
+        char res[] = new char[s.length()];
+        int len=0;
         while(sc!=0){
-            for(i=0;i<count.length;i++){
+            for(int i=0;i<count.length;i++){
                 if(count[i]!=0){
-                    res = res+(char)('a'+i);
+                    res[len++] = (char)('a'+i);
                     count[i]-=1;
                     sc--;   
                 }
             }
             
-            for(i=count.length-1;i>=0;i--){
+            for(int i=count.length-1;i>=0;i--){
                 if(count[i]!=0){
-                    res = res+(char)('a'+i);
+                    res[len++] = (char)('a'+i);
                     count[i]-=1;
                     sc--;
                 }
@@ -28,6 +27,6 @@ class Solution {
                 
         }
         
-        return res;
+        return String.valueOf(res);
     }
 }
