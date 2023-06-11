@@ -10,25 +10,22 @@ class Solution {
         String res = "";
         int i=0;
         while(sc!=0){
-            if(fc){
-                for(i=0;i<count.length;i++){
-                    if(count[i]!=0){
-                        res = res+(char)('a'+i);
-                        count[i]-=1;
-                        sc--;   
-                    }
+            for(i=0;i<count.length;i++){
+                if(count[i]!=0){
+                    res = res+(char)('a'+i);
+                    count[i]-=1;
+                    sc--;   
                 }
-                fc=false;
-            }else{
-                for(i=count.length-1;i>=0;i--){
-                    if(count[i]!=0){
-                        res = res+(char)('a'+i);
-                        count[i]-=1;;
-                        sc--;
-                    }
-                }
-                fc=true;
             }
+            
+            for(i=count.length-1;i>=0;i--){
+                if(count[i]!=0){
+                    res = res+(char)('a'+i);
+                    count[i]-=1;
+                    sc--;
+                }
+            }
+                
         }
         
         return res;
