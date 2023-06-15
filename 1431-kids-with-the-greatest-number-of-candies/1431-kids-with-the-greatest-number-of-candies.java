@@ -6,16 +6,17 @@ class Solution {
                 max=n;
             }
         }
-        List<Boolean> list = new ArrayList<Boolean>();
+        List<Boolean> res = new ArrayList<>();
         
-        for(int n:candies){
-            if(n+extraCandies>=max){
-                list.add(true);
-            }else{
-                list.add(false);
-            }
+        for (int i=0;i<candies.length;i++ ){
+          if ((candies[i] + extraCandies) >= max) {
+            res.add(true);
+          }
+          else {
+            res.add(false);
+          }
         }
         
-        return list;
+        return res;
     }
 }
