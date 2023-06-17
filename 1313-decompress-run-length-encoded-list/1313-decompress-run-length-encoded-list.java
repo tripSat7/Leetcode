@@ -8,11 +8,9 @@ class Solution {
         }
         int res[] = new int[arrLen];
         int x=0;
-        for(int i=0;i<nums.length;i=i+2){
-            int val=nums[i+1];
-            for(int j=0;j<nums[i];j++){
-                res[x++]=val;
-            }
+        for (int i=0;i<nums.length;i+=2) {
+            Arrays.fill(res, x, x+nums[i], nums[i+1]);
+            x += nums[i];
         }
         
         return res;
