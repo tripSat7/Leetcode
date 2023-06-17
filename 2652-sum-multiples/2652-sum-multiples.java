@@ -1,13 +1,21 @@
 class Solution {
     public int sumOfMultiples(int n) {
-        int sum = 0;
-
-        for (int i = 3; i <= n; i++) {
-            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
-                sum = sum + i;
-            }
-        }
-
-        return sum;
+        if (n < 3) {
+			return 0;
+		}
+		int sum = 0;
+		for (int numberForThree = 3, numberForFive = 5,
+				numberForSeven = 7; numberForThree <= n; numberForThree += 3, numberForFive += 5, numberForSeven += 7) {
+			if (numberForThree % 5 != 0 && numberForFive % 7 != 0) {
+				sum += numberForThree;
+			}
+			if (numberForFive % 7 != 0 && numberForFive <= n) {
+				sum += numberForFive;
+			}
+			if (numberForSeven <= n) {
+				sum += numberForSeven;
+			}
+		}
+		return sum;
     }
 }
