@@ -6,12 +6,10 @@ class Solution {
             if(!(ch[i]=='a' || ch[i]=='e' || ch[i]=='i' || ch[i]=='o' || ch[i]=='u' || ch[i]=='A' || ch[i]=='E' || ch[i]=='I' || ch[i]=='O' || ch[i]=='U')){
                 i++;
             }
-            
-            if(!(ch[j]=='a' || ch[j]=='e' || ch[j]=='i' || ch[j]=='o' || ch[j]=='u' || ch[j]=='A' || ch[j]=='E' || ch[j]=='I' || ch[j]=='O' || ch[j]=='U')){
+            else if(!(ch[j]=='a' || ch[j]=='e' || ch[j]=='i' || ch[j]=='o' || ch[j]=='u' || ch[j]=='A' || ch[j]=='E' || ch[j]=='I' || ch[j]=='O' || ch[j]=='U')){
                 j--;
             }
-            
-            if(isVowel(ch[i])&&isVowel(ch[j])){
+            else{
                 char temp = ch[i];
                 ch[i]=ch[j];
                 ch[j]=temp;
