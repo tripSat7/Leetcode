@@ -3,25 +3,32 @@ class Solution {
         Set<String> set = new HashSet<String>(emails.length);
         
         for(String s : emails){
-            String temp[] = s.split("@");
-            String loc = temp[0];
-            String dom = temp[1];
-            StringBuilder sb = new StringBuilder();
-            for(char c:loc.toCharArray()){
-                if(c=='+'){
-                    break;
-                }
-                if(c!='.'){
-                    sb.append(c);
-                }
-            }
-            sb.append("@");
-            sb.append(dom);
-            if(!set.contains(sb.toString())){
-                set.add(sb.toString());
-            }
+            set.add(checkEmail(s));
         }
         
         return set.size();
+    }
+    
+    public static String checkEmail(String s){
+            
+        StringBuilder sb = new StringBuilder();
+        int flag=0;
+        for(char c:s.toCharArray()){
+            if(c=='+' || c=='@'){
+                    break;
+            }
+            // else if(c=='.' && flag=1){
+            //     sb.append(c);
+            // }
+            if(c!='.' ){
+                sb.append(c);
+            }
+        }
+        if(sb.indexOf("@")==-1){
+            sb.append(s.substring(s.indexOf('@')));
+        }
+        
+        System.out.println(sb);
+        return sb.toString();
     }
 }
