@@ -21,18 +21,16 @@ class Solution {
             if(c=='@'){
                     break;
             }
-            if(c=='+'){
+            else if(c=='+'){
                 flag=1;
             }
-            if(c!='.' && flag==0){
+            else if(c!='.' && flag==0){
                 sb.append(c);
             }
             i++;
         }
         
         sb.append(s.substring(i));
-        
-        System.out.println(sb);
         return sb.toString();
     }
 }
