@@ -15,19 +15,18 @@ class Solution {
     public static String checkEmail(String s){
             
         StringBuilder sb = new StringBuilder();
+        char c[] = s.toCharArray();
         int i=0;
-        int flag=0;
-        for(char c:s.toCharArray()){
-            if(c=='@'){
-                    break;
+        for(; i<s.length();i++){
+            if(c[i]=='@'){
+                break;
             }
-            else if(c=='+'){
-                flag=1;
+            else if(c[i]=='+'){
+                i= s.indexOf('@',i)-1;
             }
-            else if(c!='.' && flag==0){
-                sb.append(c);
+            else if(c[i]!='.'){
+                sb.append(c[i]);
             }
-            i++;
         }
         
         sb.append(s.substring(i));
