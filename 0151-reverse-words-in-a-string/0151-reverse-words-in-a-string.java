@@ -10,15 +10,15 @@ class Solution {
             }   
         }
         
-        int j=sb.length()-1;
-        while(true){
-            if(sb.charAt(j)!=' '){
-                break;
-            }
-            j--;
-        }
-        String res=sb.substring(0,j+1);
+        // int j=sb.length()-1;
+        // while(true){
+        //     if(sb.charAt(j)!=' '){
+        //         break;
+        //     }
+        //     j--;
+        // }
+        // String res=sb.substring(0,j+1);
         
-        return res;
+        return sb.toString().trim();
     }
 }
