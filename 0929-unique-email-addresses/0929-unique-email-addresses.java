@@ -1,5 +1,8 @@
 class Solution {
     public int numUniqueEmails(String[] emails) {
+        if(emails.length == 1){
+            return 1;
+        } 
         Set<String> set = new HashSet<String>(emails.length);
         
         for(String s : emails){
