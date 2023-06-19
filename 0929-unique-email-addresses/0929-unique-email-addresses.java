@@ -12,21 +12,22 @@ class Solution {
     public static String checkEmail(String s){
             
         StringBuilder sb = new StringBuilder();
+        int i=0;
         int flag=0;
         for(char c:s.toCharArray()){
-            if(c=='+' || c=='@'){
+            if(c=='@'){
                     break;
             }
-            // else if(c=='.' && flag=1){
-            //     sb.append(c);
-            // }
-            if(c!='.' ){
+            if(c=='+'){
+                flag=1;
+            }
+            if(c!='.' && flag==0){
                 sb.append(c);
             }
+            i++;
         }
-        if(sb.indexOf("@")==-1){
-            sb.append(s.substring(s.indexOf('@')));
-        }
+        
+        sb.append(s.substring(i));
         
         System.out.println(sb);
         return sb.toString();
