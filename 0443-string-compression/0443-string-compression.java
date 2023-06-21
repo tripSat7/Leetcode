@@ -8,28 +8,24 @@ class Solution {
         while(j<chars.length){
             if(chars[i]!=chars[j]){
                 int n = j-i;
-                System.out.println(i+":"+j+":"+c);
+                chars[c]=chars[i];
                 if(n==1){
-                    chars[c]=chars[i];
                     c++;
-                }                
+                }
+                else if(n<10){
+                    chars[c+1] = (char)('0'+n);
+                    c+=2;
+                }
                 else{
-                    chars[c] = chars[i];
                     c++;
-                    if(n<10){
-                        chars[c] = (char)('0'+n);
+                    String s = String.valueOf(n);
+                    for(char ch:s.toCharArray()){
+                        chars[c]=ch;
                         c++;
-                    }
-                    else{
-                        String s = String.valueOf(n);
-                        for(char ch:s.toCharArray()){
-                            chars[c]=ch;
-                            c++;
-                        }
                     }
                 }
                 i=j;
-            }   
+            }
             j++;
         }
         
