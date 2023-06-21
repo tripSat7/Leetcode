@@ -2,21 +2,20 @@ class Solution {
     public boolean isIsomorphic(String s, String t) {
         int map1[] = new int[128];
         int map2[] = new int[128];
+        char ch1[] = s.toCharArray();
+        char ch2[] = t.toCharArray();
         
         for(int i=0;i<s.length();i++){
-            int s1 = s.charAt(i);
-            int s2 = t.charAt(i);
-            map1[s1] = s2;
-            map2[s2] = s1;
+            map1[ch1[i]] = ch2[i];
+            map2[ch2[i]] = ch1[i];
         }
         
         for(int i=0; i<s.length(); i++){
-            int s1 = s.charAt(i);
-            int s2 = t.charAt(i);
-            if(!(map1[s1]==s2 && map2[s2]==s1)){
+            if(!(map1[ch1[i]]==ch2[i] && map2[ch2[i]]==ch1[i])){
                 return false;
             }
         }
+        
         return true;
     }
 }
