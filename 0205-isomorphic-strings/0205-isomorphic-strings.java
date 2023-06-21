@@ -1,5 +1,8 @@
 class Solution {
     public boolean isIsomorphic(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
         int map1[] = new int[127];
         int map2[] = new int[127];
         char ch1[] = s.toCharArray();
