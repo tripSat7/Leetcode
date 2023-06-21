@@ -3,7 +3,6 @@ class Solution {
         char ch[] = s.toLowerCase().toCharArray();
         int i=0, j=ch.length-1;
         while(i<j){
-            // System.out.println(ch[i]>='0');
 
             while(!((ch[i]>='a' && ch[i]<='z')||(ch[i]>='0' && ch[i]<='9')) && i<j){
                 i++;
@@ -12,7 +11,7 @@ class Solution {
                 j--;
             }
             System.out.println(ch[i]+"::"+ch[j]);
-            if(!(ch[i]==ch[j])){
+            if(!(ch[i]==ch[j]) || i>j){
                 return false;
             }
             i++;j--;
