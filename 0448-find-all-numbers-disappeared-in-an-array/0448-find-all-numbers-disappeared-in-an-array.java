@@ -1,7 +1,7 @@
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         boolean[] n = new boolean[nums.length];
-        List<Integer> res = new ArrayList<Integer>();
+        List<Integer> res = new ArrayList<>();
         
         for (int i: nums) {
             n[i - 1] = true;
