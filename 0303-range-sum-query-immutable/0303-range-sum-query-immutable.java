@@ -15,8 +15,10 @@ class NumArray {
     public int sumRange(int left, int right) {
         if(left==0){
             return pf[right];
+        }else{
+            return pf[right]-pf[left-1];
         }
-        return pf[right]-pf[left-1];
+        
     }
 }
 
