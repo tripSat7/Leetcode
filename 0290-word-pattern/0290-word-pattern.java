@@ -12,11 +12,12 @@ class Solution {
             if(map1.containsKey(c) && !map1.get(c).equals(arr[i])){
                 return false;
             }
-            if(map2.containsKey(arr[i]) && !map2.get(arr[i]).equals(c)){
+            else if(map2.containsKey(arr[i]) && !map2.get(arr[i]).equals(c)){
                 return false;
-            }
-            map1.put(c,arr[i]);
-            map2.put(arr[i],c);
+            }else{
+                map1.put(c,arr[i]);
+                map2.put(arr[i],c);
+            }    
         }
         return true;
     }
