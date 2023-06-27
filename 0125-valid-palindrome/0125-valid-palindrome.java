@@ -10,7 +10,6 @@ class Solution {
             while(!Character.isLetterOrDigit(ch[j])&&i<j){
                 j--;
             }
-            //System.out.println(ch[i]+"::"+ch[j]);
             if(!(Character.toLowerCase(ch[i])==Character.toLowerCase(ch[j])) || i>j){
                 return false;
             }
