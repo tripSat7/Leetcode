@@ -5,7 +5,7 @@ class Solution {
         int j = num2.length()-1;
         char ch1[] = num1.toCharArray();
         char ch2[] = num2.toCharArray();
-        String result = "";
+        StringBuilder result = new StringBuilder();
         while(i>=0||j>=0){
             int sum = 0;
             sum+= carry;
@@ -19,13 +19,13 @@ class Solution {
                 sum+=n2;
                 j--;
             }
-            result = (sum%10) + result;
+            result.append(sum%10);
             carry = sum/10;
         }
         
         if(carry!=0){
-            result = carry + result; 
+            result.append(carry); 
         }
-        return result;
+        return result.reverse().toString();
     }
 }
