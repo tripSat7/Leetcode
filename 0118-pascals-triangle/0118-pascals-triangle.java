@@ -15,16 +15,20 @@ class Solution {
             return res;
         }
         for(int i=3;i<=numRows;i++){
-            List<Integer> n = new ArrayList<>();
-            n.add(1);
-            for(int j=1;j<i-1;j++){
-                int s = res.get(i-2).get(j)+res.get(i-2).get(j-1);
-                n.add(s);
-            }
-            n.add(1);
+            List<Integer> n = generateRow(res.get(i-2));
             res.add(n);
         }
-        System.out.println(res);
         return res;
+    }
+    
+    public static List<Integer> generateRow(List<Integer> prev){
+        List<Integer> temp = new ArrayList<>();
+        temp.add(1);
+        for(int j=1;j<prev.size();j++){
+            int s = prev.get(j)+prev.get(j-1);
+            temp.add(s);
+        }
+        temp.add(1);
+        return temp;
     }
 }
