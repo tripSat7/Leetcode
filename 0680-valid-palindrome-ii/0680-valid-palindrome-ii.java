@@ -7,6 +7,7 @@ class Solution {
             if(s.charAt(i) == s.charAt(j)){
                 i++;
                 j--;
+                continue;
             }
             else return isPalindrome(s, i + 1, j) || isPalindrome(s, i, j - 1);
         }
