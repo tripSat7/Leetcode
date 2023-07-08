@@ -13,23 +13,34 @@ public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode temp1=headA;
         ListNode temp2=headB;
-        
-        HashSet<ListNode> map = new HashSet<>();
-        
+        int count1 = 0, count2 = 0, n=0;
         while(temp1!=null){
-            map.add(temp1);
+            count1++;
             temp1=temp1.next;
         }
-        
         while(temp2!=null){
-            if(map.contains(temp2)){
-                return temp2;
-            }else{
-                map.add(temp2);
-            }
+            count2++;
             temp2=temp2.next;
         }
         
-        return null;
+        temp1=headA;
+        temp2=headB;
+        if(count2>count1){
+            n=count2-count1;
+            for(int i=1;i<=n;i++){
+                temp2=temp2.next;
+            }
+        }
+        else{
+            n=count1-count2;
+              for(int i=1;i<=n;i++){
+                temp1=temp1.next;
+            }
+        }
+        while(temp1!=temp2){
+            temp1=temp1.next;
+            temp2=temp2.next;
+        }
+        return temp1;
     }
 }
