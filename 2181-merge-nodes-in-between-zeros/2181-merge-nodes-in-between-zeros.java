@@ -19,17 +19,13 @@ class Solution {
                 sum+=temp.val;
                 temp=temp.next;
             }
+            resTemp.next = temp;
+            resTemp = resTemp.next;
             resTemp.val = sum;
-            if(temp.next==null){
-                resTemp.next = null;
-            }
-            else{
-                resTemp.next = temp;
-                resTemp = resTemp.next;
-            }
+            
             temp = temp.next;
         }
         
-        return res;
+        return res.next;
     }
 }
