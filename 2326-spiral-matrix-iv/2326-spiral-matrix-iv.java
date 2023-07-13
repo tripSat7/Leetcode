@@ -24,7 +24,6 @@ class Solution {
         while(temp!=null){
             while(j<n && res[i][j]==-1 &&temp!=null){
                 res[i][j] = temp.val;
-                System.out.println("i:"+i+" j:"+j);
                 temp=temp.next;
                 j++;
             }
@@ -34,7 +33,6 @@ class Solution {
             while(i<m && res[i][j]==-1 &&temp!=null){
                 
                 res[i][j] = temp.val;
-                System.out.println("i:"+i+" j:"+j);
                 temp = temp.next;
                 i++;
             }
@@ -44,7 +42,6 @@ class Solution {
             while(j>c && res[i][j]==-1 &&temp!=null){
         
                 res[i][j] = temp.val;
-                System.out.println("i:"+i+" j:"+j);
                 temp = temp .next;
                 j--;
             }
@@ -54,7 +51,6 @@ class Solution {
             while(i>r && res[i][j]==-1 &&temp!=null){
                 
                 res[i][j] = temp.val;
-                System.out.println("i:"+i+" j:"+j);
                 temp = temp.next;
                 i--;
             }
