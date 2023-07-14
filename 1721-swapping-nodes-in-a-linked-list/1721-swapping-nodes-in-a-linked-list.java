@@ -11,7 +11,7 @@
 class Solution {
     public ListNode swapNodes(ListNode head, int k) {
         ListNode temp1 = head, temp2 = head;
-        int count = 1, c1=1;
+        int count = 1, c1;
         while(temp1!=null){
             count++;
             temp1 = temp1.next;
@@ -19,14 +19,16 @@ class Solution {
                 temp2 = temp1;
             }
         }
-        System.out.println(count);
-        temp1 = head;
+        if(count-k>=k){
+            temp1 = temp2;
+            c1 = k;
+        }else{
+            temp1 = head;
+            c1=1;
+        }
+        
         while(c1<(count-k)){
-            if(c1<k){
-                temp1 = temp1.next;
-            }else{
-                temp2 = temp2.next;
-            }
+            temp1 = temp1.next;
             c1++;
         }
         System.out.println(temp1.val+":"+temp2.val);
