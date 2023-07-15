@@ -1,73 +1,19 @@
-class ListNode{
-    int val;
-    ListNode next;
-    public ListNode(int val){
-        this.val = val;
-        this.next = null;
-    }
-}
-
 class MyHashSet {
  
-      ListNode head;
-      public MyHashSet() {
-        head = new ListNode(-1);
+      boolean[] keys = new boolean[1000001];
+    public MyHashSet() {
+        
     }
     
     public void add(int key) {
-        ListNode prev = head;
-        ListNode curr = head.next;
-        if(curr == null){
-            head.next = new ListNode(key);
-            return ;
-        }
-        while(curr != null ){
-            if(curr.val == key){
-                return;
-            }
-            else if(curr.val < key){
-                curr = curr.next;
-                prev = prev.next;
-            }
-            else{
-                ListNode temp = new ListNode(key);
-                prev.next = temp;
-                temp.next = curr;
-                return ;
-            }
-        }
-        
-        prev.next = new ListNode(key);
-        return ;
+        keys[key]=true;
     }
     
     public void remove(int key) {
-        ListNode prev = head;
-        ListNode curr = head.next;
-        while(curr != null){
-            if(curr.val == key){
-                prev.next = curr.next;
-                return ;
-            }
-            else if(curr.val < key){
-                prev = curr;
-                curr = curr.next;
-            }
-            else {
-                return ;
-            }
-        }
-        return ;
+        keys[key]=false;
     }
     
     public boolean contains(int key) {
-        ListNode temp = head;
-        while(temp != null){
-            if(temp.val == key){
-                return true;
-            }
-            temp = temp.next;
-        }
-        return false;
+        return keys[key];
     }
 }
