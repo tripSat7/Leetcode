@@ -1,75 +1,75 @@
-class ListNode {
-    int key;
-    int value;
+class ListNode{
     ListNode next;
-
-    public ListNode(int key, int value) {
+    int key, val;
+    
+    ListNode(int key, int val){
         this.key = key;
-        this.value = value;
-        this.next = null;
+        this.val = val;
     }
 }
 
 class MyHashMap {
-    ListNode[] hashmap;
+
+    ListNode hashMap[];
     int size;
-
     public MyHashMap() {
-        size = 10000;
-        hashmap = new ListNode[size];
+        size = 10000;//10^4 is the max no of calls being made
+        hashMap = new ListNode[size];
     }
-
-    private int hash(int key) {
-        return key % size;
+    
+    public int hash(int key){
+        return key%size;
     }
-
+    
     public void put(int key, int value) {
         int index = hash(key);
-        if (hashmap[index] == null) {
-            hashmap[index] = new ListNode(key, value);
-        } else {
-            ListNode curr = hashmap[index];
-            while (true) {
-                if (curr.key == key) {
-                    curr.value = value;
+        if(hashMap[index]==null){
+            hashMap[index] = new ListNode(key,value); 
+        }else{
+            ListNode temp = hashMap[index];
+            while(true){
+                if(temp.key==key){
+                    temp.val = value;
                     return;
                 }
-                if (curr.next == null) {
+                if(temp.next==null){
                     break;
                 }
-                curr = curr.next;
+                temp = temp.next;
             }
-            curr.next = new ListNode(key, value);
+            temp.next = new ListNode(key,value);
         }
     }
-
+    
     public int get(int key) {
         int index = hash(key);
-        ListNode curr = hashmap[index];
-        while (curr != null) {
-            if (curr.key == key) {
-                return curr.value;
+        ListNode temp = hashMap[index];
+        while(temp!=null){
+            if(temp.key==key){
+                return temp.val;
             }
-            curr = curr.next;
+            temp = temp.next;
         }
+        
         return -1;
     }
-
+    
     public void remove(int key) {
         int index = hash(key);
-        ListNode curr = hashmap[index];
+        ListNode temp = hashMap[index];
         ListNode prev = null;
-        while (curr != null) {
-            if (curr.key == key) {
-                if (prev == null) {
-                    hashmap[index] = curr.next;
-                } else {
-                    prev.next = curr.next;
+        
+        while(temp!=null){
+            if(temp.key==key){
+                if(prev == null){
+                    hashMap[index] = temp.next;
+                }else{
+                    prev.next = temp.next;
                 }
                 return;
             }
-            prev = curr;
-            curr = curr.next;
+            prev = temp;
+            temp = temp.next;
         }
     }
 }
