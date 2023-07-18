@@ -18,9 +18,9 @@ class Solution {
         ListNode fast = head;
         
         while(fast!=null && fast.next!=null){
-            fast = fast.next.next;
             prev = curr;
             curr = curr.next;
+            fast = fast.next.next;
         }
         
         prev.next = curr.next;
