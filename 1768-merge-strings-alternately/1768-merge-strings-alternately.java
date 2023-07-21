@@ -4,23 +4,15 @@ class Solution {
         int n = word1.length()>word2.length()?word2.length():word1.length();
         int max = word1.length()>word2.length()?word1.length():word2.length();
         int i;
-        char ch1[] = word1.toCharArray();
-        char ch2[] = word2.toCharArray();
         for(i=0;i<n;i++){
-            sb.append(ch1[i]+""+ch2[i]);
+            sb.append(word1.charAt(i));
+            sb.append(word2.charAt(i));
         }
         
         if(i>=word2.length()){
-            while(i<max){
-                sb.append(ch1[i]);
-                i++;
-            }
-        }
-        else{
-            while(i<max){
-                sb.append(ch2[i]);
-                i++;
-            }
+            sb.append(word1.substring(i));
+        }else{
+            sb.append(word2.substring(i));
         }
         
         return sb.toString();
