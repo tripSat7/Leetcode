@@ -1,87 +1,118 @@
-class MyLinkedList {
-	Node head;
-	int length;
-    public class Node{
-        int val;
-        Node next;
-        
-        Node(int val){
-            this.val = val;
-        }
-    }
+class Node{
+    int val;
+    Node next;
 
+    Node(int val){
+        this.val = val;
+        this.next = null;
+    }
+}
+
+class MyLinkedList {
+    Node head;
+    Node tail;
+    int size;
     public MyLinkedList() {
-        this.head = null;
-        this.length = 0;
+        head = null;
+        tail = null;
+        size = 0;
     }
     
     public int get(int index) {
-        if(index >= length)
-        	return -1;
-        int counter = 0;
-        Node temp = head;
-        while(counter < index) {
-        	counter++;
-        	temp = temp.next;
+        if(index < 0 || index >= size){
+            return -1;
+        }else{
+            Node temp = head;
+            for(int i = 0; i < index; i++){
+                temp = temp.next;
+            }
+            return temp.val;
         }
-        return temp.val;
     }
     
     public void addAtHead(int val) {
-        Node newnew = new Node(val);
-        newnew.next = head;
-        head = newnew;
-        length++;
+        Node node = new Node(val);
+        if(size == 0){
+            head = tail = node;
+        }else{
+            node.next = head;
+            head = node;
+        }
+        size++;
     }
     
     public void addAtTail(int val) {
-        if(head == null) {
-        	addAtHead(val);
-        }else {
-        	Node temp = head;
-        	while(temp.next != null)
-        		temp = temp.next;
-        	Node newnew = new Node(val);
-        	temp.next = newnew;
-        	length++;
+        Node node = new Node(val);
+        if(size == 0){
+            head = tail = node;
+        }else{
+            tail.next = node;
+            tail = node;
         }
+        size++;
     }
     
     public void addAtIndex(int index, int val) {
-    	if(index > length)
-    		return;
-        if(index == 0)
-        	addAtHead(val);
-        else {
-        	int counter = 1;
-        	Node temp = head;
-        	while(counter < index) {
-        		temp = temp.next;
-        		counter++;
-        	}
-        	Node newnew = new Node(val);
-        	Node next = temp.next;
-        	temp.next = newnew;
-        	newnew.next = next;
-        	length++;
+        if(index < 0 || index > size){
+            return;
+        }else if(index == 0){
+            addAtHead(val);
+        }else if(index == size){
+            addAtTail(val);
+        }else{
+            Node m1 = head;
+            for(int i = 0; i < index - 1; i++){
+                m1 = m1.next;
+            }
+            Node p1 = m1.next;
+            Node node = new Node(val);
+            m1.next = node;
+            node.next = p1;
+            size++;
         }
+    }
+
+    public void deleteAtHead(){
+        if(size == 0){
+            return;
+        }else if(size == 1){
+            head = tail = null;
+        }else{
+            head = head.next;
+        }
+        size--;
+    }
+
+    public void deleteAtTail(){
+        if(size == 0){
+            return;
+        }else if(size == 1){
+            head = tail = null;
+        }else{
+            Node temp = head;
+            for(int i = 0; i < size - 2; i++){
+                temp = temp.next;
+            }
+            tail = temp;
+            temp.next = null;
+        }
+        size--;
     }
     
     public void deleteAtIndex(int index) {
-        if(index >= length)
-        	return;
-        if(index == 0) {
-        	head = head.next;
-        	length--;
-        }else {
-        	int counter = 1;
-        	Node temp = head;
-        	while(counter < index) {
-        		counter++;
-        		temp = temp.next;
-        	}
-        	temp.next = temp.next.next;
-        	length--;
+        if(index < 0 || index >= size || size == 0){
+            return;
+        }else if(index == 0){
+            deleteAtHead();
+        }else if(index == size-1){
+            deleteAtTail();
+        }else{
+            Node temp = head;
+            for(int i = 0; i < index - 1; i++){
+                temp = temp.next;
+            }        
+            temp.next = temp.next.next;
+            size--;
         }
     }
 }
