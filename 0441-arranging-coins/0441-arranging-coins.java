@@ -5,16 +5,16 @@ class Solution {
 
         while(high>=low){
             long mid = low+(high-low)/2;
-            long sum = mid*(mid+1)/2;
+            long sum = (mid*(mid+1))/2;
             System.out.println(sum);
             
             if(sum==n){
                 return (int)mid;
             }
-            else if(sum<=n){
-                low = mid+1;
-            }else{
+            else if(sum>n){
                 high = mid-1;
+            }else{
+                low = mid+1;
             }
             
         }
