@@ -7,7 +7,11 @@ class Solution {
             mid = low+(high-low)/2;
             long sum = mid*(mid+1)/2;
             System.out.println(sum);
-            if(sum<=n){
+            
+            if(sum==n){
+                return (int)mid;
+            }
+            else if(sum<=n){
                 low = mid+1;
             }else{
                 high = mid-1;
