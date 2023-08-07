@@ -8,13 +8,7 @@ class Solution {
             }
             else if(!stk.empty()){
                 char c = stk.pop();
-                if(ch==')' && c!='('){
-                    return false;
-                }
-                else if(ch==']' && c!='['){
-                    return false;
-                }
-                else if(ch=='}' && c!='{'){
+                if(ch==')' && c!='(' || ch==']' && c!='[' || ch=='}' && c!='{'){
                     return false;
                 }
             }
