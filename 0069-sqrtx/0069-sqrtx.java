@@ -5,7 +5,6 @@ class Solution {
 
         while(l <= r){
             int mid = (l + r) / 2;
-            //System.out.println(l+":"+r+":"+mid);
             if(x / mid == mid){
                 return mid;
             } else if(mid > x / mid){
