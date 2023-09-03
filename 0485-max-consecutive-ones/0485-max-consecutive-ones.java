@@ -15,14 +15,6 @@ class Solution {
             if(nums[i]==1)
             {
                 count[j]++;
-                // if(prev==1)
-                // {
-                //     count[j]++;    
-                // }
-                // else
-                // {
-                //     count[j]++;
-                // }
             }
             else
             {
