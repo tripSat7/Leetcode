@@ -19,10 +19,9 @@ class Solution {
         ListNode fast = head;
         ListNode prev = null;
         
-        while(fast.next!=null && fast!=null){
+        while(fast.next!=null){
             prev = fast;
             fast = fast.next;
-            System.out.println(prev.val);
             ListNode tmp = new ListNode(gcd(prev.val,fast.val));
             prev.next = tmp;
             tmp.next = fast;
