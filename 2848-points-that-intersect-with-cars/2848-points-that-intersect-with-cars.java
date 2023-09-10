@@ -1,7 +1,7 @@
 class Solution {
     public int numberOfPoints(List<List<Integer>> nums) {
         
-        int[] hash = new int[110];
+        int[] hash = new int[102];
         
         for(List<Integer> num: nums){
             hash[num.get(0)]++;
