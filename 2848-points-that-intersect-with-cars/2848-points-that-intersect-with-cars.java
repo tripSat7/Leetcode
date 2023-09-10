@@ -11,7 +11,6 @@ class Solution {
         int ans = 0;
         for(int i=1;i<hash.length;i++){
             hash[i] += hash[i-1];
-            System.out.print(hash[i]);
             if(hash[i] > 0){
                 ans++;
             }   
