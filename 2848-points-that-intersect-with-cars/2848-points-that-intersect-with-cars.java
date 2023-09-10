@@ -10,9 +10,13 @@ class Solution {
         
         int ans = 0;
         for(int i=1;i<hash.length;i++){
+            System.out.print(hash[i]+" || ");
             hash[i] += hash[i-1];
-            if(hash[i] > 0)
+            System.out.print(hash[i]);
+            System.out.println();
+            if(hash[i] > 0){
                 ans++;
+            }   
         }
         
         return ans;
