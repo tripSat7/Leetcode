@@ -1,15 +1,20 @@
 class Solution {
     public int numberOfPoints(List<List<Integer>> nums) {
         
-        HashSet<Integer> res = new HashSet<>();
+        int[] hash = new int[110];
         
-        for(List<Integer> list: nums)
-        {
-            for(int i = list.get(0); i<=list.get(1);i++)
-            {
-                res.add(i);
-            }
-        }  
-        return res.size();
+        for(List<Integer> num: nums){
+            hash[num.get(0)]++;
+            hash[num.get(1) + 1]--;
+        }
+        
+        int ans = 0;
+        for(int i=1;i<hash.length;i++){
+            hash[i] += hash[i-1];
+            if(hash[i] > 0)
+                ans++;
+        }
+        
+        return ans;
     }
 }
