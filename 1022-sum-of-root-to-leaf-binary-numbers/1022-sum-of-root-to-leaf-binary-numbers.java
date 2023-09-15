@@ -28,7 +28,6 @@ class Solution {
         }
         int res = (bin<<1) + root.val;
         if(root.left == null && root.right == null){
-            System.out.println(res);
             sum = sum + res;
         }
         
