@@ -19,21 +19,20 @@ class Solution {
             return;
         }
         
-        TreeNode tempLeft = root.left;
-        TreeNode tempRight = root.right;
-        
-        root.left = null;
-        
-        flatten(tempLeft);
-        flatten(tempRight);
-        
-        root.right = tempLeft;
-        TreeNode cur = root;
-        while(cur.right != null){
-            cur = cur.right;
+        while(root!=null){
+            if(root.left != null){
+                TreeNode tempLeft = root.left;
+                TreeNode cur = tempLeft;
+                while(cur.right != null){
+                    cur = cur.right;
+                }
+                cur.right = root.right;
+                root.left = null;
+                root.right = tempLeft;
+                
+            }
+            root = root.right;
         }
-        cur.right = tempRight;
-        
     }
     
 }
