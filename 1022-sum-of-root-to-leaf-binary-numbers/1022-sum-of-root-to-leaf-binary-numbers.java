@@ -17,33 +17,22 @@ class Solution {
     int sum = 0;
     public int sumRootToLeaf(TreeNode root) {
         
-        helper(root,"");
+        helper(root,0);
         
         return sum;
     }
     
-    public void helper(TreeNode root, String s){
+    public void helper(TreeNode root, int bin){
         if(root == null){
             return;
         }
-        String lev = s + "" + root.val;
+        int res = (bin<<1) + root.val;
         if(root.left == null && root.right == null){
-            sum = sum + stringToInt(lev);
+            System.out.println(res);
+            sum = sum + res;
         }
         
-        helper(root.left, lev);
-        helper(root.right, lev);
-    }
-    
-    public int stringToInt(String str){
-        double bin = Math.pow(2,(str.length()-1));
-        double res = 0;
-        for(char c : str.toCharArray()){
-            if(c == '1'){
-                res = res + bin;
-            }
-            bin = bin/2;
-        }
-        return (int) res;
+        helper(root.left, res);
+        helper(root.right, res);
     }
 }
