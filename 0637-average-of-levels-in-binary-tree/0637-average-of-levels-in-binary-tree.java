@@ -26,15 +26,15 @@ class Solution {
         Queue<TreeNode> q = new LinkedList<TreeNode>();
         q.add(root);
         q.add(null);
-        List<Double> cur = new ArrayList<>();
         double sum = 0;
+        int lc = 0;
 
         while(!q.isEmpty()){
             TreeNode temp = q.remove();
             
             if(temp!=null){
-                cur.add((double)temp.val);
                 sum += (double)temp.val;
+                lc++;
                 if(temp.left != null){
                     q.add(temp.left);
                 }
@@ -43,9 +43,9 @@ class Solution {
                 }
             }
             else{                
-                res.add((sum)/cur.size());
+                res.add((sum)/lc);
                 sum = 0;
-                cur.clear();
+                lc = 0;
                 if(!q.isEmpty()){
                     q.add(null);
                 }
