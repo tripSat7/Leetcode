@@ -27,11 +27,14 @@ class Solution {
         q.add(root);
         q.add(null);
         List<Double> cur = new ArrayList<>();
+        double sum = 0;
+
         while(!q.isEmpty()){
             TreeNode temp = q.remove();
             
             if(temp!=null){
                 cur.add((double)temp.val);
+                sum += (double)temp.val;
                 if(temp.left != null){
                     q.add(temp.left);
                 }
@@ -39,14 +42,10 @@ class Solution {
                     q.add(temp.right);
                 }
             }
-            else{
-                double sum = 0;
-                for(Double i : cur){
-                    sum += i;
-                }
-                double d = (sum)/cur.size();
+            else{                
+                res.add((sum)/cur.size());
+                sum = 0;
                 cur.clear();
-                res.add(d);
                 if(!q.isEmpty()){
                     q.add(null);
                 }
