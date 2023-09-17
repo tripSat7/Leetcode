@@ -29,7 +29,6 @@ class Solution {
             ans[i] = res.get(i);
         }
         
-        //return res.stream().mapToInt(Integer::intValue).toArray();
         return ans;
     }
 }
