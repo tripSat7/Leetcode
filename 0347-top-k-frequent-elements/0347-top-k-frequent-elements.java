@@ -25,7 +25,6 @@ class Solution {
                 k = k - bucket[i].size();
             }
         }
-        System.out.println(res);
         for(int i = 0; i < res.size(); i++){
             ans[i] = res.get(i);
         }
