@@ -1,5 +1,15 @@
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
+        
+        List<List<String>> result = new ArrayList<>();
+        if (strs == null || strs.length == 0) {
+            return result;
+        }
+        if (strs.length == 1) {
+            result.add(Arrays.asList(strs));
+            return result;
+        }
+
         HashMap<String, List<String>> groups = new HashMap<>();
         
         for(String s : strs) {
