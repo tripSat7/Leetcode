@@ -1,39 +1,21 @@
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
+        HashMap<String,List<String>> map=new HashMap<>();
         
-        List<List<String>> result = new ArrayList<>();
-        if (strs == null || strs.length == 0) {
-            return result;
-        }
-        if (strs.length == 1) {
-            result.add(Arrays.asList(strs));
-            return result;
-        }
-
-        HashMap<String, List<String>> groups = new HashMap<>();
-        
-        for(String s : strs) {
-            String signature = getSignature(s);
-            groups.putIfAbsent(signature, new ArrayList<>());
-            groups.get(signature).add(s);
-        }
-
-        return new ArrayList<>(groups.values());
-    }
-
-    private String getSignature(String s) {
-        int[] count = new int[26];
-        for (int i = 0; i < s.length(); i++) {
-            count[s.charAt(i) - 'a']++;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 26; i++) {
-            if (count[i] != 0) {
-                sb.append((char) ('a' + i)).append(count[i]);
+        for(int i=0;i<strs.length;i++){
+            String s1=strs[i];
+            char[] arr=s1.toCharArray();
+            Arrays.sort(arr);
+            String str=new String(arr);
+            
+            if(map.containsKey(str)){
+                map.get(str).add(s1); 
+            }else{
+                map.put(str,new ArrayList<>());
+                map.get(str).add(s1);
             }
         }
-        return sb.toString();
-    }
+        return new ArrayList<>(map.values());
 
+    }
 }
