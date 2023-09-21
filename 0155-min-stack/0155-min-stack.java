@@ -1,54 +1,33 @@
 class MinStack {
 
-    Stack<Integer> stk;
-    Stack<Integer> minStk;
+    private Stack<Integer> stack;
+    private Stack<Integer> minStack;
 
     public MinStack() {
-        stk  = new Stack<>();
-        minStk = new Stack<>();
+        stack = new Stack<>();
+        minStack = new Stack<>();
     }
-    
+
     public void push(int val) {
-        stk.push(val);
-        if(minStk.empty()){
-            minStk.push(val);    
-        }
-        else{
-            Stack<Integer> tmp = new Stack<>();
-            while(!minStk.empty() && minStk.peek() < val){
-                tmp.push(minStk.pop());
-            }
-            minStk.push(val);
-            while(!tmp.empty()){
-                minStk.push(tmp.pop());
-            }
-        }
-        
+        stack.push(val);
+
+        val = Math.min(val, minStack.isEmpty() ? val : minStack.peek());
+        minStack.push(val);
     }
-    
+
     public void pop() {
-        int res = stk.pop();
-        Stack<Integer> tmp = new Stack<>();
-        while(!minStk.empty() && minStk.peek() != res){
-            tmp.push(minStk.pop());
-        }
-        minStk.pop();
-        while(!tmp.empty()){
-            minStk.push(tmp.pop());
-        }
+        stack.pop();
+        minStack.pop();
     }
-    
+
     public int top() {
-        
-        return stk.peek();
+        return stack.peek();
     }
-    
+
     public int getMin() {
-        
-        return minStk.peek();
+        return minStack.peek();
     }
 }
-
 /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();
