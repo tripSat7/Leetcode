@@ -1,33 +1,31 @@
 class Solution {
     public int evalRPN(String[] tokens) {
         
-        Stack<String> stk = new Stack<>();
-        
-        for(String ch : tokens){
-            int num1, num2;
-            switch(ch){
-                case "+" :  num1 = Integer.valueOf(stk.pop());
-                            num2 = Integer.valueOf(stk.pop());
-                            stk.push(String.valueOf(num1+num2));
-                            break;
-                case "-" :  num1 = Integer.valueOf(stk.pop());
-                            num2 = Integer.valueOf(stk.pop());
-                            stk.push(String.valueOf(num2-num1));
-                            break;
-                case "*" :  num1 = Integer.valueOf(stk.pop());
-                            num2 = Integer.valueOf(stk.pop());
-                            stk.push(String.valueOf(num1*num2));
-                            break;
-                case "/" :  num1 = Integer.valueOf(stk.pop());
-                            num2 = Integer.valueOf(stk.pop());
-                            stk.push(String.valueOf(num2/num1));
-                            break;
-                default :   stk.push(ch);
-                            break;
-                    
+        Stack<Integer> stk = new Stack<>();
+        for(String i : tokens){
+            if(i.equals("+")){
+                int t = stk.pop()+stk.pop();
+                stk.push(t);
+            }
+            else if(i.equals("-")){
+                int t =(stk.pop()-stk.pop())*(-1);
+                stk.push(t);
+            }
+              else if(i.equals("*")){
+                int t =stk.pop()*stk.pop();
+                stk.push(t);
+            }
+             else if(i.equals("/")){
+                int x= stk.pop();
+                int y =stk.pop();
+                stk.push(y/x);
+            }
+            else{
+                int t =  Integer.parseInt(i);
+                stk.push(t);
             }
         }
         
-        return Integer.valueOf(stk.pop());
+        return stk.pop(); 
     }
 }
