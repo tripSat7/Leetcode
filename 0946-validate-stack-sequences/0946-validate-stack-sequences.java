@@ -18,8 +18,10 @@ class Solution {
         
         if (popIndex == popped.length){
             return true;
+        }else{
+            return false;    
         }
             
-        return false;
+        
     }
 }
