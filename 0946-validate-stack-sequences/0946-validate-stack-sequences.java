@@ -10,10 +10,6 @@ class Solution {
             }
         }
         
-        // while((j<popped.length && !stk.isEmpty()) && stk.peek() == popped[j]){
-        //     stk.pop();
-        //     j++;
-        // }
         if(!stk.isEmpty()){
             return false;
         }
