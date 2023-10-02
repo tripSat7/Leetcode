@@ -1,36 +1,37 @@
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
-        Stack<Integer> stack = new Stack<>();
-        int index = 0;
-        
-        while(index < asteroids.length) {
-            int a = asteroids[index];
-            if(stack.isEmpty()) {
-                stack.push(a);
-                index++;
-            } 
-            else {
-                if(stack.peek() > 0 && a < 0) {
-                    if(Math.abs(stack.peek()) > Math.abs(a)) {
-                        index++;
-                    } else if(Math.abs(stack.peek()) < Math.abs(a)) {
-                        stack.pop();
-                    } else {
-                        index++;
-                        stack.pop();
+        Stack<Integer> stk = new Stack<>();
+
+        for(int i =0 ; i<asteroids.length ; i++){
+            if(stk.size()==0 || asteroids[i]>0){
+                stk.push(asteroids[i]);
+            }else{
+                while(true){
+                    int peek = stk.peek();
+                    if(peek<0){
+                        stk.push(asteroids[i]);
+                        break;
+                    }else if(peek == -asteroids[i]){
+                        stk.pop();
+                        break;
+                    }else if(peek> - asteroids[i]){
+                        break;
+                    }else{
+                        stk.pop();
+                        if(stk.size()==0){
+                            stk.push(asteroids[i]);
+                            break;
+                        }
                     }
-                } 
-                else {
-                    stack.push(a);
-                    index++;
                 }
             }
         }
-        
-        int[] res = new int[stack.size()];
-        for(int i=res.length-1; i>=0 ;i--) {
-            res[i] = stack.pop();
+
+        int ans [] = new int[stk.size()];
+        for(int i= stk.size()-1 ; i>=0 ; i--){
+            ans[i]= stk.pop();
         }
-        return res;
+
+        return ans ;
     }
 }
