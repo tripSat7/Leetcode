@@ -16,7 +16,8 @@ class Solution {
                         break;
                     }else if(peek> - asteroids[i]){
                         break;
-                    }else{
+                    }
+                    else{
                         stk.pop();
                         if(stk.size()==0){
                             stk.push(asteroids[i]);
