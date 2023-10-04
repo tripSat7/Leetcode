@@ -6,12 +6,11 @@ class Solution {
         int[]answer = new int[n];
 
         for(int i = 0; i<n; i++){
-            // Check if the stack is not empty and the current temperature is higher.
             while(!dailyTemp.isEmpty() && temperatures[i] > temperatures[dailyTemp.peek()]){
-                int index = dailyTemp.pop(); // Calculate the number of days to wait.
+                int index = dailyTemp.pop();
                 answer[index] = i - index;
             }
-            dailyTemp.push(i); // Push the current day's index onto the stack.
+            dailyTemp.push(i);
         }
         return answer;
     }
