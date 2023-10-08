@@ -32,18 +32,16 @@ class Solution {
                 }
                 i--;
             }
-            //System.out.println(stk.peek());    
         }
         
         if(stk.size()>2 && stk.peek().equals("/")){
             stk.pop();
         }
         
-        String res = "";
-        while(!stk.isEmpty()){
-            res = stk.pop()+ res;
+        StringBuilder sb = new StringBuilder();
+        while (!stk.isEmpty()) {
+            sb.insert(0,stk.pop());
         }
-        
-        return res;
+        return sb.toString();
     }
 }
