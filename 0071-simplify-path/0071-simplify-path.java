@@ -1,47 +1,18 @@
 class Solution {
     public String simplifyPath(String path) {
-        
-        Stack<String> stk = new Stack<>();
-        char ch[] = path.toCharArray();
-        stk.push("/");
-        for(int i = 1; i < ch.length; i++){
-            if(ch[i]=='/'){
-                if(!stk.peek().equals("/") && i+1<ch.length){
-                    stk.push(String.valueOf(ch[i]));                
+        Stack<String> stack = new Stack<>(); // create a stack to keep track of directories
+        String[] directories = path.split("/"); // split the path by slash '/'
+        for (String dir : directories) { // iterate over the directories
+            if (dir.equals(".") || dir.isEmpty()) { // ignore the current directory '.' and empty directories
+                continue;
+            } else if (dir.equals("..")) { // go one level up for double period '..'
+                if (!stack.isEmpty()) { // if stack is not empty, pop the top element
+                    stack.pop();
                 }
-            }
-            else{
-                String temp = "";
-                while(i<ch.length && ch[i]!='/'){
-                    temp = temp + String.valueOf(ch[i]);
-                    i++;
-                }
-                if(temp.equals("..")){
-                    if(stk.size()>2){
-                        stk.pop();
-                        stk.pop();   
-                    }
-                }
-                else if(temp.equals(".")){
-                    if(stk.size()>1){
-                        stk.pop();   
-                    }
-                }
-                else{
-                    stk.push(temp);
-                }
-                i--;
+            } else { // for any other directory, push it to the stack
+                stack.push(dir);
             }
         }
-        
-        if(stk.size()>2 && stk.peek().equals("/")){
-            stk.pop();
-        }
-        
-        StringBuilder sb = new StringBuilder();
-        while (!stk.isEmpty()) {
-            sb.insert(0,stk.pop());
-        }
-        return sb.toString();
+        return "/" + String.join("/", stack); // join the directories in the stack with slash '/' and add a slash at the beginning
     }
 }
