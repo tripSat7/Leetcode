@@ -2,7 +2,6 @@ class Solution {
     public int search(int[] nums, int target) {
         
         int idx = minIndex(nums);
-        //System.out.println(idx);
         int left = 0, right = nums.length - 1;
         if(target == nums[idx]){
             return idx;
@@ -13,7 +12,6 @@ class Solution {
         else{
             right = idx - 1;
         }
-        //System.out.println(left+"||"+right);
         while(left < right){
             int mid = left+(right-left)/2;
             if(nums[mid] == target){
@@ -26,7 +24,6 @@ class Solution {
                 right = mid - 1;
             }
         }
-        System.out.println(left+"||"+right);
         if(right > -1 && nums[right] == target){
             return right;
         }
