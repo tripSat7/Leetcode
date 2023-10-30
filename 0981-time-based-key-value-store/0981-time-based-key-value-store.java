@@ -1,6 +1,16 @@
+class TimeVal {
+    int timestamp;
+    String value;
+
+    TimeVal(int timestamp, String value) {
+        this.timestamp = timestamp;
+        this.value = value;
+    }
+}
+
 class TimeMap {
 
-    HashMap<String, TreeMap<Integer, String>> map;
+    HashMap<String, ArrayList<TimeVal>> map;
     public TimeMap() {
         map = new HashMap<>();
     }
@@ -8,14 +18,14 @@ class TimeMap {
     public void set(String key, String value, int timestamp) {
         
         if(map.containsKey(key)){
-            map.get(key).put(timestamp, value);
+            map.get(key).add(new TimeVal(timestamp,value));
             // System.out.print("Already there---");
             // System.out.println(map);
         }
         else{
-            TreeMap<Integer,String> tmap = new TreeMap<>();
-            tmap.put(timestamp,value);
-            map.put(key, tmap);
+            ArrayList<TimeVal> list = new ArrayList<>();
+            list.add(new TimeVal(timestamp,value));
+            map.put(key, list);
             // System.out.print("New---");
             // System.out.println(map);
         }
@@ -23,23 +33,28 @@ class TimeMap {
     
     public String get(String key, int timestamp) {
         
-        if(!map.containsKey(key)){
-            return "";
-        }
+        String res = "";
         
-        TreeMap<Integer, String> tMap = map.get(key);
-        if(tMap.containsKey(timestamp)){
-            return tMap.get(timestamp);
-        }
-        else
-        {
-            Integer k = tMap.lowerKey(timestamp);
-            if(k == null){
-                return "";
+        if(map.containsKey(key)){
+            ArrayList<TimeVal> list = map.get(key);
+            int low = 0, high = list.size()-1;
+            
+            while(low <= high){
+                int mid = low + (high-low)/2;
+                if(list.get(mid).timestamp == timestamp){
+                    return list.get(mid).value;
+                }
+                else if(list.get(mid).timestamp < timestamp){
+                    res = list.get(mid).value;
+                    low = mid + 1;
+                }
+                else{
+                    high = mid -1;
+                }
             }
-            return tMap.get(k);
         }
         
+        return res;
     }
 }
 
