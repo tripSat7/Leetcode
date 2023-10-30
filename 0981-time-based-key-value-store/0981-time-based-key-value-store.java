@@ -1,60 +1,62 @@
-class TimeVal {
-    int timestamp;
-    String value;
-
-    TimeVal(int timestamp, String value) {
-        this.timestamp = timestamp;
-        this.value = value;
-    }
-}
-
 class TimeMap {
 
-    HashMap<String, ArrayList<TimeVal>> map;
+        class Pair{
+        int timestamp;
+        String value;
+
+        public Pair(int timestamp, String value){
+            this.timestamp = timestamp;
+            this.value = value;
+        }
+    }
+
+    Map<String, ArrayList<Pair>> map;
+
     public TimeMap() {
-        map = new HashMap<>();
+        map = new HashMap<>();    
     }
     
-    public void set(String key, String value, int timestamp) {
-        
+    public void set(String key, String value, int timestamp) {//O1
         if(map.containsKey(key)){
-            map.get(key).add(new TimeVal(timestamp,value));
-            // System.out.print("Already there---");
-            // System.out.println(map);
-        }
-        else{
-            ArrayList<TimeVal> list = new ArrayList<>();
-            list.add(new TimeVal(timestamp,value));
-            map.put(key, list);
-            // System.out.print("New---");
-            // System.out.println(map);
+            map.get(key).add(new Pair(timestamp, value));
+        } else {
+            ArrayList<Pair> temp = new ArrayList();
+            temp.add(new Pair(timestamp, value));
+            map.put(key, temp);
         }
     }
     
     public String get(String key, int timestamp) {
         
-        String res = "";
-        
-        if(map.containsKey(key)){
-            ArrayList<TimeVal> list = map.get(key);
-            int low = 0, high = list.size()-1;
-            
-            while(low <= high){
-                int mid = low + (high-low)/2;
-                if(list.get(mid).timestamp == timestamp){
+        if (map.containsKey(key)){
+            ArrayList<Pair> list = map.get(key);
+            int left = 0;
+            int right = list.size() - 1;
+            String holder = "";
+
+            if(list.get(left).timestamp > timestamp){
+                return "";
+            } 
+            if(list.get(right).timestamp <= timestamp){
+                return list.get(right).value;
+            }
+
+            while(left <= right){
+                int mid = (left+right)/2;
+
+                if (list.get(mid).timestamp == timestamp){
                     return list.get(mid).value;
                 }
-                else if(list.get(mid).timestamp < timestamp){
-                    res = list.get(mid).value;
-                    low = mid + 1;
-                }
-                else{
-                    high = mid -1;
-                }
+                else if (list.get(mid).timestamp > timestamp){
+                    right = mid-1;
+                } else {
+                    holder = list.get(mid).value;
+                    left = mid+1;
+                }             
             }
+            return holder;
         }
-        
-        return res;
+        return "";
     }
 }
 
