@@ -27,10 +27,10 @@ class Solution {
     
     public boolean isSubsequence(char ch1[], char ch2[]){
         
-        int sLen = ch1.length, pLen = ch2.length;
+        //int sLen = ch1.length, pLen = ch2.length;
         int i = 0, j = 0;
         
-        while(i<sLen && j<pLen){
+        while(i<ch1.length && j<ch2.length){
             if(ch1[i] == ch2[j]){
                 j++;
                 i++;
@@ -40,7 +40,7 @@ class Solution {
             }
         }
         
-        return j == pLen;
+        return j == ch2.length;
     }
         
         
