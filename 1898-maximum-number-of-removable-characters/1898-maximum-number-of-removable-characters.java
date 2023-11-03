@@ -2,16 +2,16 @@ class Solution {
     public int maximumRemovals(String s, String p, int[] removable) {
         
         int left = 0, right = removable.length-1;
-        
+        char ch2[] = p.toCharArray();
         while(left <= right){
             int mid = left + (right-left)/2;
-            char ch[] = s.toCharArray();    
+            char ch1[] = s.toCharArray();    
             for(int i = 0; i <= mid; i++)
             {
-                ch[removable[i]] = '|';
+                ch1[removable[i]] = '|';
             }
             
-            if(isSubsequence(ch, p)){
+            if(isSubsequence(ch1, ch2)){
                 left = mid + 1;
             }
             else{
@@ -23,8 +23,8 @@ class Solution {
     }
     
     
-    public boolean isSubsequence(char ch1[], String p){
-        char ch2[] = p.toCharArray();
+    public boolean isSubsequence(char ch1[], char ch2[]){
+        
         int sLen = ch1.length, pLen = ch2.length;
         int i = 0, j = 0;
         
