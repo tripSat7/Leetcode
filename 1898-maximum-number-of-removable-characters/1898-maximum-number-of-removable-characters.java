@@ -6,10 +6,7 @@ class Solution {
         while(left <= right){
             int mid = left + (right-left)/2;
             char ch1[] = s.toCharArray();    
-            for(int i = 0; i <= mid; i++)
-            {
-                ch1[removable[i]] = '|';
-            }
+            for(int i = 0; i <= mid; i++) ch1[removable[i]] = '|';
             
             if(isSubsequence(ch1, ch2)){
                 left = mid + 1;
