@@ -21,32 +21,20 @@ class Solution {
         return count;
     }
     
-    public int getSum(TreeNode root){
+    public int[] getSum(TreeNode root){
         if(root == null){
-            return 0;
+            return new int[]{0,0};
         }
-        int ls = getSum(root.left);
-        int rs = getSum(root.right);
+        int []ls = getSum(root.left);
+        int []rs = getSum(root.right);
         
-        int sum = ls + rs + root.val;
-        int n = getCount(root);
-        //System.out.println(sum+"||"+n+"||"+root.val);
+        int sum = ls[0] + rs[0] + root.val;
+        int n = ls[1] + rs[1] + 1;
         if((sum/n) == root.val){
             count++;
         }
         
-        return sum;
+        return new int[]{sum, n};
     }
     
-    public int getCount(TreeNode root){
-        if(root == null){
-            return 0;
-        }
-        int lc = getCount(root.left);
-        int rc = getCount(root.right);
-        
-        int total = lc + rc + 1;
-        
-        return total;
-    }
 }
