@@ -14,14 +14,8 @@
  * }
  */
 class Solution {
-    public TreeNode constructMaximumBinaryTree(int[] nums) {
-        
-        return construct(nums, 0, nums.length - 1);
-    }
-    
-    public TreeNode construct(int[] nums, int start, int end){
-        
-        if(start > end){
+    TreeNode Tree_making(int start,int end,int[]nums){
+        if(start>end){
             return null;
         }
         int index=start;
@@ -30,13 +24,14 @@ class Solution {
                 index=i;
             }
         }
-        
-        TreeNode root = new TreeNode(nums[index]);
-        
-        root.left = construct(nums, start, index-1);
-        root.right = construct(nums, index+1, end);
-        
+        TreeNode root=new TreeNode(nums[index]);
+        root.left=Tree_making(start,index-1,nums);
+        root.right=Tree_making(index+1,end,nums);
         return root;
     }
-    
+    public TreeNode constructMaximumBinaryTree(int[] nums) {
+        
+       return Tree_making(0,nums.length-1,nums);
+
+    }
 }
