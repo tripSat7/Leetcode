@@ -24,26 +24,19 @@ class Solution {
         if(start > end){
             return null;
         }
+        int index=start;
+        for(int i=start;i<=end;i++){
+            if(nums[index]<nums[i]){
+                index=i;
+            }
+        }
         
-        int max = findMax(nums, start, end);
-        TreeNode root = new TreeNode(nums[max]);
+        TreeNode root = new TreeNode(nums[index]);
         
-        root.left = construct(nums, start, max-1);
-        root.right = construct(nums, max+1, end);
+        root.left = construct(nums, start, index-1);
+        root.right = construct(nums, index+1, end);
         
         return root;
     }
     
-    public int findMax(int[] nums, int start, int end){
-        int max = nums[start];
-        int idx = start;
-        for(int i = start; i <= end; i++){
-            if(nums[i] > max){
-                max = nums[i];
-                idx = i;
-            }
-        }
-        
-        return idx;
-    }
 }
