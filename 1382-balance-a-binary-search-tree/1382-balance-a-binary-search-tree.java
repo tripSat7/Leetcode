@@ -25,6 +25,15 @@ class Solution {
         if(start>end){
             return null;
         }
+        
+        if(start == end){
+            TreeNode root = inorder.get(start);
+            root.left = null;
+            root.right = null;
+            
+            return root;
+        }
+        
         int mid = (start+end)/2;
         TreeNode root = inorder.get(mid);
         root.left = helper(inorder, start, mid-1);
