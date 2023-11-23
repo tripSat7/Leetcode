@@ -16,53 +16,36 @@
 class Solution {
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         
-        List<TreeNode> list1 = new ArrayList<>(); 
-        List<TreeNode> list2 = new ArrayList<>(); 
+        List<Integer> res = new ArrayList<>();//to store the node data  in sorted order 
         
-        inOrderTraversal(list1,root1);
-        inOrderTraversal(list2,root2);
-        int size1 = list1.size();
-        int size2 = list2.size();
-        List<Integer> res = new ArrayList<>();
-        int n = size1>size2 ? size2 : size1;
+        Stack<TreeNode> stack1 = new Stack<>();//for tree 1
+        Stack<TreeNode> stack2 = new Stack<>();//for tree 2
         
-        int i=0, j=0;
-        while(i<size1 || j<size2){
-            if(i<size1 && j<size2 && list1.get(i).val > list2.get(j).val){
-                res.add(list2.get(j).val);
-                j++;
+        while (!stack1.isEmpty() || root1 != null || !stack2.isEmpty() || root2 != null) //termination condition 
+        {
+            while (root1 != null) //pushing all left node going in depth in tree 1//Left
+            {
+                stack1.push(root1);
+                root1 = root1.left;
             }
-            else if (i<size1 && j<size2 && list1.get(i).val <= list2.get(j).val){
-                res.add(list1.get(i).val);
-                i++;
+            while (root2 != null) //pushing all left node going in depth in tree 2//Left
+            {
+                stack2.push(root2);
+                root2 = root2.left;
             }
-            else{
-                if(i>=size1){
-                    while(j<size2){
-                        res.add(list2.get(j).val);
-                        j++;
-                    }
-                }
-                else{
-                    while(i<size1){
-                        res.add(list1.get(i).val);
-                        i++;
-                    }
-                }
+            if (stack2.isEmpty() || (!stack1.isEmpty() && stack1.peek().val < stack2.peek().val&& !stack2.isEmpty()))//pushing only the smaller element which is present in stack 1//if stack 2 is not present we are dealing with stack 1
+            {
+                TreeNode cur1= stack1.pop();//Root
+                res.add(cur1.val);//adding to the list
+                root1= cur1.right;//Right
+            } 
+            else //just the opposite case is followed  here 
+            {
+                TreeNode cur2= stack2.pop();//Root
+                res.add(cur2.val);//adding to the list 
+                root2= cur2.right;//Right
             }
         }
-        
-
         return res;
-    }
-    
-    public void inOrderTraversal(List<TreeNode> inorder, TreeNode root){
-        if(root == null){
-            return;
-        }
-        
-        inOrderTraversal(inorder, root.left);
-        inorder.add(root);
-        inOrderTraversal(inorder, root.right);
     }
 }
