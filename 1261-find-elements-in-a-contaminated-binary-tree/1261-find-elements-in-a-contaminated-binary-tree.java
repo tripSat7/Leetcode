@@ -15,10 +15,9 @@
  */
 class FindElements {
 
-    TreeNode troot;
+    TreeNode troot = new TreeNode();
     public FindElements(TreeNode root) {
         
-        troot = new TreeNode();
         troot = root;
         troot.val = 0;        
         helper(troot);
