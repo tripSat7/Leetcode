@@ -15,43 +15,29 @@
  */
 class FindElements {
 
-    TreeNode troot = new TreeNode();
+    TreeNode root;
+    Set<Integer> set = new HashSet<>();
     public FindElements(TreeNode root) {
-        
-        troot = root;
-        troot.val = 0;        
-        helper(troot);
-    }
-    
-    public void helper(TreeNode root){
-        if(root == null){
-            return;
-        }
-        
-        if(root.left!=null){
-            root.left.val = 2*root.val + 1;    
-            helper(root.left);
-        }
-        if(root.right!=null){
-            root.right.val = 2*root.val + 2;
-            helper(root.right);
-        }
+        this.root = root;
+        if(root != null){ root.val = 0; set.add(root.val); }
+        recover(root,set);
     }
     
     public boolean find(int target) {
-        
-        return findHelper(troot, target);
+      return set.contains(target);
     }
-    
-    public boolean findHelper(TreeNode root, int target){
-        if(root == null){
-            return false;
+
+    private void recover(TreeNode root, Set<Integer> set){
+        if(root.left != null){
+            root.left.val = 2 * root.val + 1;
+            set.add(root.left.val);
+            recover(root.left, set);
         }
-        if(root.val == target){
-            return true;
-        }
-        
-        return (findHelper(root.left, target) || findHelper(root.right, target));
+       if(root.right != null){
+            root.right.val = 2 * root.val + 2;
+            set.add(root.right.val);
+            recover(root.right, set);
+       } 
     }
 }
 
