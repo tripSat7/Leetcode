@@ -21,11 +21,15 @@ class Solution {
     }
     
     TreeNode solve(int[] inorder, int[] postorder, int inI, int inJ) {
-        if(inI > inJ) return null;
+        if(inI > inJ) {
+            return null;
+        }
         TreeNode node = new TreeNode(postorder[postJ]);
         int k;
         for(k = inJ; k >= inI; k--) {
-            if(inorder[k] == postorder[postJ]) break;
+            if(inorder[k] == postorder[postJ]) { 
+                break;
+            }
         }
         postJ--;
         node.right = solve(inorder, postorder, k + 1, inJ);
