@@ -14,9 +14,9 @@
  * }
  */
 class Solution {
-    int res = 0;
+    public int res = 0;
     public int goodNodes(TreeNode root) {
-        helper(root, Integer.MIN_VALUE);
+        helper(root, root.val);
         return res;
     }
     
@@ -25,7 +25,6 @@ class Solution {
             return;
         }
         if(root.val >= max){
-            //System.out.println(root.val);
             res++;
             max = root.val;
         }
