@@ -30,7 +30,6 @@ class Solution {
         }
         
         helper(root.left);
-        System.out.println(root.val+" : "+count);
         count--;
         if(count==0){
             res = root.val;
