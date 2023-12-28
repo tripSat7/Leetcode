@@ -1,58 +1,57 @@
-class Pair{
-    int first;
-    int second;
-    
-    Pair(int first, int second){
-        this.first = first;
-        this.second = second;
-    }
-}
-
 class Solution {
     public int numIslands(char[][] grid) {
-        int n = grid.length;
-        int m = grid[0].length;
-        int visited[][] = new int[n][m];
-        int count = 0;
-        
-        for(int i = 0 ; i < n ; i++){
-            for(int j = 0 ; j < m ; j++){
-                
-                if(grid[i][j] == '1' && visited[i][j] == 0){
-                    bfs(grid, visited, i, j);
-                    count++;
+        int m = grid.length;
+        int n = grid[0].length;
+        int sol = 0;
+        int[][] vis = new int[m][n];
+        for (int r=0;r<m;r++)
+        {
+            for (int c=0;c<n;c++)
+            {
+                if(grid[r][c]=='1' && vis[r][c]==0)
+                {
+                    sol++;
+                    bfs(r,c,vis,grid);
                 }
             }
         }
-        
-        return count;
+        return sol;
     }
-    
-    public void bfs(char[][] grid, int visited[][], int row, int col){
-        visited[row][col] = 1;
+    public void bfs(int r,int c,int[][] vis,char[][] grid)
+    {
+        int m = grid.length;
+        int n = grid[0].length;
         Queue<Pair> q = new LinkedList<>();
-        q.add(new Pair(row,col));
-        int n = grid.length;
-        int m = grid[0].length;
-        
-        while(!q.isEmpty()){
-            int qrow = q.peek().first;
-            int qcol = q.peek().second;
-            q.poll();
-            
-            for(int i = -1 ; i <= 1 ; i++){
-                for(int j = -1 ; j <= 1 ; j++){
-                    if(Math.abs(i) != Math.abs(j)){
-                        int nrow = qrow + i;
-                        int ncol = qcol + j;
-
-                        if((nrow >= 0 && nrow < n) && (ncol >= 0 && ncol < m) && visited[nrow][ncol] == 0 && grid[nrow][ncol] == '1'){
-                            visited[nrow][ncol] = 1;
-                            q.add(new Pair(nrow,ncol));
-                        }
-                    }
+        vis[r][c]=1;
+        q.add(new Pair(r,c));
+        int[] arow={-1,0,0,1};
+        int[] acol={0,-1,+1,0};
+        while(!q.isEmpty())
+        {
+            int row=q.peek().r;
+            int col=q.peek().c;
+            q.remove();
+            for (int i=0;i<arow.length;i++)
+            {
+                int row1=row+arow[i];
+                int col1=col+acol[i];
+                if(row1>=0 && row1<m && col1>=0 && col1<n && 
+                grid[row1][col1]=='1' && vis[row1][col1]==0)
+                {
+                    q.add(new Pair(row1,col1));
+                    vis[row1][col1]=1;
                 }
             }
         }
+    }
+}
+class Pair
+{
+    int r;
+    int c;
+    Pair(int r,int c)
+    {
+        this.r=r;
+        this.c=c;
     }
 }
