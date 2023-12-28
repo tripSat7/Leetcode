@@ -1,33 +1,29 @@
-class Solution {
-    public int numIslands(char[][] grid) {
-        int rowLength = grid.length;
-        int columnLength = grid[0].length;
-        int noOfIsnlands =0;
+public class Solution {
 
-        for(int r=0; r< rowLength;r++){
-            for(int c=0; c< columnLength;c++){
-                if(grid[r][c] == '1'){
-                    checkIsland(grid,r,c);
-                    noOfIsnlands++;
+    private int n;
+    private int m;
+
+    public int numIslands(char[][] grid) {
+        int count = 0;
+        n = grid.length;
+        if (n == 0) return 0;
+        m = grid[0].length;
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < m; j++)
+                if (grid[i][j] == '1') {
+                    DFSMarking(grid, i, j);
+                    ++count;
                 }
-            }
-        }
-       return noOfIsnlands;
+        }    
+        return count;
     }
 
-    public void checkIsland(char[][] grid, int row, int column){
-        int rowLength = grid.length;
-        int columnLength = grid[0].length;
-
-        if( row < 0 || column <0 || row >= rowLength || column >= columnLength ||
-            grid[row][column] == '0'){
-                return;
-            }
-        
-        grid[row][column]='0';
-        checkIsland(grid, row+1, column);
-        checkIsland(grid, row-1, column);
-        checkIsland(grid, row, column-1);
-        checkIsland(grid, row, column+1);
+    private void DFSMarking(char[][] grid, int i, int j) {
+        if (i < 0 || j < 0 || i >= n || j >= m || grid[i][j] != '1') return;
+        grid[i][j] = '0';
+        DFSMarking(grid, i + 1, j);
+        DFSMarking(grid, i - 1, j);
+        DFSMarking(grid, i, j + 1);
+        DFSMarking(grid, i, j - 1);
     }
 }
