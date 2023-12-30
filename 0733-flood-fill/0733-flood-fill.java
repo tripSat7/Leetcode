@@ -11,10 +11,8 @@ class Solution {
     }
     
     public void dfs(int[][] image, int sr, int sc, int curr, int color){
-        int rowLength = image.length;
-        int columnLength = image[0].length;
         
-        if( sr < 0 || sc < 0 || sr >= rowLength || sc >= columnLength ||
+        if( sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length ||
             image[sr][sc] != curr){
                 return;
         }
