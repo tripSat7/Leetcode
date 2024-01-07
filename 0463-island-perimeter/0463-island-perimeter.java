@@ -46,8 +46,7 @@ class Solution {
                 int row1=row+arow[i];
                 int col1=col+acol[i];
                 
-                if(row1>=0 && row1<m && col1>=0 && col1<n && 
-                grid[row1][col1] == 1 && vis[row1][col1]==0)
+                if(row1>=0 && row1<m && col1>=0 && col1<n && grid[row1][col1] == 1 && vis[row1][col1]==0)
                 {
                     q.add(new Pair(row1,col1));
                     vis[row1][col1]=1;
@@ -56,10 +55,9 @@ class Solution {
                 if((row1 == -1 || row1 == m || col1 == -1 || col1 == n ) || (row1>=0 && row1<m && col1>=0 && col1<n && grid[row1][col1] == 0)){
                     per++;
                 }
-                //System.out.println(row1+":"+col1+"|"+per);
             }
         }
-        //System.out.println(per);
+    
         return per;
     }
 }
