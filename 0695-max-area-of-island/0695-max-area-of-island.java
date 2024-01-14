@@ -15,9 +15,10 @@ class Solution {
     }
 
     public int markVisited(int i, int j, int m, int n, int[][] grid) {
-        if(i < 0 || j < 0 || i >= m || j >= n || grid[i][j] == 0) return 0;
-            grid[i][j] = 0;
-           return (1 +  markVisited(i + 1, j, m, n, grid) +  markVisited(i - 1, j, m, n, grid) +  markVisited(i, j + 1, m, n, grid) +  markVisited(i, j - 1, m, n, grid));
-    
+        if(i < 0 || j < 0 || i >= m || j >= n || grid[i][j] == 0) {
+            return 0;
+        }
+        grid[i][j] = 0;
+        return (1 +  markVisited(i + 1, j, m, n, grid) +  markVisited(i - 1, j, m, n, grid) +  markVisited(i, j + 1, m, n, grid) +  markVisited(i, j - 1, m, n, grid));
     }
 }
