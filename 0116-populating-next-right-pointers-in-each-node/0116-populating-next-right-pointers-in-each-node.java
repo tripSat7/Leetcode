@@ -30,7 +30,6 @@ class Solution {
         Queue<Node> q = new LinkedList<>();
         q.add(root);
         q.add(null);
-        List<Node> arr = new ArrayList<>();
         
         while(!q.isEmpty()){
             Node temp = q.poll();
