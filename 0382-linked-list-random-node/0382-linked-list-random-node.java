@@ -9,31 +9,31 @@
  * }
  */
 class Solution {
-    private ListNode head;
-    private Random random;
+        ListNode head;
+        int length;
 
-    public Solution(ListNode head) {
-        this.head = head;
-        random = new Random();
-    }
-
-    public int getRandom() {
-        int count = 0;
-        int result = 0;
-        ListNode curr = head;
-
-        while (curr != null) {
-            count++;
-    
-            if (random.nextInt(count) == 0) {
-                result = curr.val;
+        public Solution(ListNode head) {
+            this.head = head;
+            ListNode temp = head;
+            while (temp != null){
+                temp = temp.next;
+                length++;
             }
-            curr = curr.next;
         }
 
-        return result;
+        public int getRandom() {
+            double random = Math.random();
+            random = Math.floor(random * length);
+            ListNode temp = head;
+            while (random > 0){
+                temp = temp.next;
+                random--;
+            }
+            return temp.val;
+        }
     }
-}
+
+
 
 /**
  * Your Solution object will be instantiated and called as such:
