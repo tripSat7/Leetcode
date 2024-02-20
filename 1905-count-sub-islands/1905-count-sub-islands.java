@@ -12,11 +12,11 @@ class Solution {
         }
         
         if(j < grid2[i].length - 1 && grid2[i][j+1] == 1){
-            method(grid1,grid2,i,j+1);
+            method(grid1, grid2, i, j+1);
         }
         
         if(i > 0 && grid2[i-1][j] == 1){
-            method(grid1,grid2,i-1,j);
+            method(grid1, grid2, i-1, j);
         }
         
         if(j > 0 && grid2[i][j-1] == 1){
