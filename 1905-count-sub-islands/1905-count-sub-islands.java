@@ -1,34 +1,44 @@
 class Solution {
-    int ans =0;
-    public void dfs(int[][] grid1, int[][] grid2, int i , int j){
-        if(i<0|| i>=grid1.length ||j<0|| j>=grid1[0].length || grid2[i][j]==0 ) {
-            return;    
+    boolean check = true; 
+    int count = 0;
+    private void method(int [][] grid1,int[][] grid2,int i,int j){
+        grid2[i][j] = 0;
+        if(grid1[i][j] != 1) {
+            check = false;
         }
         
-        if(grid1[i][j]== 0){
-            ans = 0;
+        if(i < grid2.length - 1 && grid2[i+1][j] == 1){
+            method(grid1, grid2, i+1, j);
         }
-        grid2[i][j] =0;
-        dfs(grid1, grid2, i-1, j);
-        dfs(grid1, grid2, i+1, j);
-        dfs(grid1, grid2, i, j+1);
-        dfs(grid1, grid2, i, j-1);
+        
+        if(j < grid2[i].length - 1 && grid2[i][j+1] == 1){
+            method(grid1,grid2,i,j+1);
+        }
+        
+        if(i > 0 && grid2[i-1][j] == 1){
+            method(grid1,grid2,i-1,j);
+        }
+        
+        if(j > 0 && grid2[i][j-1] == 1){
+            method(grid1, grid2, i, j-1);
+        }
     }
-
-    public int countSubIslands(int[][] grid1, int[][] grid2) {
-        int res=0;
-        for(int i=0 ;i <grid1.length ;i++){
-            for(int j=0 ;j<grid2[0].length ;j++){
-
-                if(grid2[i][j]==1)
-                {
-                    ans=1;
-                    dfs(grid1, grid2, i, j);
-                    res+=ans;
+    
+    public int countSubIslands(int[][] grid1, int[][] grid2){
+        for(int i = 0; i < grid2.length; i++){
+            for(int j = 0;j < grid2[i].length; j++){
+                if(grid2[i][j] == 1){
+                    method(grid1, grid2, i, j);
+                    if(check == true){
+                        count++;  
+                    } 
+                    else {
+                        check=true;
+                    }
                 }
+                
             }
         }
-        return res;
-
+        return count;
     }
 }
