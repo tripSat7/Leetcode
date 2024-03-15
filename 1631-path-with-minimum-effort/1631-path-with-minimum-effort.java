@@ -11,6 +11,7 @@ class Pair{
 class Solution {
     public int minimumEffortPath(int[][] heights) {
         PriorityQueue<Pair> q = new PriorityQueue<>((p1, p2) -> p1.first - p2.first);
+        
         int m = heights.length;
         int n = heights[0].length;
         int dist[][] = new int[m][n];
@@ -32,16 +33,17 @@ class Solution {
             int row = p.second;
             int col = p.third;
             q.remove();
-            // System.out.println(row+"||"+col+"::"+dist[row][col]);
+            if(row == m-1 && col == n-1){
+                break;
+            }
             for(int i = 0; i < 4; i++){
                 int nr = row + X[i];
                 int nc = col + Y[i];
-                // System.out.println(nr+"||"+nc);
                 if(nr >= 0 && nr < m && nc >= 0 && nc < n && Math.max(Math.abs(heights[row][col] - heights[nr][nc]), ef) < dist[nr][nc]){
                     
                     dist[nr][nc] = Math.max(Math.abs(heights[row][col] - heights[nr][nc]), ef);
-                    // System.out.println(nr+"|"+nc+"??"+dist[nr][nc]);
                     q.add(new Pair(dist[nr][nc],nr,nc));
+                    
                 }
             }
         }
