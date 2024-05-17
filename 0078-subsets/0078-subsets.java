@@ -8,13 +8,13 @@ class Solution {
             for(int j = 0; j < nums.length; j++){
                 if((i & (1<<j)) > 0){
                     temp.add(nums[j]);
-                    if(!res.contains(temp)){
-                        res.add(temp);
-                    }
                 }
             }
+            res.add(temp);
+            // if(!res.contains(temp)){
+            //     res.add(temp);
+            // }
         }
-        res.add(new ArrayList<>());
         return res;
     }
 }
