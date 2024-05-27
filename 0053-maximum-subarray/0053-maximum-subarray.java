@@ -6,7 +6,9 @@ class Solution {
         for(int i = 1; i < nums.length; i++){
             maxEnding = maxEnding + nums[i];
             maxEnding = maxEnding > nums[i] ? maxEnding : nums[i];
-            res = Math.max(maxEnding, res);
+            if(maxEnding > res){
+                res = maxEnding;
+            }
         }
         
         return res;
