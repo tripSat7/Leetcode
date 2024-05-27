@@ -1,16 +1,14 @@
 class Solution {
     public int maxSubArray(int[] nums) {
-        int res = nums[0];
-        int maxEnding = nums[0];
-        
-        for(int i = 1; i < nums.length; i++){
-            maxEnding = maxEnding + nums[i];
-            maxEnding = maxEnding > nums[i] ? maxEnding : nums[i];
-            if(maxEnding > res){
-                res = maxEnding;
-            }
+        int cs =0;
+        int ms = nums[0];
+        for (int i=0; i<nums.length; i++){
+            cs+=nums[i];
+            ms = cs>ms?cs:ms;
+            if(cs<0){
+               cs=0;
+            }        
         }
-        
-        return res;
+        return ms;  
     }
 }
