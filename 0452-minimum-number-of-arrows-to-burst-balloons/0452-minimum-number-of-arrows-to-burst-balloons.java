@@ -7,7 +7,6 @@ class Solution {
             if (points[i][0] > points[index][1]) {
                 index = i;
                 result++;
-            } else {
             }
         }  
         return result; 
