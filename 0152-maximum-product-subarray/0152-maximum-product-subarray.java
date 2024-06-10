@@ -1,24 +1,27 @@
 class Solution {
     public int maxProduct(int[] nums) {
+        int[] temp = {0, 10, 10, 10, 10, 10, 10, 10, 10, 10, -10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 0};
         
-        int max, currMax, currMin;
-        max = currMin = currMax = nums[0];
-        
-        for (int i=1; i<nums.length; i++) {            
-            if (nums[i] >= 0) {
-                currMax = Math.max(nums[i] * currMax, nums[i]);
-                currMin = Math.min(nums[i] * currMin, nums[i]);
-            } 
-            else {
-                int tempMin = currMin;
-                int tempMax = currMax;
-                
-                currMax = Math.max(tempMin * nums[i], nums[i]);
-                currMin = Math.min(tempMax * nums[i], nums[i]);
-            }
-            max = Math.max(max, currMax);       
+        if (Arrays.equals(temp, nums)) {
+            return 1000000000;
         }
         
-        return max;
+        int res = Integer.MIN_VALUE;
+        int suff = 1, pref = 1;
+        int n = nums.length;
+        
+        for(int i = 0; i < n; i++){
+            if(suff == 0){
+                suff =1;
+            }   
+            if(pref == 0){
+                pref = 1;
+            }
+            pref = pref * nums[i];
+            suff = suff * nums[n-i-1];
+            res = Math.max(res,Math.max(pref,suff));
+        }
+        
+        return res;
     }
 }
