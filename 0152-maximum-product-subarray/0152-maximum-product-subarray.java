@@ -6,22 +6,31 @@ class Solution {
             return 1000000000;
         }
         
-        int res = Integer.MIN_VALUE;
-        int suff = 1, pref = 1;
+       int prod = 1;
+        int maxProd = Integer.MIN_VALUE;
         int n = nums.length;
-        
-        for(int i = 0; i < n; i++){
-            if(suff == 0){
-                suff =1;
-            }   
-            if(pref == 0){
-                pref = 1;
+
+        for (int i = 0; i < n; i++) {
+            prod = prod * nums[i];
+            if (prod > maxProd) {
+                maxProd = prod;
             }
-            pref = pref * nums[i];
-            suff = suff * nums[n-i-1];
-            res = Math.max(res,Math.max(pref,suff));
+            if (prod == 0) {
+                prod = 1;
+            }
         }
-        
-        return res;
+
+        prod = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            prod = prod * nums[i];
+            if (prod > maxProd) {
+                maxProd = prod;
+            }
+            if (prod == 0) {
+                prod = 1;
+            }
+        }
+
+        return maxProd;
     }
 }
