@@ -6,7 +6,7 @@ class Solution {
             return 1000000000;
         }
         
-       int prod = 1;
+        int prod = 1;
         int maxProd = Integer.MIN_VALUE;
         int n = nums.length;
 
