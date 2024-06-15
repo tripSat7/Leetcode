@@ -6,7 +6,7 @@ class Solution {
         for(int end = 0; end < s.length(); end ++){
             arr[s.charAt(end) - 'A']++;
             largestCount = Math.max(largestCount, arr[s.charAt(end) - 'A']);
-            if(end - beg + 1 - largestCount > k){
+            while(end - beg + 1 - largestCount > k){
                 arr[s.charAt(beg) - 'A']--;
                 beg ++;
             }
