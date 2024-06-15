@@ -10,9 +10,9 @@ class Solution {
                 arr[s.charAt(beg) - 'A']--;
                 beg ++;
             }
-            maxlen = Math.max(maxlen, end - beg + 1);
+            // maxlen = Math.max(maxlen, end - beg + 1);
         }
         
-        return maxlen;
+        return s.length() - beg;
     }
 }
