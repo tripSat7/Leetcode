@@ -1,23 +1,13 @@
 class Solution {
     public String shiftingLetters(String s, int[] shifts) {
-        int prefix[] = new int[shifts.length];
-        prefix[shifts.length - 1] = shifts[shifts.length - 1];
-        
-        for(int i = shifts.length - 2; i >= 0; i--){
-            prefix[i] = (shifts[i] + prefix[i+1])%26;
+        char arr[] = s.toCharArray();
+        for (int i = shifts.length - 2; i >= 0; i--) {
+            shifts[i] = (shifts[i] + shifts[i + 1]) % 26;
         }
         
-        StringBuilder res = new StringBuilder();
-        int i = 0;
-        for(char ch : s.toCharArray()){
-            int temp = ch - 'a';
-            temp = (temp + prefix[i])%26;
-            char c = (char)('a' + temp);
-            res.append(c);
-            //System.out.println(c);
-            i++;
+        for(int i = 0;i<shifts.length;i++){
+           arr[i] = (char) ((arr[i] - 'a' + shifts[i]) % 26 + 'a');
         }
-        
-        return res.toString();
+        return new String(arr ,0,arr.length);
     }
 }
