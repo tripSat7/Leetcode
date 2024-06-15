@@ -3,6 +3,7 @@ class Solution {
         int[] arr = new int[26];
         int largestCount = 0, beg = 0, maxlen = 0;
         char[] ans = s.toCharArray();
+        
         for(int end = 0; end < ans.length; end ++){
             arr[ans[end] - 'A']++;
             largestCount = Math.max(largestCount, arr[ans[end] - 'A']);
@@ -10,7 +11,6 @@ class Solution {
                 arr[ans[beg] - 'A']--;
                 beg ++;
             }
-            // maxlen = Math.max(maxlen, end - beg + 1);
         }
         
         return s.length() - beg;
