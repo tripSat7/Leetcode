@@ -1,21 +1,21 @@
 class Solution {
     public int maxChunksToSorted(int[] arr) {
-        int n = arr.length;
-        int min[] = new int[n];
-        min[n-1] = arr[n-1];
-        for(int i = n-2; i >=0; i--){
-            min[i] = Math.min(min[i+1],arr[i]);
-        }
-        
-        int maxOfLeft = arr[0];
-        int res = 0;
-        for (int i = 0; i < n - 1; i++) {
-            maxOfLeft = Math.max(maxOfLeft, arr[i]);
-            if(maxOfLeft <= min[i + 1]) {
-                res++;
+        int rmin[] = new int[arr.length +1];
+        rmin[arr.length] = Integer.MAX_VALUE;
+         for(int i=arr.length-1;i>=0;i--){
+            rmin[i] = Math.min(rmin[i+1], arr[i]);
+         }
+
+        int lmax = arr[0];
+        int count = 0;
+        for(int i=0;i<arr.length;i++){
+            lmax = Math.max(lmax, arr[i]);
+
+            if(lmax<=rmin[i+1]){
+                count++;
             }
         }
 
-        return res+1;
+        return count;
     }
 }
