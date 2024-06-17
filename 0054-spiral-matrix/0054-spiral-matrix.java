@@ -15,19 +15,19 @@ class Solution {
             }
             top++;
             
-            for(int i = top;tot>0 && i <= bottom; i++){
+            for(int i = top; tot>0 && i <= bottom ; i++){
                 res.add(matrix[i][right]);
                 tot--;
             }
             right--;
             
-            for(int i = right;tot>0 && i >= left; i--){
+            for(int i = right; tot>0 && i >= left ; i--){
                 res.add(matrix[bottom][i]);
                 tot--;
             }
             bottom--;
             
-            for(int i = bottom;tot>0 && i >= top; i--){
+            for(int i = bottom; tot>0 && i >= top; i--){
                 res.add(matrix[i][left]);
                 tot--;
             }
