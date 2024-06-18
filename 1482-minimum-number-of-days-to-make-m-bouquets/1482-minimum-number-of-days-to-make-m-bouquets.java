@@ -28,21 +28,17 @@ class Solution {
     public boolean checkPos(int[] arr, int x, int m, int k){
         int count = 0;
         int res = 0;
-        
+        int num = 0;
         for(int i : arr){
             if(i <= x){
                 count++;
             }
             else{
-                count = 0;
-            }
-            
-            if(count == k){
-                res++;
+                num = num + (count/k);
                 count = 0;
             }
         }
-        
-        return res >= m; 
+        num = num + (count/k);
+        return num >= m; 
     }
 }
