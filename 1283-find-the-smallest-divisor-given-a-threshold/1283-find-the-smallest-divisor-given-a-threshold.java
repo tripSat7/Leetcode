@@ -8,14 +8,11 @@ class Solution {
         
         while(min < max){
             int mid = (min+max)/2;
-            boolean flag = sum(nums, threshold, mid);
-            //System.out.println(mid+"::"+flag);
-            if(flag){
+            if(sum(nums, threshold, mid)){
                 max = mid;
             }
             else{
                 min = mid + 1;
-                
             }
             
         }
