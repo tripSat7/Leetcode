@@ -1,9 +1,9 @@
 class Solution {
     public int minDays(int[] bloomDay, int m, int k) {
-        //System.out.println(m*k + "::"+ bloomDay.length);
-        if((long)m*k > (long)bloomDay.length){
+        int n = bloomDay.length;
+
+        if(m > ((double)n)/k)
             return -1;
-        }
         
         int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
         
