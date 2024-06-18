@@ -34,11 +34,11 @@ class Solution {
                 count++;
             }
             else{
-                num = num + (count/k);
+                num += (count/k);
                 count = 0;
             }
         }
-        num = num + (count/k);
+        num += (count/k);
         return num >= m; 
     }
 }
