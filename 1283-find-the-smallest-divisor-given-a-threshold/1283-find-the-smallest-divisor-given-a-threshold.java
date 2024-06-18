@@ -23,14 +23,8 @@ class Solution {
     public boolean sum(int[] nums, int threshold, int mid){
         int res = 0;
         for(int i : nums){
-            if(i%mid != 0){
-                res = res + (i/mid) + 1;
-            }
-            else{
-                res = res + (i/mid);
-            }
+           res += (i + mid - 1) / mid;
         }
-        //System.out.println(res);
         return res <= threshold;
     }
 }
