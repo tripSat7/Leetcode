@@ -1,39 +1,38 @@
 class Solution {
     public int splitArray(int[] nums, int k) {
-        int min = 0, max = 0;
-        
-        for(int i : nums){
-            min = Math.max(min, i);
-            max += i;
+        if(nums.length<k){
+            return -1;
         }
-        
-        while(min <= max){
-            int mid = (min+max)/2;
-            
-            if(checkSum(nums, k, mid)){
-                min = mid + 1;
+        int low=Integer.MIN_VALUE;
+        int high=0;
+        for(int i:nums){
+            low=Math.max(low,i);
+            high+=i;
+        }
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            int x=func(nums,mid);
+            if(x>k){
+                low=mid+1;
             }
             else{
-                max = mid - 1;
+                high=mid-1;
             }
         }
-        
-        return min;
+        return low;
     }
-    
-    public boolean checkSum(int[] nums, int k, int mid){
-        int req = 1, sum = 0;
-        
-        for(int i = 0; i < nums.length; i++){
-            if(sum + nums[i] > mid){
-                req++;
-                sum = nums[i];
+    public static int func(int[] arr,int mid){
+        int x=1;
+        int a=0;
+        for(int i:arr){
+            if(i+a<=mid){
+                a+=i;
             }
             else{
-                sum += nums[i];
+                x++;
+                a=i;
             }
         }
-        
-        return req > k;
+        return x;
     }
 }
