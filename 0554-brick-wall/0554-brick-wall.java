@@ -1,25 +1,25 @@
 class Solution {
     public int leastBricks(List<List<Integer>> wall) {
-        Map<Integer, Integer> freq = new HashMap<>();
-        for (List<Integer> row : wall) {
-            int end = 0;
-            for (int i = 0; i < row.size() - 1; i++) {
-                end += row.get(i);
-                freq.put(end, freq.getOrDefault(end, 0) + 1);
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < wall.size(); i++) {
+            List<Integer> bricks = wall.get(i);
+            int len = 0;
+            for (int j = 0; j < bricks.size() -1 ; j++) {
+                len += bricks.get(j);
+                putToMap(map, len);
             }
         }
-        
-        if (freq.isEmpty()) {
+        if (map.isEmpty()) {
             return wall.size();
         }
-        
-        int max = 0;
-        for (Integer val : freq.values()) {
-            if (val > max){
-                max = val;
-            } 
-        }
+        return wall.size() - Collections.max( map.values());
+    }
 
-        return (wall.size() - max);
+    private void putToMap(Map<Integer, Integer> map, int val) {
+        if (map.containsKey(val)) {
+            map.put(val, map.get(val) + 1);
+        } else {
+            map.put(val, 1);
+        }
     }
 }
