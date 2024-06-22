@@ -8,7 +8,11 @@ class Solution {
                 freq.put(end, freq.getOrDefault(end, 0) + 1);
             }
         }
-
+        
+        if (freq.isEmpty()) {
+            return wall.size();
+        }
+        
         int max = 0;
         for (Integer val : freq.values()) {
             if (val > max){
