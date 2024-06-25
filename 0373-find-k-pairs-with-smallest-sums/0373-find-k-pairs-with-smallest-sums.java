@@ -1,29 +1,27 @@
 class Solution {
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
-        int n = nums1.length;
-        int m = nums2.length;
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b)->(a[0] - b[0]));
-        HashSet<Pair<Integer,Integer>>hashSet = new HashSet<>();
-        List<List<Integer>> ans = new ArrayList<>();
-        List<Integer> pair;
-        int i,j;
-        pq.add(new int[]{nums1[0]+nums2[0],0,0});
-        hashSet.add(new Pair<Integer, Integer>(0, 0));
-        while (!pq.isEmpty() && k-->0){
-            int [] min = pq.remove();
-            i = min[1];
-            j = min[2];
-            ans.add(Arrays.asList(nums1[i],nums2[j]));
-            if(i<n-1 && !hashSet.contains(new Pair<Integer, Integer>(i+1,j))){
-                pq.offer(new int[]{nums1[i+1]+nums2[j],i+1,j});
-                hashSet.add(new Pair<Integer, Integer>(i+1,j));;
-            }
-
-            if(j<m-1 && !hashSet.contains(new Pair<Integer, Integer>(i,j+1))){
-                pq.offer(new int[]{nums1[i]+nums2[j+1],i,j+1});
-                hashSet.add(new Pair<Integer, Integer>(i,j+1));
-            }
+        
+        PriorityQueue<int[]> minHeap = new PriorityQueue<>(
+            (a, b) -> (nums1[a[0]] + nums2[a[1]]) - (nums1[b[0]] + nums2[b[1]])
+        );
+        List<List<Integer>> result = new ArrayList<>();
+        
+        for (int i = 0; i < nums1.length && i < k; i++) {
+            minHeap.offer(new int[]{i, 0});
         }
-        return ans;
+
+        while (k > 0 && !minHeap.isEmpty()) {
+            int[] cur = minHeap.poll();
+            int i = cur[0];
+            int j = cur[1];
+            result.add(Arrays.asList(nums1[i], nums2[j]));
+
+            if (j + 1 < nums2.length) {
+                minHeap.offer(new int[]{i, j + 1});
+            }
+            k--;
+        }
+
+        return result;
     }
 }
