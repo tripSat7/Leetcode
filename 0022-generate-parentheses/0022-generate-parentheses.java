@@ -9,6 +9,7 @@ class Solution {
     public void generation(List<String> res, String s, int left, int right){
         if(left == 0 && right == 0){
             res.add(s);
+            return;
         }
         
         if(left > 0){
