@@ -1,26 +1,37 @@
 class Solution {
     public String frequencySort(String s) {
-        HashMap<Character,Integer> map = new HashMap<>();
-        for(char ch : s.toCharArray()){
-            map.put(ch,map.getOrDefault(ch,0)+1);
-        }
-        
-        PriorityQueue<Character> pq = new PriorityQueue<>((a,b)->map.get(b)-map.get(a));
-        
-        for(char ch : map.keySet()){
-            pq.offer(ch);
-        }
-        
+        int n = s.length();
         StringBuilder sb = new StringBuilder();
-        int k = pq.size();
-        for(int i = 0; i < k; i++){
-            char ch = pq.poll();
-            int n = map.get(ch);
-            for(int j = 0; j < n; j++){
-                sb.append(ch);
-            }
+        int[] count = new int[128];
+        List<Character>[] buckets = new List[n + 1];
+
+        for (char c : s.toCharArray()){
+            count[c]++;
         }
-        
+          
+
+        for (int i = 0; i < 128; ++i) {
+          int freq = count[i];
+          if (freq > 0) {
+            if (buckets[freq] == null){
+                buckets[freq] = new ArrayList<>();
+            }
+            buckets[freq].add((char) i);
+          }
+        }
+
+        for (int freq = n; freq > 0; freq--){
+            if (buckets[freq] != null){
+                for (char c : buckets[freq])
+                {
+                    for (int i = 0; i < freq; ++i)
+                    {
+                        sb.append(c);
+                    }
+                }
+            }   
+        }   
+
         return sb.toString();
     }
 }
