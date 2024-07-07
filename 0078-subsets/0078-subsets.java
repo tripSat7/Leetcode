@@ -1,17 +1,20 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
+        int pow_set = 1<<nums.length;
+        
         List<List<Integer>> res = new ArrayList<>();
-         generate(nums, 0, new ArrayList<>(), res);
-         return res;
-     }
-     public void generate(int[] nums, int i, List<Integer> temp, List<List<Integer>> res) {
-         if(i == nums.length) {
-            res.add(new ArrayList(temp));
-            return;
-         }
-         generate(nums, i + 1, temp, res);
-         temp.add(nums[i]);
-         generate(nums, i + 1, temp, res);
-         temp.remove(temp.size() - 1);
-     }
+        for(int i = 0; i < pow_set; i++){
+            List<Integer> temp = new ArrayList<>(); 
+            for(int j = 0; j < nums.length; j++){
+                if((i & (1<<j)) > 0){
+                    temp.add(nums[j]);
+                }
+            }
+            res.add(temp);
+            // if(!res.contains(temp)){
+            //     res.add(temp);
+            // }
+        }
+        return res;
+    }
 }
