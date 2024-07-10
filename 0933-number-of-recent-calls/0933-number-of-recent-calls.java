@@ -1,7 +1,7 @@
 class RecentCounter {
-    private static final int[] records = new int[10000]; 
-    private int start;
-    private int end;
+    int[] records = new int[10000]; 
+    int start;
+    int end;
 
     public RecentCounter() {        
         start = 0;
