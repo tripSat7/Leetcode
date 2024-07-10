@@ -1,17 +1,22 @@
 class RecentCounter {
-    Queue<Integer> q;
-    
-    public RecentCounter() {
-        q = new ArrayDeque<>();
+    private static final int[] records = new int[10000]; //
+    private int start;
+    private int end;
+
+    public RecentCounter() {        
+        start = 0;
+        end = 0;
     }
     
     public int ping(int t) {
-        q.offer(t);
-        while(!q.isEmpty() && q.peek() < (t-3000)){
-            q.poll();
+        
+        records[end++] = t;
+        
+        while (start < end && (t - records[start] > 3000)) { 
+            start++;
         }
         
-        return q.size();
+        return end - start;
     }
 }
 
