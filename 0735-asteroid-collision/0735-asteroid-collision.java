@@ -1,38 +1,42 @@
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
-        Stack<Integer> stk = new Stack<>();
+        int[] stack = new int[asteroids.length];
+        int top = -1;
 
-        for(int i =0 ; i<asteroids.length ; i++){
-            if(stk.size()==0 || asteroids[i]>0){
-                stk.push(asteroids[i]);
-            }else{
-                while(true){
-                    int peek = stk.peek();
-                    if(peek<0){
-                        stk.push(asteroids[i]);
-                        break;
-                    }else if(peek == -asteroids[i]){
-                        stk.pop();
-                        break;
-                    }else if(peek> - asteroids[i]){
-                        break;
-                    }
-                    else{
-                        stk.pop();
-                        if(stk.size()==0){
-                            stk.push(asteroids[i]);
-                            break;
+        for (int asteroid : asteroids) {
+            if (top == -1)
+                stack[++top] = asteroid;
+            else {
+                if (asteroid < 0) {
+                    if (stack[top] < 0) {
+                        stack[++top] = asteroid;
+                    } else {
+                        while (top != -1 && stack[top] >= 0 && Math.abs(asteroid) > stack[top]) {
+                            top--;
+                        }
+
+                        if (top >= 0) {
+                            if (stack[top] == Math.abs(asteroid)) {
+                                top--;
+                            } else if (stack[top] < 0) {
+                                stack[++top] = asteroid;
+                            }
+                        } else {
+                            stack[++top] = asteroid;
                         }
                     }
+                } else {
+                    stack[++top] = asteroid;
                 }
             }
         }
 
-        int ans [] = new int[stk.size()];
-        for(int i= stk.size()-1 ; i>=0 ; i--){
-            ans[i]= stk.pop();
+        int[] ans = new int[top + 1];
+        while (top >= 0) {
+            ans[top] = stack[top];
+            top--;
         }
 
-        return ans ;
+        return ans;
     }
 }
