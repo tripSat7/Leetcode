@@ -1,5 +1,5 @@
 class RecentCounter {
-    private static final int[] records = new int[10000]; //
+    private static final int[] records = new int[10000]; 
     private int start;
     private int end;
 
