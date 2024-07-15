@@ -14,43 +14,33 @@
  * }
  */
 class Solution {
-    
-    HashMap<Integer, Integer> map;
-    int height = 0;
     public List<Integer> largestValues(TreeNode root) {
         
-        map = new HashMap<>();
         List<Integer> res = new ArrayList<>();
         if(root == null){
             return res;
         }
         
-        large(root, 0);
-        for(int i = 0; i < height; i++){
-            res.add(map.get(i));            
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        q.offer(root);
+        while(!q.isEmpty()){
+            int size = q.size();
+            int max = Integer.MIN_VALUE;
+            for(int i = 0; i < size; i++){
+                TreeNode node = q.poll();
+                if(node.left != null){
+                    q.offer(node.left);
+                }
+                if(node.right != null){
+                    q.offer(node.right);
+                }
+                if(node.val > max){
+                    max= node.val;
+                }
+            }
+            res.add(max);
         }
         
         return res;
-    }
-    
-    public void large(TreeNode root, int level){
-        
-        if(root == null){
-            height = Math.max(height,level);
-            return;
-        }
-        
-        large(root.left, level + 1);
-        large(root.right, level + 1);
-        
-        if(!map.containsKey(level)){
-            map.put(level, root.val);
-        }
-        else{
-            if(root.val > map.get(level)){
-                map.put(level, root.val);
-            }    
-        }
-        
     }
 }
