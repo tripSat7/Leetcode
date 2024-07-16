@@ -15,51 +15,25 @@
  */
 class Solution {
     public TreeNode createBinaryTree(int[][] descriptions) {
-        HashMap<Integer, TreeNode> hm = new HashMap<>();
-        HashSet<Integer> set = new HashSet<>();
-        TreeNode root = new TreeNode();
-        
-        for(int[] a : descriptions){
-            
-            Integer parent = a[0];
-            Integer child = a[1];
-            Integer isLeft = a[2];
-
-            if(!hm.containsKey(parent)){
-                TreeNode parentNode = new TreeNode(parent);
-                hm.put(parent,parentNode);
-            }
-            if(hm.containsKey(child)){
-                TreeNode childNode = hm.get(child);
-                TreeNode parentNode = hm.get(parent);
-                if(isLeft==1){
-                    parentNode.left = childNode;
-                }
-                else{
-                    parentNode.right = childNode;
-                }
-            }else{
-                TreeNode childNode = new TreeNode(child);
-                hm.put(child,childNode);
-
-                TreeNode parentNode = hm.get(parent);
-               if(isLeft==1){
-                    parentNode.left = childNode;
-                }
-                else{
-                    parentNode.right = childNode;
-                }
-            }
-            set.add(a[1]);
-            
-        }
-        
+        Map<Integer,TreeNode> map= new HashMap<>();
         for(int[] row : descriptions){
-            if(!set.contains(row[0])){
-                return hm.get(row[0]);
-            }
+            map.put(row[1],new TreeNode(row[1]));
         }
         
-        return null;
+        TreeNode root=null;
+        for(int[]row : descriptions){
+            if(!map.containsKey(row[0])){
+                root= new TreeNode(row[0]);
+                map.put(row[0],root);
+            }
+            
+            if(row[2] == 1){
+                map.get(row[0]).left = map.get(row[1]);
+            }
+            else{
+                map.get(row[0]).right = map.get(row[1]);
+            }
+        }
+        return root;
     }
 }
