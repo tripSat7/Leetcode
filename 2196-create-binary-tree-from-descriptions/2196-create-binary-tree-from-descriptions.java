@@ -17,7 +17,7 @@ class Solution {
     public TreeNode createBinaryTree(int[][] descriptions) {
         Map<Integer,TreeNode> map= new HashMap<>();
         for(int[] row : descriptions){
-            map.put(row[1],new TreeNode(row[1]));
+            map.put(row[1], new TreeNode(row[1]));
         }
         
         TreeNode root=null;
