@@ -15,31 +15,48 @@
  */
 class Solution {
     public TreeNode createBinaryTree(int[][] descriptions) {
-        HashMap<Integer, TreeNode> map = new HashMap<>();
+        HashMap<Integer, TreeNode> hm = new HashMap<>();
         HashSet<Integer> set = new HashSet<>();
         TreeNode root = new TreeNode();
         
-        for(int[] row : descriptions){
+        for(int[] a : descriptions){
             
-            TreeNode parent = map.getOrDefault(row[0], new TreeNode(row[0]));
-            TreeNode child = map.getOrDefault(row[1], new TreeNode(row[1]));
-            
-            if(row[2] == 1){
-                parent.left = child;
+            Integer parent = a[0];
+            Integer child = a[1];
+            Integer isLeft = a[2];
+
+            if(!hm.containsKey(parent)){
+                TreeNode parentNode = new TreeNode(parent);
+                hm.put(parent,parentNode);
             }
-            else{
-                parent.right = child;
+            if(hm.containsKey(child)){
+                TreeNode childNode = hm.get(child);
+                TreeNode parentNode = hm.get(parent);
+                if(isLeft==1){
+                    parentNode.left = childNode;
+                }
+                else{
+                    parentNode.right = childNode;
+                }
+            }else{
+                TreeNode childNode = new TreeNode(child);
+                hm.put(child,childNode);
+
+                TreeNode parentNode = hm.get(parent);
+               if(isLeft==1){
+                    parentNode.left = childNode;
+                }
+                else{
+                    parentNode.right = childNode;
+                }
             }
-            
-            set.add(row[1]);
-            map.put(row[1], child);
-            map.put(row[0], parent);
+            set.add(a[1]);
             
         }
         
         for(int[] row : descriptions){
             if(!set.contains(row[0])){
-                return map.get(row[0]);
+                return hm.get(row[0]);
             }
         }
         
