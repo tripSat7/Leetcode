@@ -4,26 +4,23 @@ class Solution {
         if(nums.length == 0 || nums.length == 1){
             return nums.length;
         }
-        Set<Integer> set = new HashSet<>();
-        for(int i : nums){
-            set.add(i);
-        }
-        
-        int res = 1;
-        
-        for(int i = 0; i < nums.length; i++){
-            int n = nums[i];
-            
-            if(!set.contains(n-1) && set.contains(n+1)){
-                int len = 0;
-                while(set.contains(n)){
-                    len++;
-                    n++;
+        int n = nums.length;
+        Arrays.sort(nums);
+        int max = 1 ;
+        int i;
+        int c = 1;
+        for(i = 1; i < n; i++)
+        {
+            if (nums[i] != nums[i - 1]) {
+                if (nums[i] == nums[i - 1] + 1) {
+                    c++;
+                } else {
+                    max = Math.max(max, c);
+                    c = 1;
                 }
-                res = Math.max(len, res);
             }
         }
         
-        return res;
+        return Math.max(max,c);
     }
 }
