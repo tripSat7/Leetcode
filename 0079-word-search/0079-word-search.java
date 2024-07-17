@@ -18,14 +18,17 @@ class Solution {
     }
     
     public boolean dfs(char[][] board, String word, int r, int c, int k, boolean vis[][]){
+        
+        if(k == word.length()){
+            return true;
+        }
+        
         if(r < 0 || c < 0 || r >= board.length || c >= board[0].length || vis[r][c] || k >= word.length() || board[r][c] != word.charAt(k)){
             return false;
         }
         
         //System.out.println(r+":"+c+"||"+word.charAt(k));
-        if(k+1 == word.length()){
-            return true;
-        }
+        
         
         vis[r][c] = true;
         if(dfs(board, word, r , c + 1, k + 1, vis) 
