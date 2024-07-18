@@ -14,45 +14,46 @@
  * }
  */
 class Solution {
-    int count = 0;
+    int count;
     public int countPairs(TreeNode root, int distance) {
-        
+        count = 0;
         dfs(root, distance);
         return count;
     }
-    
-    public List<Integer> dfs(TreeNode root, int distance){
-        
-        if(root == null){
+
+    public List<Integer> dfs(TreeNode root, int d) {
+        if (root == null) {
             return new ArrayList<>();
         }
-        
-        if(root.left == null && root.right == null){
-            List<Integer> dist = new ArrayList<>();
-            dist.add(1);
-            return dist;
+
+        if (root.left == null && root.right == null) {
+            List<Integer> list = new ArrayList<>();
+            list.add(1);
+            return list;
         }
-        
-        List<Integer> leftDist = dfs(root.left, distance);
-        List<Integer> rightDist = dfs(root.right, distance);
-        
-        for(int i : leftDist){
-            for(int j : rightDist){
-                if(i+j <= distance){
+
+        List<Integer> l = dfs(root.left, d);
+        List<Integer> r = dfs(root.right, d);
+
+        for (int i: l) {
+            for (int j: r) {
+                if (i + j <= d) {
                     count++;
                 }
             }
         }
-        
-        List<Integer> list = new ArrayList<>();
-        for(int i : leftDist){
-            list.add(i+1);
+
+        List<Integer> result = new ArrayList<>();
+        for (int i: l) {
+            if (i + 1 < d) {
+                result.add(i + 1);
+            }
         }
-            
-        for(int i : rightDist){
-            list.add(i+1);
+        for (int i: r) {
+            if (i + 1 < d) {
+                result.add(i + 1);
+            }
         }
-            
-        return list;
+        return result;
     }
 }
