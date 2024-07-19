@@ -1,18 +1,26 @@
 class Solution {
     public int maxAbsoluteSum(int[] nums) {
-        int maxSum = nums[0];
-        int maxEnd = nums[0];
-        int minSum = nums[0];
-        int minEnd = nums[0];
-        
-        for(int i = 1; i < nums.length; i++){
-            maxEnd = Math.max(maxEnd + nums[i], nums[i]);
-            minEnd = Math.min(minEnd + nums[i], nums[i]);
-        
-            maxSum = Math.max(maxEnd, maxSum);
-            minSum = Math.min(minEnd, minSum);
+        int sum = 0;
+        int max = Integer.MIN_VALUE;
+        for (int num : nums) {
+            sum = sum + num;
+            max = Math.max(max, sum);
+            if (sum < 0){
+                sum = 0;
+            }
         }
-        
-        return Math.max(maxSum, Math.abs(minSum));
+
+        int min = Integer.MAX_VALUE;
+        sum = 0;
+        for (int num : nums) {
+            sum = sum + num;
+            min = Math.min(min, sum);
+            if (sum > 0){
+                sum = 0;
+            }
+                
+        }
+
+        return Math.max(Math.abs(max), Math.abs(min));
     }
 }
