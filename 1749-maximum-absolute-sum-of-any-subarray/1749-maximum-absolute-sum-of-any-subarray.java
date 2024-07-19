@@ -33,6 +33,6 @@ class Solution {
             }
         }
 
-        return Math.max(max,Math.abs(min));
+        return Math.max(Math.abs(max),Math.abs(min));
     }
 }
