@@ -1,34 +1,26 @@
 class Solution {
     public int maximalNetworkRank(int n, int[][] roads) {
-        HashMap<Integer, HashSet<Integer>> adjList = new HashMap<>();
+        int[] degree = new int[n];
+        Set<String> roadSet = new HashSet<>();
         
-        for(int i = 0; i < n; i++){
-            adjList.put(i, new HashSet<Integer>());
+        for (int[] road : roads) {
+            degree[road[0]]++;
+            degree[road[1]]++;
+            roadSet.add(road[0] + "," + road[1]);
+            roadSet.add(road[1] + "," + road[0]);
         }
-        
-        int m = roads.length;
-        for(int i = 0; i < m; i++){
-            adjList.get(roads[i][0]).add(roads[i][1]);
-            adjList.get(roads[i][1]).add(roads[i][0]);
-        }
-        
-        System.out.println(adjList);
-    
-        int max = 0;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
-                if(i == j) {
-                    continue;
+
+        int maxRank = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i+1; j < n; j++) {
+                int rank = degree[i] + degree[j];
+                if (roadSet.contains(i + "," + j)) {
+                    rank--;
                 }
-                
-                int temp = 0;
-                if(adjList.get(i).contains(j)){
-                    temp--;
-                } 
-                temp += adjList.get(i).size() + adjList.get(j).size();
-                max = Math.max(temp, max);
+                maxRank = Math.max(maxRank, rank);
             }
         }
-        return max;
+
+        return maxRank;
     }
 }
