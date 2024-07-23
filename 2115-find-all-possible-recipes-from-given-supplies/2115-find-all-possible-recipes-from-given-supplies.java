@@ -1,56 +1,65 @@
 class Solution {
     public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {
-        Map<String, List<String>> ingredientsOfRecipe = new HashMap<>();
-        for (int i = 0; i < recipes.length; i++) {
-            ingredientsOfRecipe.put(recipes[i], ingredients.get(i));
+        Map<String, List<String>> graph = new HashMap<>();  // Recipes and supplies are nodes in the graph. The ingredients list gives us the edges.
+    Map<String, Integer> inDegree = new HashMap<>();  
+    
+        Set<String> recipesSet = new HashSet<>();   // Needed so that later, while processing nodes during the topological sort,  we only add recipes to the result.
+
+        // Add supply nodes to the graph.
+        for (String currSupply : supplies) {
+            graph.put(currSupply, new ArrayList<>());
+            inDegree.put(currSupply, 0);
+        }
+        
+        // System.out.println(graph);
+
+        // Add recipe nodes to the graph.
+        for (String currRecipe : recipes) {
+            graph.put(currRecipe, new ArrayList<>());
+            inDegree.put(currRecipe, 0);
+
+            recipesSet.add(currRecipe);
         }
 
-        Set<String> recipesToMake = new HashSet<>(List.of(recipes));
-        Set<String> suppliesAvailable = new HashSet<>(List.of(supplies));
-        List<String> recipesCanBeMade = new ArrayList<>();
-
-        // Check if each recipe can be made
-        // Note that, for checking if the recipe can be made, we might know whether dependent recipe can also be made.
-        // For e.g. If we've to make 'Burger' and 'Bread', while checking if 'Burger' can be made, we'll come to know whether we can make 'Bread' too.
-        // Hence, we'll come to know whether 'Burger' and 'Bread' can be made in the first iteration itself.
-        for (String recipe: recipes) {
-            canWeMakeTheRecipe(recipe, recipesToMake, suppliesAvailable, ingredientsOfRecipe, recipesCanBeMade, new HashSet<>());
-        }
-
-        return recipesCanBeMade;
-    }
-
-    private boolean canWeMakeTheRecipe(String recipe, Set<String> recipesToMake, Set<String> suppliesAvailable,
-                                       Map<String, List<String>> ingredientsOfRecipe, List<String> recipesCanBeMade,
-                                       Set<String> visited) {
-
-        // If the recipe is available in the supply, we can make it.
-        // Note that, we keep updating supply (last 3rd line) if the recipe can be made.
-        if (suppliesAvailable.contains(recipe)) {
-            return true;
-        }
-
-        // One recipe is dependent on another which in turn is dependent on the previous.
-        // Recipe cannot be made. For e.g. X --> Y, Y --> X (OR X --> Y --> Z, Z --> X)
-        if (visited.contains(recipe)) {
-            return false;
-        }
-
-        // We don't bother about a recipe which we don't have to make and which is not available in supply too.
-        if (!recipesToMake.contains(recipe) && !suppliesAvailable.contains(recipe)) {
-            return false;
-        }
-
-        visited.add(recipe);
-        for (String ingredient: ingredientsOfRecipe.get(recipe)) {
-            if (!canWeMakeTheRecipe(ingredient, recipesToMake, suppliesAvailable, ingredientsOfRecipe, recipesCanBeMade, visited)) {
-                return false; // If any of the ingredient is not available, we cannot make the recipe
+        // System.out.println(graph);
+        // Add edges to the graph.
+        for (int i = 0; i < ingredients.size(); ++i) {
+            for (String currIngredient : ingredients.get(i)) {
+                graph.putIfAbsent(currIngredient, new ArrayList<>());   
+                graph.get(currIngredient).add(recipes[i]); 
+                inDegree.put(recipes[i], inDegree.get(recipes[i]) + 1);   
             }
         }
 
-        suppliesAvailable.add(recipe); // This recipe can be ingredient for another recipe, hence update the supply.
-        recipesCanBeMade.add(recipe); // Recipe can be made.
+        // Standard topological sort
+        List<String> result = new ArrayList<>();
+        Deque<String> queue = new ArrayDeque<>();
 
-        return true;
+        //System.out.println(graph);
+        
+        for (String currNode : inDegree.keySet()) {
+            //System.out.println(currNode +"::"+inDegree.get(currNode));
+            if (inDegree.get(currNode) == 0){
+                queue.offer(currNode);  
+            } 
+        }
+
+
+        while (!queue.isEmpty()) {
+            String currNode = queue.poll();
+
+            if (recipesSet.contains(currNode)) {
+                result.add(currNode);   
+            }
+            
+            for (String adjacentNode : graph.get(currNode)) {
+                inDegree.put(adjacentNode, inDegree.get(adjacentNode) - 1);
+                if (inDegree.get(adjacentNode) == 0){
+                    queue.offer(adjacentNode);
+                } 
+            }
+        }
+        
+        return result;
     }
 }
