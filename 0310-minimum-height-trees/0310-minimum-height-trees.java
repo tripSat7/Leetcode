@@ -45,7 +45,9 @@ class Solution {
         }
         
         
-        res.addAll(q);
+        while (!q.isEmpty()) {
+            res.add(q.poll());
+        }
 
         return res;
     }
