@@ -1,36 +1,38 @@
 class Solution {
-    
     public List<Boolean> checkIfPrerequisite(int numCourses, int[][] prerequisites, int[][] queries) {
-        Map<Integer, Set<Integer>> graph = new HashMap<>();
+        List<Integer>[] graph = new List[numCourses];
         for(int i = 0; i < numCourses; i++){
-            graph.put(i, new HashSet<>());
+            graph[i] = new ArrayList<>();
+        } 
+
+        for(int[] pair : prerequisites){
+            int prereq = pair[0];
+            int course = pair[1];
+            graph[prereq].add(course);
         }
-        
-        for(int[] pre : prerequisites){
-            graph.get(pre[0]).add(pre[1]);
+
+        boolean[][] visited = new boolean[numCourses][numCourses];
+        for(int node = 0; node < numCourses; node++){
+            dfs(node, visited[node], graph);
         }
-            
+
         List<Boolean> res = new ArrayList<>();
-        Boolean[][] memo = new Boolean[numCourses][numCourses];
-        for(int[] q : queries){
-            res.add(query(graph, q[0], q[1], memo));
+        for(int[] querie : queries){
+            int a = querie[0];
+            int b = querie[1];
+            res.add(visited[a][b]);
         }
-        
         return res;
     }
-    
-    private boolean query(Map<Integer, Set<Integer>> graph, int from, int to, Boolean[][] memo) {
-        if(from == to) return true;
-        
-        if(memo[from][to] != null)
-            return memo[from][to];
-        
-        for(int next : graph.get(from)) {
-            if(query(graph, next, to, memo)){
-                return memo[from][to] = true;
+
+    private void dfs(int node, boolean[] vis, List<Integer>[] graph){
+        vis[node] = true;
+        for(int child : graph[node]){
+            if(vis[child]) 
+            {
+                continue;
             }
+             dfs(child, vis, graph);
         }
-        
-        return memo[from][to] = false;
     }
 }
