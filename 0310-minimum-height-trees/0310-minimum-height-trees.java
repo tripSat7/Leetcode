@@ -8,15 +8,17 @@ class Solution {
         for (int i = 0; i < n; i++) {
             graph.add(new HashSet<>());
         }
-        
+        int degree[] = new int[n];
         for (int[] edge : edges) {
             graph.get(edge[0]).add(edge[1]);
             graph.get(edge[1]).add(edge[0]);
+            degree[edge[0]]++;
+            degree[edge[1]]++;
         }
 
         Deque<Integer> q = new ArrayDeque<>();
         for (int i = 0; i < n; i++) {
-            if (graph.get(i).size() == 1) {
+            if (degree[i] == 1) {
                 q.offer(i);
             }
         }
@@ -28,8 +30,8 @@ class Solution {
             while (size-- > 0) {
                 int leaf = q.poll();
                 for (int neighbor : graph.get(leaf)) {
-                    graph.get(neighbor).remove(leaf);
-                    if (graph.get(neighbor).size() == 1) {
+                    degree[neighbor]--;
+                    if (degree[neighbor] == 1) {
                         q.add(neighbor);
                     }
                 }
