@@ -10,9 +10,9 @@ class Solution {
             return res;
         }
 
-        List<Set<Integer>> graph = new ArrayList<>(n);
+        List<List<Integer>> graph = new ArrayList<>(n);
         for (int i = 0; i < n; i++) {
-            graph.add(new HashSet<>());
+            graph.add(new ArrayList<>());
         }
         int degree[] = new int[n];
         for (int[] edge : edges) {
