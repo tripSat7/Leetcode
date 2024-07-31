@@ -1,1 +1,1 @@
-​
+length of string should be equal to maxfreq
