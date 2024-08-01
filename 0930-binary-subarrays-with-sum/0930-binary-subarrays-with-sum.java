@@ -1,23 +1,20 @@
 class Solution {
-    public int numSubarraysWithSum(int[] nums, int goal) {
-        
-        int sum=0;
-        int count=0;
-        
-        for(int i = 0; i < nums.length; i++){
-            for(int j = i; j < nums.length; j++){
-                sum += nums[j];
-                if(sum == goal){
-                    count++;  
-                } 
-                
-                if(sum > goal){
-                    break;
-                }
+    private int slidingWindowAtMost(int[] nums, int goal) {
+        int st = 0, sum = 0, count = 0;
+
+        for (int end = 0; end < nums.length; end++) {
+            sum += nums[end];
+
+            while (st <= end && sum > goal) {
+                sum -= nums[st++];
             }
-            
-            sum = 0;
+
+            count += end - st + 1;
         }
         return count;
+    }
+
+    public int numSubarraysWithSum(int[] nums, int goal) {
+        return slidingWindowAtMost(nums, goal) - slidingWindowAtMost(nums, goal - 1);
     }
 }
