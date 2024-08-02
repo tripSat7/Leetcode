@@ -1,5 +1,5 @@
 class Solution {
-    private int slidingWindowAtMost(int[] nums, int goal) {
+    private int window(int[] nums, int goal) {
         int n = nums.length;
         int sum = 0, l = 0, r = 0;
         int count = 0;
@@ -16,6 +16,6 @@ class Solution {
     }
 
     public int numSubarraysWithSum(int[] nums, int goal) {
-        return slidingWindowAtMost(nums, goal) - slidingWindowAtMost(nums, goal - 1);
+        return window(nums, goal) - window(nums, goal - 1);
     }
 }
