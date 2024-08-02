@@ -5,7 +5,7 @@ class Solution {
         int count = 0;
         while(r < n){
             sum += nums[r];
-           while(l <= r && sum > goal){
+           while(sum > goal && l <= r){
             sum -= nums[l];
             l++;
            }
