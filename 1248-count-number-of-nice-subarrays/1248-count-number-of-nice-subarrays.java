@@ -7,12 +7,12 @@ class Solution {
         int st = 0, end = 0, sum = 0, count = 0;
         
         while (end < nums.length) {
-            sum = sum + (nums[end] & 1);
+            sum += (nums[end] & 1);
             while (sum > k) {
-                sum = sum - (nums[st] & 1);
+                sum -= nums[st] & 1;
                 st++;
             }
-            count = count + (end - st + 1);
+            count += (end - st + 1);
             end++;
         }
         
