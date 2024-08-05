@@ -2,14 +2,14 @@ class Solution {
     
     public int shortestPathBinaryMatrix(int[][] grid) {
         
-        if(grid[0][0] == 1){
-            return -1;
-        }
-        
         int m = grid.length;
         int n = grid[0].length;
         if(m == 1 && grid[0][0] == 0){
             return 1;
+        }
+        
+        if(grid[0][0] != 0 || grid[m-1][n-1] != 0){
+            return -1;
         }
         
         PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[0] - b[0]);
@@ -18,7 +18,9 @@ class Solution {
         int[][] dist = new int[m][n];
         
         for(int i = 0; i < m; i++){
-            Arrays.fill(dist[i], Integer.MAX_VALUE);
+            for(int j = 0; j < n; j++){
+                dist[i][j] = (int)(1e9);
+            }
         }
         dist[0][0] = 0;
         
@@ -30,7 +32,7 @@ class Solution {
             int r = curr[1];
             int c = curr[2];
             int d = curr[0];
-            System.out.println(r+"||"+c+"||"+d);
+            // System.out.println(r+"||"+c+"||"+d);
             
             for(int i = 0; i < 8; i++){
                 int nr = r + dr[i];
