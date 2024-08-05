@@ -25,10 +25,9 @@ class Solution {
         int dist[][] = new int[m][n];
                 
         for(int i = 0; i < m; i++){
-            // for(int j = 0; j < n; j++){
-            //     dist[i][j] = (int)(1e9);
-            // }
-            Arrays.fill(dist[i], Integer.MAX_VALUE);
+            for(int j = 0; j < n; j++){
+                dist[i][j] = (int)(1e9);
+            }            
         }
         
         q.add(new Pair(1,0,0));
