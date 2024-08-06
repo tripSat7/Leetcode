@@ -20,9 +20,9 @@ class Solution {
             int d = curr[0];
             int r = curr[1];
             int c = curr[2];
-            // if(r == m-1 && c == n-1){
-            //     break;
-            // }
+            if(r == m-1 && c == n-1){
+                break;
+            }
             
             for(int i = 0; i < 4; i++){
                 int nr = r + dr[i];
