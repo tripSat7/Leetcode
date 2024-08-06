@@ -1,54 +1,40 @@
-class Pair{
-    int first, second, third;
-    
-    Pair(int first, int second, int third){
-        this.first = first;
-        this.second = second;
-        this.third = third;
-    }
-}
-
 class Solution {
     public int minimumEffortPath(int[][] heights) {
-        PriorityQueue<Pair> q = new PriorityQueue<>((p1, p2) -> p1.first - p2.first);
         
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[0] - b[0]);
         int m = heights.length;
         int n = heights[0].length;
-        int dist[][] = new int[m][n];
+        int[][] dist = new int[m][n];
         
         for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                dist[i][j] = (int)(1e9);
-            }
+            Arrays.fill(dist[i], Integer.MAX_VALUE);
         }
-        q.add(new Pair(0,0,0));
-        
-        int X[] = {0,1,0,-1};
-        int Y[] = {-1,0,1,0};
         dist[0][0] = 0;
+        pq.add(new int[]{0, 0, 0});
         
-        while(!q.isEmpty()){
-            Pair p = q.peek();
-            int ef = p.first;
-            int row = p.second;
-            int col = p.third;
-            q.remove();
-            if(row == m-1 && col == n-1){
-                break;
-            }
+        int dr[] = {0,1,0,-1};
+        int dc[] = {-1,0,1,0};
+        
+        while(!pq.isEmpty()){
+            int curr[] = pq.poll();
+            int d = curr[0];
+            int r = curr[1];
+            int c = curr[2];
+            // if(r == m-1 && c == n-1){
+            //     break;
+            // }
+            
             for(int i = 0; i < 4; i++){
-                int nr = row + X[i];
-                int nc = col + Y[i];
-                if(nr >= 0 && nr < m && nc >= 0 && nc < n && Math.max(Math.abs(heights[row][col] - heights[nr][nc]), ef) < dist[nr][nc]){
+                int nr = r + dr[i];
+                int nc = c + dc[i];
+                
+                if(nr >= 0 && nr < m && nc >= 0 && nc < n && Math.max(Math.abs(heights[nr][nc] - heights[r][c]), d) < dist[nr][nc]){
+                    dist[nr][nc] = Math.max(Math.abs(heights[nr][nc] - heights[r][c]), d);
                     
-                    dist[nr][nc] = Math.max(Math.abs(heights[row][col] - heights[nr][nc]), ef);
-                    q.add(new Pair(dist[nr][nc],nr,nc));
-                    
+                    pq.add(new int[]{dist[nr][nc], nr, nc});
                 }
             }
         }
-        
-        
         
         return dist[m-1][n-1];
     }
