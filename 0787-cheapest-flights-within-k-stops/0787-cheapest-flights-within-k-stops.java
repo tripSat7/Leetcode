@@ -31,9 +31,11 @@ class Solution {
         }
         
         int dist[] = new int[n];
-        for(int i = 0; i < n; i++){
-            dist[i] = (int)(1e9);
-        }
+        // for(int i = 0; i < n; i++){
+        //     dist[i] = (int)(1e9);
+        // }
+        
+        Arrays.fill(dist, (int)(1e9));
         
         Queue<Tuple> q = new LinkedList<>();
         q.add(new Tuple(0, src, 0));
