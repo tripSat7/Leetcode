@@ -23,6 +23,10 @@ class Solution {
             int stops = curr[0];
             int s = curr[1];
             int price = curr[2];
+            
+            if(stops > k+1){
+                continue;
+            }
             // System.out.println("--"+s+"||"+stops+"||"+price);
             for(int[] nodes : adj.get(s)){
                 int ew = nodes[1];
