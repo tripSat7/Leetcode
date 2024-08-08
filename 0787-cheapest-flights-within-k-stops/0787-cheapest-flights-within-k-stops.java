@@ -35,7 +35,7 @@ class Solution {
             dist[i] = (int)(1e9);
         }
         
-        Queue<Tuple> q = new LinkedList<>();
+        PriorityQueue<Tuple> q = new PriorityQueue<>((a,b) -> a.first - b.first);
         q.add(new Tuple(0, src, 0));
         // System.out.println(adj);
         dist[src] = 0;
