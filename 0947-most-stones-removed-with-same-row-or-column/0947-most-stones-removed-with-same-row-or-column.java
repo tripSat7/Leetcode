@@ -4,7 +4,7 @@ class Solution {
         int n = stones.length;
         UnionFind uf = new UnionFind(n);
 
-        // Populate uf by connecting stones that share the same row or column
+       
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (
@@ -18,19 +18,19 @@ class Solution {
         return n - uf.count;
     }
 
-    // Union-Find data structure for tracking connected components
+    
     private class UnionFind {
 
-        int[] parent; // Array to track the parent of each node
-        int count; // Number of connected components
+        int[] parent; 
+        int count; 
 
         UnionFind(int n) {
             parent = new int[n];
-            Arrays.fill(parent, -1); // Initialize all nodes as their own parent
-            count = n; // Initially, each stone is its own connected component
+            Arrays.fill(parent, -1); 
+            count = n; 
         }
 
-        // Find the root of a node with path compression
+        
         int find(int node) {
             if (parent[node] == -1) {
                 return node;
@@ -38,16 +38,14 @@ class Solution {
             return parent[node] = find(parent[node]);
         }
 
-        // Union two nodes, reducing the number of connected components
         void union(int n1, int n2) {
             int root1 = find(n1);
             int root2 = find(n2);
 
             if (root1 == root2) {
-                return; // If they are already in the same component, do nothing
+                return;
             }
 
-            // Merge the components and reduce the count of connected components
             count--;
             parent[root2] = root1;
         }
