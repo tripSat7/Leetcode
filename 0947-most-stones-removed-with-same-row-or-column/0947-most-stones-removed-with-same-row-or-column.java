@@ -49,7 +49,7 @@ class Solution {
 
             // Merge the components and reduce the count of connected components
             count--;
-            parent[root1] = root2;
+            parent[root2] = root1;
         }
     }
 }
