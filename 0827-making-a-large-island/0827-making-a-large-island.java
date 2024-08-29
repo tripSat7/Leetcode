@@ -18,9 +18,8 @@ class Solution {
             }
         }
         
-        System.out.println(islandArea);
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
                 if (grid[i][j] == 0) {
                     hasZero = true;
                     Set<Integer> seenIslands = new HashSet<>();
