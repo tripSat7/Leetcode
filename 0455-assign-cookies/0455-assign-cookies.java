@@ -10,6 +10,9 @@ class Solution {
             }
             idx++;
         }
+        if(count > s.length){
+            return count;
+        }
         return count;
     }
 
