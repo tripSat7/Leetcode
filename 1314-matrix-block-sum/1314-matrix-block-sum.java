@@ -1,30 +1,29 @@
 class Solution {
-    public int[][] matrixBlockSum(int[][] mat, int k) {
-        int m = mat.length;
-        int n = mat[0].length;
-        int[][] prefix = new int[m+1][n+1];
+    public int[][] matrixBlockSum(int[][] arr, int k) {
+        int m = arr.length;
+        int n = arr[0].length;
+        int[][] pre = new int[m][n];
         for (int i = 0; i < m; i++) {
-            int curSumRow = 0;
+            pre[i][0] = arr[i][0];
+            for(int j = 1; j < n; j++){
+                pre[i][j] = pre[i][j-1] + arr[i][j];
+            }
+        }
+        int[][]ret = new int[m][n];
+        for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                curSumRow += mat[i][j];
-                if (i > 0) {
-                    prefix[i+1][j+1] = curSumRow + prefix[i][j+1];
-                } else {
-                    prefix[i+1][j+1] = curSumRow;
+                int v = 0;
+                int r1 = Math.max(0, i -k);
+                int c1 = Math.max(0, j- k);
+                int r2 = Math.min(m-1, i + k);
+                int c2 = Math.min(n-1, j + k);
+                
+                for (int r = r1; r <= r2; r++) {
+                   v +=  pre[r][c2] - (c1 > 0 ? pre[r][c1-1] : 0) ;
                 }
+                ret[i][j] = v;
             }
         }
-        int[][] res = new int[m][n];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                int xLeft = Math.max(i-k, 0);
-                int yLeft = Math.max(j-k, 0);
-                int xRight = Math.min(i+1+k, m);
-                int yRight = Math.min(j+1+k, n);
-                res[i][j] = prefix[xRight][yRight] + prefix[xLeft][yLeft] - prefix[xLeft][yRight] - prefix[xRight][yLeft];
-            }
-        }
-        
-        return res;
+        return ret;
     }
 }
