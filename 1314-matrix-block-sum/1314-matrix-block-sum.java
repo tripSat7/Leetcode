@@ -2,42 +2,29 @@ class Solution {
     public int[][] matrixBlockSum(int[][] mat, int k) {
         int m = mat.length;
         int n = mat[0].length;
-        
-        int dp[][] = new int[m][n];
-        
-        for(int i = 0; i < m; i++){
-            int sum = 0;
-            for(int j = 0; j < n; j++){
-                sum += mat[i][j];
-                dp[i][j] = sum;
-                System.out.print(dp[i][j]+" ");
-            }
-            //System.out.println();
-        }
-        
-        int ans[][] = new int[m][n];
-        for(int i = 0; i < m; i++){
-            Arrays.fill(ans[i], 0);
-            for(int j = 0; j < n; j++){
-                
-                int r1 = i-k >= 0 ? i-k: 0, r2 = i+k < m ? i+k: m-1;
-                int c1 = j-k >= 0 ? j-k: 0, c2 = j+k < n ? j+k: n-1;
-                
-                int temp = r1;
-                while(temp <= r2){
-                    //System.out.println(r1+"||"+c1+"++"+r2+"||"+c2);
-                    ans[i][j] += dp[temp][c2];
-                    if(c1 - 1 != -1){
-                        ans[i][j] -= dp[temp][c1 - 1];
-                    }
-                    
-                    temp++;
+        int[][] prefix = new int[m+1][n+1];
+        for (int i = 0; i < m; i++) {
+            int curSumRow = 0;
+            for (int j = 0; j < n; j++) {
+                curSumRow += mat[i][j];
+                if (i > 0) {
+                    prefix[i+1][j+1] = curSumRow + prefix[i][j+1];
+                } else {
+                    prefix[i+1][j+1] = curSumRow;
                 }
-                //System.out.println(ans[i][j]+"----");
             }
-            //System.out.println();
+        }
+        int[][] res = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                int xLeft = Math.max(i-k, 0);
+                int yLeft = Math.max(j-k, 0);
+                int xRight = Math.min(i+1+k, m);
+                int yRight = Math.min(j+1+k, n);
+                res[i][j] = prefix[xRight][yRight] + prefix[xLeft][yLeft] - prefix[xLeft][yRight] - prefix[xRight][yLeft];
+            }
         }
         
-        return ans;
+        return res;
     }
 }
