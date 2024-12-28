@@ -1,46 +1,38 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-
-        for(int row = 0; row < 9; row++){
-            HashSet<Character> set = new HashSet<>();
-            for(int col = 0; col < 9; col++){
-                if(board[row][col] == '.'){
-                    continue;
-                }
-                if(set.contains(board[row][col])){
-                    return false;
-                }
-                set.add(board[row][col]);
-            }
+        int n = 9;
+        HashSet<Character> rows[] = new HashSet[n];
+        HashSet<Character> cols[] = new HashSet[n];
+        HashSet<Character> boxes[] = new HashSet[n];
+        
+        for(int i = 0; i < n; i++){
+            rows[i] = new HashSet<Character>();
+            cols[i] = new HashSet<Character>();
+            boxes[i] = new HashSet<Character>();
         }
 
-        for(int col = 0; col < 9; col++){
-            HashSet<Character> set = new HashSet<>();
-            for(int row = 0; row < 9; row++){
-                if(board[row][col] == '.'){
+        for(int r = 0; r < n; r++){
+            for(int c = 0; c < n; c++){
+                char val = board[r][c];
+                if(val == '.'){
                     continue;
                 }
-                if(set.contains(board[row][col])){
+                    
+                if(rows[r].contains(val)){
+                    return false;
+                } 
+                rows[r].add(val);
+
+                if(cols[c].contains(val)){
                     return false;
                 }
-                set.add(board[row][col]);
-            }
-        }
-
-        for (int square = 0; square < 9; square++) {
-            Set<Character> set = new HashSet<>();
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 3; j++) {
-                    int row = (square / 3) * 3 + i;
-                    int col = (square % 3) * 3 + j;
-                    if (board[row][col] == '.'){
-                        continue;
-                    } 
-                    if (set.contains(board[row][col])){
-                        return false;
-                    } 
-                    set.add(board[row][col]);
-                }
+                cols[c].add(val);
+                
+                int box = (r/3) * 3 + c/3;
+                if(boxes[box].contains(val)){
+                    return false;
+                }     
+                boxes[box].add(val);
             }
         }
         
