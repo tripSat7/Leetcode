@@ -21,7 +21,7 @@ class Solution {
             res = Math.max(res, map.get(k));
         }
 
-        System.out.println(map);
+        // System.out.println(map);
         return wall.size() - res;
     }
 }
