@@ -16,12 +16,7 @@ class Solution {
             return wall.size();
         }
         map.remove(max);
-        int res = 0;
-        for(Integer k : map.keySet()){
-            res = Math.max(res, map.get(k));
-        }
-
-        // System.out.println(map);
-        return wall.size() - res;
+        
+        return wall.size() - Collections.max( map.values());
     }
 }
