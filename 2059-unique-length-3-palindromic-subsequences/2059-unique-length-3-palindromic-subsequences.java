@@ -19,12 +19,12 @@ class Solution {
                 continue;
             }
             
-            Set<Character> between = new HashSet();
+            int[] arr = new int[26];
             for (int j = first[i] + 1; j < last[i]; j++) {
-                between.add(s.charAt(j));
+                if(arr[s.charAt(j)-'a']++ == 0){
+                    res++;
+                } 
             }
-            
-            res += between.size();
         }
         
         return res;
