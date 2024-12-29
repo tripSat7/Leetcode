@@ -9,6 +9,7 @@ Collection of solved LeetCode questions
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0238-product-of-array-except-self](https://github.com/tripSat7/Leetcode/tree/master/0238-product-of-array-except-self) |
+| [0525-contiguous-array](https://github.com/tripSat7/Leetcode/tree/master/0525-contiguous-array) |
 | [0554-brick-wall](https://github.com/tripSat7/Leetcode/tree/master/0554-brick-wall) |
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
@@ -24,6 +25,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/tripSat7/Leetcode/tree/master/0238-product-of-array-except-self) |
+| [0525-contiguous-array](https://github.com/tripSat7/Leetcode/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 ## Hash Table
@@ -31,6 +33,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0525-contiguous-array](https://github.com/tripSat7/Leetcode/tree/master/0525-contiguous-array) |
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0554-brick-wall](https://github.com/tripSat7/Leetcode/tree/master/0554-brick-wall) |
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
