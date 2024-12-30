@@ -1,28 +1,27 @@
 class Solution {
     public long countSubarrays(int[] nums, int k) {
-        long res = 0;
-        int l = 0, r = 0, cnt = 0, max = 0;
-        for(int num : nums){
-            max = Math.max(max, num);
+        long answer = 0;
+        int left = 0;
+
+        int max = Integer.MIN_VALUE;
+
+        for (int i : nums) {
+            max = Math.max(max, i);
         }
 
-        while(r < nums.length){
-            if(nums[r] == max){
-                cnt++;
+        int count = 0;
+        for (int right = 0; right < nums.length; ++right) {
+            if (nums[right] == max) {
+                count++;
             }
-
-            while (cnt >= k) {
-                res += nums.length - r;
-                if (nums[l] == max) {
-                    cnt--; 
+            while (count >= k) {
+                answer += nums.length - right;
+                if (nums[left] == max) {
+                    count--;
                 }
-                l++;
+                left++;
             }
-            
-            //System.out.println(l+"::"+r+"||"+res);
-            r++;
         }
-
-        return res;
+        return answer;
     }
 }
