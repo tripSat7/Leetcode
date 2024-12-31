@@ -1,12 +1,15 @@
-public  class Solution {
+class Solution {
     public long interchangeableRectangles(int[][] rectangles) {
-        HashMap<Double, Integer> count = new HashMap<>();
-        long res = 0;
-        for (int[] rect : rectangles) {
-            double ratio = (double) rect[0] / rect[1];
-            res += count.getOrDefault(ratio, 0);
-            count.put(ratio, count.getOrDefault(ratio, 0) + 1);
+        Map<Double, Long> freq = new HashMap<>();
+        for (int[] r : rectangles) {
+            double ratio = (double) r[0] / r[1];
+            freq.put(ratio, freq.getOrDefault(ratio, 0l) + 1);
         }
-        return res;
+
+        long count = 0;
+        for (long n : freq.values()) {
+            count += (n * (n - 1)) / 2; 
+        }
+        return count;
     }
 }
