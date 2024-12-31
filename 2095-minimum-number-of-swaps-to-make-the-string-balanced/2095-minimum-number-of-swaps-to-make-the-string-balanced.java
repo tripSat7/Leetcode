@@ -1,8 +1,8 @@
 public class Solution {
     public int minSwaps(String s) {
         int close = 0, maxClose = 0;
-        for(int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '['){
+        for(char ch : s.toCharArray()){
+            if (ch == '['){
                 close--;
             } 
             else{
@@ -10,7 +10,7 @@ public class Solution {
             } 
             maxClose = Math.max(maxClose, close);
         }
-        
+
         return (maxClose + 1) / 2;
     }
 }
