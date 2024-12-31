@@ -1,17 +1,14 @@
-public class Solution {
+class Solution {
     public int minSwaps(String s) {
-        int close = 0, maxClose = 0;
-        for(char ch : s.toCharArray()){
-            if (ch == '['){
-                close--;
-            } 
-            else{
-                close++;
-                maxClose = Math.max(maxClose, close);
-            } 
-            
+        int ans = 0;
+        int extraClosedBracket = 0;
+        for(char c: s.toCharArray()) {
+            if(c=='[') extraClosedBracket-=1;
+            else {
+                extraClosedBracket+=1;
+                ans = Math.max(ans, extraClosedBracket);
+            }
         }
-
-        return (maxClose + 1) / 2;
+        return (ans+1)/2;
     }
 }
