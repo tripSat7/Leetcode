@@ -7,8 +7,9 @@ public class Solution {
             } 
             else{
                 close++;
+                maxClose = Math.max(maxClose, close);
             } 
-            maxClose = Math.max(maxClose, close);
+            
         }
 
         return (maxClose + 1) / 2;
