@@ -2,7 +2,6 @@ class Solution {
     public long gridGame(int[][] grid) {
         int n = grid[0].length;
 
-        // Prefix sums for both rows
         long[] preRow1 = new long[n];
         long[] preRow2 = new long[n];
 
