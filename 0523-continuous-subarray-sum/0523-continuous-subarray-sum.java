@@ -1,18 +1,18 @@
-class Solution {
+public class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
-        HashSet<Integer> modSet = new HashSet<>();
-        int prefixSum = 0, prevMod = 0;
+        HashMap<Integer, Integer> remainder = new HashMap<>();
+        remainder.put(0, -1);
+        int total = 0;
 
-        for (int num : nums) {
-            prefixSum += num;
-            int currentMod = prefixSum % k;
-
-            if (modSet.contains(currentMod)) {
+        for(int i = 0; i < nums.length; i++){
+            total += nums[i];
+            int r = total % k;
+            if (!remainder.containsKey(r)){
+                remainder.put(r, i);
+            } 
+            else if (i - remainder.get(r) > 1) {
                 return true;
             }
-
-            modSet.add(prevMod);
-            prevMod = currentMod;
         }
 
         return false;
