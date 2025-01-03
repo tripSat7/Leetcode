@@ -1,18 +1,24 @@
-class Solution {
+public class Solution {
     public boolean hasAllCodes(String s, int k) {
-        if(k > s.length()){
+        int n = s.length();
+        if (n < (1 << k)) {
             return false;
         }
-        Set<String> set = new HashSet<>();
-        
-        for (int i = 0; i <= s.length() - k; i++) {
-            set.add(s.substring(i, i + k));
-        }
-        
-        if(set.size() == Math.pow(2,k)){
-            return true;
+
+        boolean[] codeSet = new boolean[1 << k];
+        int cur = 0, have = 0;
+
+        for (int i = 0; i < n; i++) {
+            cur = ((cur << 1) & ((1 << k) - 1)) | (s.charAt(i) - '0');
+
+            if (i >= k - 1) {
+                if (!codeSet[cur]) {
+                    codeSet[cur] = true;
+                    have++;
+                }
+            }
         }
 
-        return false;
+        return have == (1 << k);
     }
 }
