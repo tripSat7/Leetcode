@@ -1,25 +1,23 @@
 class Solution {
     public long zeroFilledSubarray(int[] nums) {
-        long res = 0, cons = 0;
-
-        if(nums[0] == 0){
-            cons++;
-            res++;
+        long result = 0;
+        
+        int n = nums.length;
+        
+        int countSubArray = 0;
+        
+        for(int i = 0; i<n; i++) {
+            
+            if(nums[i] == 0)
+                countSubArray += 1;
+            else
+                countSubArray = 0;
+            
+            result += countSubArray;
+            
         }
-
-        for(int i = 1; i < nums.length; i++){
-            if(nums[i] == 0){
-                if(nums[i-1] == 0){
-                    res += cons+1;
-                    cons++;
-                }
-                else{
-                    res++;
-                    cons = 1;
-                }
-            }
-        } 
-
-        return res;
+        
+        return result;
+        
     }
 }
