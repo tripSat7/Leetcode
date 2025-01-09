@@ -18,6 +18,7 @@ Collection of solved LeetCode questions
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/tripSat7/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
@@ -41,6 +42,7 @@ Collection of solved LeetCode questions
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/tripSat7/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
@@ -110,6 +112,7 @@ Collection of solved LeetCode questions
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0523-continuous-subarray-sum](https://github.com/tripSat7/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/tripSat7/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
 ## Sliding Window
