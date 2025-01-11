@@ -22,6 +22,7 @@ Collection of solved LeetCode questions
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/tripSat7/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
+| [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 ## Binary Search
 |  |
@@ -65,6 +66,7 @@ Collection of solved LeetCode questions
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
+| [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 ## Matrix
 |  |
 | ------- |
