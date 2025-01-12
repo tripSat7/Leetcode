@@ -23,6 +23,7 @@ Collection of solved LeetCode questions
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/tripSat7/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 ## Binary Search
 |  |
@@ -67,6 +68,7 @@ Collection of solved LeetCode questions
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Matrix
 |  |
 | ------- |
@@ -138,10 +140,12 @@ Collection of solved LeetCode questions
 | ------- |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Counting
 |  |
 | ------- |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Number Theory
 |  |
 | ------- |
