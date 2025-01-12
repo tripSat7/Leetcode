@@ -26,6 +26,7 @@ Collection of solved LeetCode questions
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
+| [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 ## Binary Search
 |  |
 | ------- |
@@ -35,6 +36,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
+| [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -144,6 +146,7 @@ Collection of solved LeetCode questions
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
+| [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 ## Counting
 |  |
 | ------- |
