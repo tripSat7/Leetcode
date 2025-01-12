@@ -1,17 +1,15 @@
 class Solution {
     public int[][] divideArray(int[] nums, int k) {
+        int n = nums.length;
+        List<int[]> ans = new ArrayList<>();
         Arrays.sort(nums);
-        int res[][] = new int[nums.length/3][3];
-
-        for(int i = 0; i < nums.length; i+=3){
-            int row = i/3;
-            if(!(nums[i+2] - nums[i] <= k)){
-                return new int[][]{};
+        for (int i = 0; i < n; i += 3) {
+            if (nums[i + 2] - nums[i] <= k) {
+                ans.add(new int[]{ nums[i], nums[i + 1], nums[i + 2] });
+            } else {
+                return new int[0][0];
             }
-
-            res[row] = new int[] {nums[i], nums[i+1], nums[i+2]};
         }
-
-        return res;
+        return ans.toArray(new int[0][0]);
     }
 }
