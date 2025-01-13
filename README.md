@@ -166,4 +166,8 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+## Enumeration
+|  |
+| ------- |
+| [1212-sequential-digits](https://github.com/tripSat7/Leetcode/tree/master/1212-sequential-digits) |
 <!---LeetCode Topics End-->
