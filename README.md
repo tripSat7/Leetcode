@@ -27,6 +27,7 @@ Collection of solved LeetCode questions
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
+| [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 ## Binary Search
 |  |
 | ------- |
@@ -37,6 +38,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
+| [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -51,6 +53,7 @@ Collection of solved LeetCode questions
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/tripSat7/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
+| [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 ## Hash Table
 |  |
 | ------- |
@@ -147,6 +150,7 @@ Collection of solved LeetCode questions
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
+| [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 ## Counting
 |  |
 | ------- |
