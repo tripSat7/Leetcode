@@ -1,10 +1,13 @@
 class Solution {
     public int tribonacci(int n) {
-        int dp[] = {0, 1, 1};
-        for(int i = 3; i <= n; i++){
-            dp[i % 3] = dp[0] + dp[1] + dp[2];
-        }
+        int [] trib = new int[n + 3];
+        trib [0] = 0;
+        trib [1] =  trib [2] = 1;
             
-        return dp[n % 3];
+        for(int i = 3; i <= n; i++){     
+            trib [i] =   trib [i - 1] + trib [i - 2] + trib [i - 3] ;  
+        }
+        
+        return trib[n];
     }
 }
