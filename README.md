@@ -8,6 +8,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0198-house-robber](https://github.com/tripSat7/Leetcode/tree/master/0198-house-robber) |
 | [0238-product-of-array-except-self](https://github.com/tripSat7/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -181,6 +182,7 @@ Collection of solved LeetCode questions
 ## Dynamic Programming
 |  |
 | ------- |
+| [0198-house-robber](https://github.com/tripSat7/Leetcode/tree/master/0198-house-robber) |
 | [0747-min-cost-climbing-stairs](https://github.com/tripSat7/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1236-n-th-tribonacci-number](https://github.com/tripSat7/Leetcode/tree/master/1236-n-th-tribonacci-number) |
 ## Memoization
