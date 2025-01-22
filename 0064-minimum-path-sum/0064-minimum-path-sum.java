@@ -19,22 +19,17 @@ class Solution {
         if(dp[i][j] != -1){
             return dp[i][j];
         }
-        int down = -1, right = -1;
-        if(i+1 < m){
-            down = helper(grid, m, n, i+1, j, dp);
-        }
-        if(j+1 < n){
-            right = helper(grid, m, n, i, j+1, dp);
+
+        int down = Integer.MAX_VALUE;
+        if (i + 1 < m) {
+            down = helper(grid, m, n, i + 1, j, dp);
         }
 
-        if(down != -1 && right != -1){
-            return dp[i][j] = grid[i][j] + Math.min(down, right);
+        int right = Integer.MAX_VALUE;
+        if (j + 1 < n) {
+            right = helper(grid, m, n, i, j + 1, dp);
         }
-        else if(down == -1){
-            return dp[i][j] = grid[i][j] + right;
-        }
-        else{
-            return dp[i][j] = grid[i][j] + down;
-        }
+        
+        return dp[i][j] = grid[i][j] + Math.min(down, right);
     }
 }
