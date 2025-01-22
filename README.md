@@ -8,6 +8,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
+| [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0198-house-robber](https://github.com/tripSat7/Leetcode/tree/master/0198-house-robber) |
 | [0238-product-of-array-except-self](https://github.com/tripSat7/Leetcode/tree/master/0238-product-of-array-except-self) |
@@ -84,6 +85,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
+| [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 ## Union Find
@@ -187,6 +189,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
+| [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0198-house-robber](https://github.com/tripSat7/Leetcode/tree/master/0198-house-robber) |
 | [0747-min-cost-climbing-stairs](https://github.com/tripSat7/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1236-n-th-tribonacci-number](https://github.com/tripSat7/Leetcode/tree/master/1236-n-th-tribonacci-number) |
