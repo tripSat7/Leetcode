@@ -1,31 +1,27 @@
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
-        int prev[] = new int[triangle.size()];
-        prev[0] = triangle.get(0).get(0);
-
-        for(int i = 1; i < triangle.size(); i++){
-            int temp[] = new int[triangle.size()];
-
-            for(int j = 0; j < triangle.get(i).size(); j++){
-                if(j == 0){
-                    temp[j] = triangle.get(i).get(j) + prev[0];
-                }
-                else if(j == triangle.get(i).size() - 1){
-                    temp[j] = triangle.get(i).get(j) + prev[j-1];   
-                }
-                else{
-                    temp[j] = triangle.get(i).get(j) + Math.min(prev[j], prev[j-1]);
-                }
-            }
-            prev = temp;
+        int n = triangle.size();
+        int dp[][] = new int[n][n];
+        for (int row[] : dp){
+            Arrays.fill(row, -1);
         }
 
-        int min = Integer.MAX_VALUE;
-        for(int i = 0; i < triangle.size(); i++)
-        {
-            min = Math.min(min, prev[i]);
+        return helper(0, 0, triangle, n, dp);
+    }
+
+    public int helper(int i, int j, List<List<Integer>> triangle, int n, int[][] dp) {
+        if (dp[i][j] != -1){
+            return dp[i][j];
         }
-        return min;
+            
+        if (i == n - 1){
+            return triangle.get(i).get(j);
+        }
+            
+        int down = triangle.get(i).get(j) + helper(i + 1, j, triangle, n, dp);
+        int diagonal = triangle.get(i).get(j) + helper(i + 1, j + 1, triangle, n, dp);
+
+        return dp[i][j] = Math.min(down, diagonal);
     }
 }
 
