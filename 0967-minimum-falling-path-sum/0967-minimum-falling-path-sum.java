@@ -1,37 +1,46 @@
 class Solution {
     public int minFallingPathSum(int[][] grid) {
-        
         int m = grid.length;
         int n = grid[0].length;
-        if(n == 1){
-            return grid[0][0];
-        }
-        int prev[]= new int[n];
-        for(int i = 0; i < n; i++){
-            prev[i] = grid[0][i];
-        }
-        for(int i = 1; i < m; i++){
-            int temp[] = new int[n];
-            for(int j = 0; j < n; j++){
-                if(j == 0){
-                    temp[j] = grid[i][j] + Math.min(prev[j], prev[j+1]);
-                }
-                else if(j == n - 1){
-                    temp[j] = grid[i][j] + Math.min(prev[j], prev[j-1]);
-                }
-                else{
-                    temp[j] = grid[i][j] + Math.min(prev[j] , Math.min(prev[j+1], prev[j-1]));
-                }
-            }
+        int dp[][] = new int[m][n];
 
-            prev = temp;
+        for(int i = 0; i < m; i++){
+            Arrays.fill(dp[i], -101);
         }
-
-        int res = Integer.MAX_VALUE;    
+        
+        int res = Integer.MAX_VALUE;
         for(int i = 0; i < n; i++){
-            res = Math.min(res, prev[i]);
+            int pathSum = helper(grid, m, n, 0, i, dp);
+            res = Math.min(res, pathSum);
         }
 
         return res;
+    }
+
+    public int helper(int[][] grid, int m, int n, int i, int j, int dp[][]){
+        if(i == m-1){
+            return dp[i][j] = grid[i][j];
+        }
+
+        if(dp[i][j] != -101){
+            return dp[i][j];
+        }
+        
+        int down = Integer.MAX_VALUE;
+        if (i + 1 < m) {
+            down = helper(grid, m, n, i + 1, j, dp);
+        }
+
+        int ldown = Integer.MAX_VALUE;
+        if (j - 1 >= 0 ) {
+            ldown = helper(grid, m, n, i + 1, j - 1, dp);
+        }
+        
+        int rdown = Integer.MAX_VALUE;
+        if (j + 1 < n) {
+            rdown = helper(grid, m, n, i + 1, j + 1, dp);
+        }
+
+        return dp[i][j] = grid[i][j] + Math.min(down, Math.min(ldown, rdown));        
     }
 }
