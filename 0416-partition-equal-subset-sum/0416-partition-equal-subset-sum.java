@@ -10,37 +10,33 @@ class Solution {
             return false;
         }
 
-        int dp[][] = new int[nums.length][sum/2 + 1];
+        boolean prev[] = new boolean[sum/2 + 1];
 
-        for(int i = 0; i < nums.length; i++){
-            Arrays.fill(dp[i], -1);
+        prev[0] = true;
+
+        if (nums[0] <= sum/2) {
+            prev[nums[0]] = true;
         }
 
-        return helper(nums, nums.length - 1, sum/2, dp);
+        for(int i = 1; i < nums.length; i++){
+            boolean temp[] = new boolean[sum/2 + 1];
+            temp[0] = true;
+            for(int target = 1; target <= sum/2; target++){
+                boolean notTaken = prev[target];
+
+                boolean taken = false;
+                if(nums[i] <= target){
+                    taken = prev[target - nums[i]];
+                }
+
+                temp[target] = taken || notTaken;
+            }
+
+            prev = temp;
+        }
+
+
+        return prev[sum/2];
     }
 
-    public boolean helper(int[] nums, int i, int target, int dp[][]){
-
-        if (target == 0){
-            return true;
-        }
-
-        if (i == 0){
-            return nums[0] == target;
-        }
-            
-        if (dp[i][target] != -1){
-            return dp[i][target] == 0 ? false : true;
-        }
-            
-        boolean notTaken = helper(nums, i - 1, target, dp);
-
-        boolean taken = false;
-        if (nums[i] <= target){
-            taken = helper(nums, i - 1, target - nums[i], dp);
-        }
-    
-        dp[i][target] = notTaken || taken ? 1 : 0;
-        return notTaken || taken;
-    }
 }
