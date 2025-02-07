@@ -1,36 +1,30 @@
 class Solution {
     public int change(int amount, int[] coins) {
 
-        int dp[][] = new int[coins.length][amount + 1];
-
-        for(int row[] : dp){
-            Arrays.fill(row, -1);
-        }
-        helper(amount, coins, coins.length - 1, dp);
-
-        return dp[coins.length - 1][amount];
-    }
-
-    public int helper(int amount, int[] coins, int i, int dp[][]){
-        if(i == 0){
-            if(amount % coins[0] == 0){
-                return dp[i][amount] = 1;
-            }
-            else{
-                return dp[i][amount] = 0;
+        int prev[] = new int[amount + 1];
+        
+        for(int i = 0; i <= amount; i++) {
+            if(i % coins[0] == 0){
+                prev[i] = 1;
             }
         }
 
-        if(dp[i][amount] != -1){
-            return dp[i][amount];
-        }
-        int notTake = helper(amount, coins, i - 1, dp);
+        // Fill the prev array using dynamic programming
+        for (int i = 1; i < coins.length; i++) {
+            int[] cur = new int[amount + 1];
+            for (int target = 0; target <= amount; target++) {
+                int notTaken = prev[target];
 
-        int take = 0;
-        if(coins[i] <= amount){
-            take = helper(amount - coins[i], coins, i, dp);
+                int taken = 0;
+                if(coins[i] <= target){
+                    taken = cur[target - coins[i]];
+                }
+                    
+                cur[target] = notTaken + taken;
+            }
+            prev = cur;
         }
 
-        return dp[i][amount] = take + notTake;
+        return prev[amount];
     }
 }
