@@ -116,6 +116,7 @@ Collection of solved LeetCode questions
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
+| [1250-longest-common-subsequence](https://github.com/tripSat7/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1512-design-underground-system](https://github.com/tripSat7/Leetcode/tree/master/1512-design-underground-system) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
@@ -225,6 +226,7 @@ Collection of solved LeetCode questions
 | [0747-min-cost-climbing-stairs](https://github.com/tripSat7/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [1236-n-th-tribonacci-number](https://github.com/tripSat7/Leetcode/tree/master/1236-n-th-tribonacci-number) |
+| [1250-longest-common-subsequence](https://github.com/tripSat7/Leetcode/tree/master/1250-longest-common-subsequence) |
 ## Memoization
 |  |
 | ------- |
