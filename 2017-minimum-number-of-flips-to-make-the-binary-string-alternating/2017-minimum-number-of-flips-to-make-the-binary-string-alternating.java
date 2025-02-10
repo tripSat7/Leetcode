@@ -1,41 +1,37 @@
 class Solution {
     public int minFlips(String s) {
-        StringBuilder sb = new StringBuilder(s).append(s);
-
-        StringBuilder alt1 = new StringBuilder();
-        StringBuilder alt2 = new StringBuilder();
-
-        for (int i = 0; i < sb.length(); i++) {
-            if (i % 2 == 0) {
-                alt1.append(0);
-                alt2.append(1);
-            }
-            else {
-                alt1.append(1);
-                alt2.append(0);
-            }
-        }
-
-        int diff1 = 0, diff2 = 0;
-        int l = 0;
-
-        int res = sb.length();
-
-        for (int r = 0; r < sb.length(); r++) {
-            if (alt1.charAt(r) != sb.charAt(r)) diff1++;
-            if (alt2.charAt(r) != sb.charAt(r)) diff2++;
-
-            if (r - l + 1 > s.length()) {
-                if (alt1.charAt(l) != sb.charAt(l)) diff1--;
-                if (alt2.charAt(l) != sb.charAt(l)) diff2--;
-                l++;
+        String t = s + s;
+        
+        int left = 0;
+        int diff1 = 0;
+        int diff2 = 0;
+        int min = Integer.MAX_VALUE;
+        
+        for (int right = 0; right < t.length(); right++) {
+            char rightChar = t.charAt(right);
+            
+            if ((right % 2 == 0 && rightChar != '0') || (right % 2 != 0 && rightChar != '1')) {
+                diff1++;
             }
 
-            if (r - l + 1 == s.length()) {
-                res = Math.min(res, Math.min(diff1, diff2));
+            if ((right % 2 == 0 && rightChar != '1') || (right % 2 != 0 && rightChar != '0')) {
+                diff2++;
+            }
+
+            if (right - left + 1 >= s.length()) {
+                min = Integer.min(min, Math.min(diff1, diff2));
+                
+                char leftChar = t.charAt(left);
+                if ((left % 2 == 0 && leftChar != '0') || (left % 2 != 0 && leftChar != '1')) {
+                    diff1--;
+                }
+                if ((left % 2 == 0 && leftChar != '1') || (left % 2 != 0 && leftChar != '0')) {
+                    diff2--;
+                }
+                left++;
             }
         }
-
-        return res;
+        
+        return min;
     }
 }
