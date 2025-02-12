@@ -27,6 +27,7 @@ Collection of solved LeetCode questions
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0747-min-cost-climbing-stairs](https://github.com/tripSat7/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
+| [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -53,6 +54,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
+| [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
@@ -88,6 +90,7 @@ Collection of solved LeetCode questions
 | [0554-brick-wall](https://github.com/tripSat7/Leetcode/tree/master/0554-brick-wall) |
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1512-design-underground-system](https://github.com/tripSat7/Leetcode/tree/master/1512-design-underground-system) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
@@ -171,6 +174,7 @@ Collection of solved LeetCode questions
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
+| [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/tripSat7/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
@@ -197,6 +201,7 @@ Collection of solved LeetCode questions
 ## Counting
 |  |
 | ------- |
+| [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
