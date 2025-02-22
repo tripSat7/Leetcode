@@ -124,6 +124,7 @@ Collection of solved LeetCode questions
 ## String
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/tripSat7/Leetcode/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -246,6 +247,7 @@ Collection of solved LeetCode questions
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
+| [0072-edit-distance](https://github.com/tripSat7/Leetcode/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0120-triangle](https://github.com/tripSat7/Leetcode/tree/master/0120-triangle) |
 | [0198-house-robber](https://github.com/tripSat7/Leetcode/tree/master/0198-house-robber) |
