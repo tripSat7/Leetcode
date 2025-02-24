@@ -1,5 +1,20 @@
 class Solution {
     public int maxStarSum(int[] vals, int[][] edges, int k) {
+        if(vals.length == 1)
+        {
+            return vals[0];
+        }
+        int min = Integer.MIN_VALUE;
+        if(edges.length == 0)
+        {
+            for(int i = 0; i < vals.length; i++)
+            {
+                min = Math.max(min, vals[i]);
+            }
+            
+            return min;
+        }
+
         int n = vals.length;
         ArrayList<Integer>[] graph = new ArrayList[n];
         
@@ -17,7 +32,7 @@ class Solution {
         
         for(int i = 0; i < n; i++){
             List<Integer> curr = graph[i];
-            
+
             curr.sort((a, b) -> vals[b]-vals[a]);
             
             long max = vals[i], sum = vals[i];
