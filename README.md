@@ -126,6 +126,7 @@ Collection of solved LeetCode questions
 ## String
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/tripSat7/Leetcode/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
@@ -205,6 +206,7 @@ Collection of solved LeetCode questions
 ## Greedy
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
@@ -247,6 +249,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
+| [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
@@ -314,4 +317,8 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
+## Recursion
+|  |
+| ------- |
+| [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 <!---LeetCode Topics End-->
