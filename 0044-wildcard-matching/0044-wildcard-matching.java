@@ -28,7 +28,7 @@ class Solution {
     }
 
     public boolean isAllStars(String S, int i) {
-        for (int j = 0; j < i; j++) { // Fixed loop condition
+        for (int j = 0; j < i; j++) { 
             if (S.charAt(j) != '*') {
                 return false;
             }
