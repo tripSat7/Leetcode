@@ -35,6 +35,7 @@ Collection of solved LeetCode questions
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/tripSat7/Leetcode/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
@@ -109,6 +110,7 @@ Collection of solved LeetCode questions
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/tripSat7/Leetcode/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1512-design-underground-system](https://github.com/tripSat7/Leetcode/tree/master/1512-design-underground-system) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -218,6 +220,7 @@ Collection of solved LeetCode questions
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/tripSat7/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
+| [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/tripSat7/Leetcode/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
