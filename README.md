@@ -194,6 +194,7 @@ Collection of solved LeetCode questions
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/tripSat7/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
+| [2610-closest-prime-numbers-in-range](https://github.com/tripSat7/Leetcode/tree/master/2610-closest-prime-numbers-in-range) |
 | [2649-count-total-number-of-colored-cells](https://github.com/tripSat7/Leetcode/tree/master/2649-count-total-number-of-colored-cells) |
 ## Sliding Window
 |  |
@@ -255,6 +256,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
+| [2610-closest-prime-numbers-in-range](https://github.com/tripSat7/Leetcode/tree/master/2610-closest-prime-numbers-in-range) |
 ## Rolling Hash
 |  |
 | ------- |
