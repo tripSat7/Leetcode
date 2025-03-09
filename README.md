@@ -62,6 +62,7 @@ Collection of solved LeetCode questions
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3463-alternating-groups-i](https://github.com/tripSat7/Leetcode/tree/master/3463-alternating-groups-i) |
+| [3483-alternating-groups-ii](https://github.com/tripSat7/Leetcode/tree/master/3483-alternating-groups-ii) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
 ## Binary Search
 |  |
@@ -214,6 +215,7 @@ Collection of solved LeetCode questions
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3463-alternating-groups-i](https://github.com/tripSat7/Leetcode/tree/master/3463-alternating-groups-i) |
+| [3483-alternating-groups-ii](https://github.com/tripSat7/Leetcode/tree/master/3483-alternating-groups-ii) |
 ## Two Pointers
 |  |
 | ------- |
