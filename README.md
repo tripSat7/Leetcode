@@ -61,6 +61,7 @@ Collection of solved LeetCode questions
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3463-alternating-groups-i](https://github.com/tripSat7/Leetcode/tree/master/3463-alternating-groups-i) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
 ## Binary Search
 |  |
@@ -212,6 +213,7 @@ Collection of solved LeetCode questions
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
+| [3463-alternating-groups-i](https://github.com/tripSat7/Leetcode/tree/master/3463-alternating-groups-i) |
 ## Two Pointers
 |  |
 | ------- |
