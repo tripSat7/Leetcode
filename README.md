@@ -63,6 +63,7 @@ Collection of solved LeetCode questions
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3463-alternating-groups-i](https://github.com/tripSat7/Leetcode/tree/master/3463-alternating-groups-i) |
 | [3483-alternating-groups-ii](https://github.com/tripSat7/Leetcode/tree/master/3483-alternating-groups-ii) |
+| [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
 | [3790-fruits-into-baskets-ii](https://github.com/tripSat7/Leetcode/tree/master/3790-fruits-into-baskets-ii) |
 ## Binary Search
@@ -93,6 +94,7 @@ Collection of solved LeetCode questions
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
 ## Prefix Sum
 |  |
@@ -353,6 +355,7 @@ Collection of solved LeetCode questions
 | [0802-k-th-smallest-prime-fraction](https://github.com/tripSat7/Leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
+| [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
 ## Backtracking
 |  |
 | ------- |
