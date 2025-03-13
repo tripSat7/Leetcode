@@ -1,27 +1,31 @@
 class Solution {
     public int maximumTastiness(int[] price, int k) {
         Arrays.sort(price);
-        int lo = 0, hi = 1000_000_000;
-        while (lo < hi) {
-            int mid = lo + (hi - lo) / 2;
-            if (check(mid, price, k)){
-                lo = mid + 1;
+        int left = 0, right = Integer.MAX_VALUE;
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (canDo(price, k, mid)) {
+                left = mid + 1;
             } 
             else{
-                hi = mid;
-            } 
+                right = mid;
+            }
         }
-        return lo - 1;
+
+        return right - 1;
     }
 
-    public boolean check(int x, int[] price, int k) {
-        int last = price[0], count = 1, i = 1;
-        while (count < k && i < price.length) {
-            if(price[i] - last >= x) {
-                last = price[i]; count++;
-            }
-            i++;
+    
+    public boolean canDo(int[] p, int k, int minDiff) {
+        int total = 1;
+        int prev = p[0];
+        for (int i = 1; i < p.length; i++) {
+            if (p[i] - prev >= minDiff) {
+                total++;
+                prev = p[i];
+            } 
         }
-        return count == k;
+        return total >= k;
     }
 }
