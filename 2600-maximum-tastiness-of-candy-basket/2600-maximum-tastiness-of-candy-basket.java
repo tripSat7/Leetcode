@@ -1,8 +1,7 @@
 class Solution {
     public int maximumTastiness(int[] price, int k) {
         Arrays.sort(price);
-        int lo = 0, hi = price[price.length - 1];
-
+        int lo = 0, hi = 1000_000_000;
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             if (check(mid, price, k)){
@@ -12,7 +11,6 @@ class Solution {
                 hi = mid;
             } 
         }
-        
         return lo - 1;
     }
 
