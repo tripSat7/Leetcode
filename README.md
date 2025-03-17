@@ -53,6 +53,7 @@ Collection of solved LeetCode questions
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2294-minimum-time-to-complete-trips](https://github.com/tripSat7/Leetcode/tree/master/2294-minimum-time-to-complete-trips) |
+| [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/tripSat7/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/tripSat7/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
@@ -85,6 +86,7 @@ Collection of solved LeetCode questions
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
 | [2294-minimum-time-to-complete-trips](https://github.com/tripSat7/Leetcode/tree/master/2294-minimum-time-to-complete-trips) |
+| [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/tripSat7/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2600-maximum-tastiness-of-candy-basket](https://github.com/tripSat7/Leetcode/tree/master/2600-maximum-tastiness-of-candy-basket) |
 | [2665-minimum-time-to-repair-cars](https://github.com/tripSat7/Leetcode/tree/master/2665-minimum-time-to-repair-cars) |
@@ -101,6 +103,7 @@ Collection of solved LeetCode questions
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
+| [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/tripSat7/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/tripSat7/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
@@ -122,6 +125,7 @@ Collection of solved LeetCode questions
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
+| [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/tripSat7/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 ## Hash Table
@@ -147,6 +151,7 @@ Collection of solved LeetCode questions
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
+| [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
@@ -401,4 +406,8 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [3790-fruits-into-baskets-ii](https://github.com/tripSat7/Leetcode/tree/master/3790-fruits-into-baskets-ii) |
+## Ordered Set
+|  |
+| ------- |
+| [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 <!---LeetCode Topics End-->
