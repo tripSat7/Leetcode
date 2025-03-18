@@ -33,13 +33,13 @@ class Solution {
             
             list.add(root.val);
             res.add(new ArrayList<>(list));
-            System.out.println("Res == "+list);
+            // System.out.println("Res == "+list);
             list.remove(list.size() - 1);
             return;
         }
         
         list.add(root.val);
-        System.out.println(list);
+        // System.out.println(list);
         helper(root.left, targetSum - root.val, list);
         helper(root.right, targetSum - root.val, list);
         list.remove(list.size() - 1);
