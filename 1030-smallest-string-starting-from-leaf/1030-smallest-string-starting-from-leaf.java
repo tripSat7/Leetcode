@@ -34,10 +34,9 @@ class Solution {
         }
         
        
-        
         String lst = helper(root.left, ""+ ch + st);
         String rst = helper(root.right, ""+ ch + st);
-        System.out.println(lst + "||" + rst);
+        // System.out.println(lst + "||" + rst);
 
         if(lst.equals("*")){
             return rst;
