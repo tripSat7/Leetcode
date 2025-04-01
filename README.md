@@ -358,6 +358,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
+| [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
@@ -366,12 +367,14 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
+| [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0322-coin-change](https://github.com/tripSat7/Leetcode/tree/master/0322-coin-change) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
@@ -383,6 +386,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
+| [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
