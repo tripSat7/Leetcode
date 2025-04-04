@@ -42,7 +42,7 @@ class Solution {
             return -1;
         } 
 
-        System.out.println(pq);
+        //System.out.println(pq);
         return pq.peek();
     }
 }
