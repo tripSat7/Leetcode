@@ -365,6 +365,7 @@ Collection of solved LeetCode questions
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
+| [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/tripSat7/Leetcode/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -382,6 +383,7 @@ Collection of solved LeetCode questions
 | [0322-coin-change](https://github.com/tripSat7/Leetcode/tree/master/0322-coin-change) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
+| [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/tripSat7/Leetcode/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -398,6 +400,7 @@ Collection of solved LeetCode questions
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
+| [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/tripSat7/Leetcode/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
