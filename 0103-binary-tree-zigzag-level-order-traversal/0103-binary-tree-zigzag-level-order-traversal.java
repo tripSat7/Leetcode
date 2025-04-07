@@ -24,21 +24,20 @@ public class Solution {
         q.offer(root);
 
         while(!q.isEmpty()) {
-            List<Integer> level = new ArrayList<>();
-            for (int i = q.size(); i > 0; i--) {
+            int size = q.size();
+            Integer[] level = new Integer[size];
+            for (int i = 0; i < size; i++) {
                 TreeNode node = q.poll();
-                level.add(node.val);
-                if (node.left != null){
+                int idx = (res.size() % 2 == 0) ? i : size - i - 1;
+                level[idx] = node.val;
+                if(node.left != null){
                     q.offer(node.left);
                 } 
                 if(node.right != null){
                     q.offer(node.right);
                 } 
             }
-            if (res.size() % 2 != 0){
-                Collections.reverse(level);
-            } 
-            res.add(level);
+            res.add(Arrays.asList(level));
         }
         return res;
     }
