@@ -13,49 +13,33 @@
  *     }
  * }
  */
-class Solution {
+public class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        
         List<List<Integer>> res = new ArrayList<>();
-        if(root == null){
+        if (root == null){
             return res;
-        }
+        } 
+
         Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
-        q.add(null);
-        int lvl = 0;
-        List<Integer> curr = new ArrayList<>();
-        
-        while(!q.isEmpty()){
-            TreeNode temp = q.poll();
-            if(temp!=null){
-                curr.add(temp.val);
-                if(temp.left!=null){
-                    q.add(temp.left);
-                }
-                
-                if(temp.right!=null){
-                    q.add(temp.right);
-                }
+        q.offer(root);
+
+        while(!q.isEmpty()) {
+            List<Integer> level = new ArrayList<>();
+            for (int i = q.size(); i > 0; i--) {
+                TreeNode node = q.poll();
+                level.add(node.val);
+                if (node.left != null){
+                    q.offer(node.left);
+                } 
+                if(node.right != null){
+                    q.offer(node.right);
+                } 
             }
-            else{
-                List<Integer> copy = new ArrayList<>(curr);
-                curr.clear();
-                if(lvl % 2 == 0){
-                    res.add(copy);    
-                }
-                else{
-                    Collections.reverse(copy);
-                    res.add(copy);
-                }
-                lvl++;
-                
-                if(!q.isEmpty()){
-                    q.add(null);
-                }
-            }
+            if (res.size() % 2 != 0){
+                Collections.reverse(level);
+            } 
+            res.add(level);
         }
-        
         return res;
     }
 }
