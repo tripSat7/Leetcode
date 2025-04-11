@@ -18,7 +18,7 @@ class Solution {
     public int amountOfTime(TreeNode root, int start) {
         Map<Integer, Set<Integer>> map = new HashMap<>();
         convert(root, 0, map);
-        System.out.println(map);
+        // System.out.println(map);
         Queue<Integer> queue = new LinkedList<>();
         queue.add(start);
         int minute = 0;
