@@ -1,21 +1,22 @@
+
 class Solution {
-    Map<Integer, Integer> memo = new HashMap<>();
-    
-    public int numTrees(int n) {
-        if(n == 0 || n == 1){
+    int dp[] = new int[20];
+    public int numTrees(int i) {
+
+        if(i == 0 || i == 1){
             return 1;
         }
-        
-        if(memo.containsKey(n)){
-            return memo.get(n);
+        if(dp[i] != 0){
+            return dp[i];
         }
-        
-        int sum = 0; 
-        for(int i = 1; i <= n; i++){
-            sum += numTrees(i-1) * numTrees(n-i);    
+
+
+        int sum = 0;
+        for(int j = 1; j <= i; j++){
+            sum = sum +  numTrees(j-1) * numTrees(i-j);
         }
-        memo.put(n,sum);  
-        
+
+        dp[i] = sum;
         return sum;
     }
 }
