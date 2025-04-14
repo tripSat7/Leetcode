@@ -383,6 +383,7 @@ Collection of solved LeetCode questions
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/tripSat7/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/tripSat7/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/tripSat7/Leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/tripSat7/Leetcode/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
@@ -402,6 +403,7 @@ Collection of solved LeetCode questions
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/tripSat7/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/tripSat7/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/tripSat7/Leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/tripSat7/Leetcode/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
@@ -443,6 +445,7 @@ Collection of solved LeetCode questions
 | [0998-check-completeness-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/tripSat7/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/tripSat7/Leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/tripSat7/Leetcode/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
