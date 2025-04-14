@@ -371,6 +371,7 @@ Collection of solved LeetCode questions
 | [0096-unique-binary-search-trees](https://github.com/tripSat7/Leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/tripSat7/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
+| [0129-sum-root-to-leaf-numbers](https://github.com/tripSat7/Leetcode/tree/master/0129-sum-root-to-leaf-numbers) |
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/tripSat7/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
@@ -393,6 +394,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
+| [0129-sum-root-to-leaf-numbers](https://github.com/tripSat7/Leetcode/tree/master/0129-sum-root-to-leaf-numbers) |
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/tripSat7/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
@@ -435,6 +437,7 @@ Collection of solved LeetCode questions
 | [0096-unique-binary-search-trees](https://github.com/tripSat7/Leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/tripSat7/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
+| [0129-sum-root-to-leaf-numbers](https://github.com/tripSat7/Leetcode/tree/master/0129-sum-root-to-leaf-numbers) |
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/tripSat7/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
