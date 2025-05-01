@@ -51,6 +51,7 @@ Collection of solved LeetCode questions
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
+| [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2294-minimum-time-to-complete-trips](https://github.com/tripSat7/Leetcode/tree/master/2294-minimum-time-to-complete-trips) |
@@ -155,6 +156,7 @@ Collection of solved LeetCode questions
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/tripSat7/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
@@ -211,6 +213,7 @@ Collection of solved LeetCode questions
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
 | [1512-design-underground-system](https://github.com/tripSat7/Leetcode/tree/master/1512-design-underground-system) |
+| [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 ## Hash Function
 |  |
 | ------- |
@@ -388,6 +391,7 @@ Collection of solved LeetCode questions
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/tripSat7/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/tripSat7/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
+| [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/tripSat7/Leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/tripSat7/Leetcode/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
@@ -409,6 +413,7 @@ Collection of solved LeetCode questions
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/tripSat7/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/tripSat7/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
+| [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/tripSat7/Leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/tripSat7/Leetcode/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
@@ -422,6 +427,7 @@ Collection of solved LeetCode questions
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/tripSat7/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1731-even-odd-tree](https://github.com/tripSat7/Leetcode/tree/master/1731-even-odd-tree) |
+| [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/tripSat7/Leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/tripSat7/Leetcode/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
