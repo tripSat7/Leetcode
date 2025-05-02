@@ -13,36 +13,33 @@
  *     }
  * }
  */
-class Solution {
-    private int result = 0;
-
+public class Solution {
     public int pseudoPalindromicPaths(TreeNode root) {
-        solve(root, new HashSet<Integer>());
-        return result;
+        Map<Integer, Integer> count = new HashMap<>();
+        int[] odd = new int[1];
+
+        return dfs(root, count, odd);
     }
 
-    private void solve(TreeNode root, HashSet<Integer> set) {
-        if (root == null) return;
-
-        if (set.contains(root.val)){
-            set.remove(root.val);
-        }  
-        else{
-            set.add(root.val);
+    private int dfs(TreeNode cur, Map<Integer, Integer> count, int[] odd) {
+        if (cur == null){
+            return 0;
         } 
 
-        if (root.left == null && root.right == null && set.size() <= 1){
-            result++;
-        } 
+        count.put(cur.val, count.getOrDefault(cur.val, 0) + 1);
+        int odd_change = (count.get(cur.val) % 2 == 1) ? 1 : -1;
+        odd[0] += odd_change;
 
-        solve(root.left, set);
-        solve(root.right, set);
-        
-        if(set.contains(root.val)){
-            set.remove(root.val);
-        }  
+        int res;
+        if (cur.left == null && cur.right == null) {
+            res = (odd[0] <= 1) ? 1 : 0;
+        } 
         else{
-            set.add(root.val);
+            res = dfs(cur.left, count, odd) + dfs(cur.right, count, odd);
         }
+
+        odd[0] -= odd_change;
+        count.put(cur.val, count.get(cur.val) - 1);
+        return res;
     }
 }
