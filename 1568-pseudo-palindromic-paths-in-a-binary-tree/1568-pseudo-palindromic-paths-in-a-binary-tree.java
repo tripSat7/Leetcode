@@ -30,7 +30,7 @@ public class Solution {
         int res = (cur.left == null && cur.right == null && odd <= 1) ? 1 
                   : dfs(cur.left, count, odd) + dfs(cur.right, count, odd);
 
-        odd += count[cur.val] == 1 ? 1 : -1;
+        //odd += count[cur.val] == 1 ? 1 : -1;
         count[cur.val] ^= 1;
 
         return res;
