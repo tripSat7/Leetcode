@@ -15,8 +15,6 @@
  */
 class Solution {
     public String smallestFromLeaf(TreeNode root) {
-        // StringBuilder left = new StringBuilder(helper(root, ""));
-        // StringBuilder right = new StringBuilder(helper(root, ""));
 
         return helper(root, "");
     }
