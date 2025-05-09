@@ -389,6 +389,7 @@ Collection of solved LeetCode questions
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/tripSat7/Leetcode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
+| [1021-distribute-coins-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
@@ -413,6 +414,7 @@ Collection of solved LeetCode questions
 | [0652-find-duplicate-subtrees](https://github.com/tripSat7/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
+| [1021-distribute-coins-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
@@ -463,6 +465,7 @@ Collection of solved LeetCode questions
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/tripSat7/Leetcode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
+| [1021-distribute-coins-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1568-pseudo-palindromic-paths-in-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1568-pseudo-palindromic-paths-in-a-binary-tree) |
