@@ -41,6 +41,7 @@ Collection of solved LeetCode questions
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/tripSat7/Leetcode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/tripSat7/Leetcode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -83,6 +84,7 @@ Collection of solved LeetCode questions
 | [0718-maximum-length-of-repeated-subarray](https://github.com/tripSat7/Leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/tripSat7/Leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0907-koko-eating-bananas](https://github.com/tripSat7/Leetcode/tree/master/0907-koko-eating-bananas) |
+| [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/tripSat7/Leetcode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
@@ -124,6 +126,7 @@ Collection of solved LeetCode questions
 | [0525-contiguous-array](https://github.com/tripSat7/Leetcode/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -253,6 +256,7 @@ Collection of solved LeetCode questions
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/tripSat7/Leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
+| [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
