@@ -1,33 +1,27 @@
 class Solution {
     public int maxConsecutiveAnswers(String answerKey, int k) {
-        int ans = Math.max(helper(answerKey,k,'T'),helper(answerKey,k,'F'));
+        int l = 0, c0 = 0, c1 = 0, ans = 0;
 
-        return ans;
-    }
-
-    public int helper(String s,int k,char ch){
-        int n = s.length();
-
-        int l = 0, r = 0;
-        int len = 0;
-        int count = 0;
-
-        while(r < n){
-            if(s.charAt(r) != ch){
-                count++;
-            } 
-
-            while(count > k){
-                if(s.charAt(l) != ch){
-                    count--;
-                } 
-                l++;
+        for(int r = 0; r < answerKey.length(); r++){
+            if(answerKey.charAt(r)=='T'){
+                c0++;
+            }
+            else{
+                c1++;
             }
 
-            len = Math.max(len, r - l + 1);
-            r++;
+            while((Math.min(c0, c1)) > k){
+                if(answerKey.charAt(l) == 'T'){
+                    c0--;
+                }
+                else{
+                    c1--;
+                }
+                l++;
+            }
+            ans = Math.max(ans, r - l + 1);
         }
-
-        return len;
+        
+        return ans;
     }
-}
+} 
