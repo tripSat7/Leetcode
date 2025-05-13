@@ -1,22 +1,22 @@
 class Solution {
     public int maximumBags(int[] capacity, int[] rocks, int additionalRocks) {
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-        for(int i = 0; i < rocks.length; i++){
-            minHeap.add(capacity[i] - rocks[i]);
+        int n = capacity.length;
+        int[] need = new int[n];
+        for (int i = 0; i < n; i++) {
+            need[i] = capacity[i] - rocks[i];
         }
+        Arrays.sort(need);
 
-        int fullCount = 0;
-        while (!minHeap.isEmpty()) {
-            int need = minHeap.poll();
-            if(need <= additionalRocks) {
-                additionalRocks -= need;
-                fullCount++;
+        int full = 0;
+        for (int x : need) {
+            if (x <= additionalRocks) {
+                additionalRocks -= x;
+                full++;
             } 
             else {
                 break;
             }
         }
-
-        return fullCount;
+        return full;
     }
 }
