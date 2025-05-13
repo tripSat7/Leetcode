@@ -89,6 +89,7 @@ Collection of solved LeetCode questions
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
+| [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
 | [2294-minimum-time-to-complete-trips](https://github.com/tripSat7/Leetcode/tree/master/2294-minimum-time-to-complete-trips) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/tripSat7/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
@@ -130,6 +131,7 @@ Collection of solved LeetCode questions
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/tripSat7/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
@@ -207,6 +209,7 @@ Collection of solved LeetCode questions
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/tripSat7/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/tripSat7/Leetcode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
@@ -259,6 +262,7 @@ Collection of solved LeetCode questions
 | [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
+| [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3463-alternating-groups-i](https://github.com/tripSat7/Leetcode/tree/master/3463-alternating-groups-i) |
 | [3483-alternating-groups-ii](https://github.com/tripSat7/Leetcode/tree/master/3483-alternating-groups-ii) |
