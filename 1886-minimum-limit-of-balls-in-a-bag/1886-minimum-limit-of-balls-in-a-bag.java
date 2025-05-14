@@ -22,14 +22,13 @@ class Solution {
         return left;
     }
 
-    private boolean isPossible(int maxBallsInBag, int[] nums, int maxOperations) {
-        int totalOperations = 0;
+    private boolean isPossible(int x, int[] nums, int maxOperations) {
+        int ops = 0;
 
         for (int num : nums) {
-            int operations = (int) Math.ceil(num / (double) maxBallsInBag) - 1;
-            totalOperations += operations;
-
-            if (totalOperations > maxOperations) {
+            ops += (num - 1)/x;
+            
+            if (ops > maxOperations) {
                 return false;
             }
         }
