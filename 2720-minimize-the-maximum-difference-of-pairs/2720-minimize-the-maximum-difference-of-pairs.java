@@ -32,10 +32,8 @@ public class Solution {
                 i++;
             }
             
-            if (count == p){
-                return true;
-            } 
         }
-        return false;
+
+        return count >= p;
     }
 }
