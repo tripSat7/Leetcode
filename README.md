@@ -68,6 +68,7 @@ Collection of solved LeetCode questions
 | [2600-maximum-tastiness-of-candy-basket](https://github.com/tripSat7/Leetcode/tree/master/2600-maximum-tastiness-of-candy-basket) |
 | [2665-minimum-time-to-repair-cars](https://github.com/tripSat7/Leetcode/tree/master/2665-minimum-time-to-repair-cars) |
 | [2690-house-robber-iv](https://github.com/tripSat7/Leetcode/tree/master/2690-house-robber-iv) |
+| [2720-minimize-the-maximum-difference-of-pairs](https://github.com/tripSat7/Leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/tripSat7/Leetcode/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
@@ -99,6 +100,7 @@ Collection of solved LeetCode questions
 | [2600-maximum-tastiness-of-candy-basket](https://github.com/tripSat7/Leetcode/tree/master/2600-maximum-tastiness-of-candy-basket) |
 | [2665-minimum-time-to-repair-cars](https://github.com/tripSat7/Leetcode/tree/master/2665-minimum-time-to-repair-cars) |
 | [2690-house-robber-iv](https://github.com/tripSat7/Leetcode/tree/master/2690-house-robber-iv) |
+| [2720-minimize-the-maximum-difference-of-pairs](https://github.com/tripSat7/Leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3790-fruits-into-baskets-ii](https://github.com/tripSat7/Leetcode/tree/master/3790-fruits-into-baskets-ii) |
 ## Sorting
 |  |
@@ -311,6 +313,7 @@ Collection of solved LeetCode questions
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/tripSat7/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
 | [2600-maximum-tastiness-of-candy-basket](https://github.com/tripSat7/Leetcode/tree/master/2600-maximum-tastiness-of-candy-basket) |
+| [2720-minimize-the-maximum-difference-of-pairs](https://github.com/tripSat7/Leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
