@@ -51,6 +51,7 @@ Collection of solved LeetCode questions
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
+| [1886-minimum-limit-of-balls-in-a-bag](https://github.com/tripSat7/Leetcode/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
@@ -90,6 +91,7 @@ Collection of solved LeetCode questions
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
+| [1886-minimum-limit-of-balls-in-a-bag](https://github.com/tripSat7/Leetcode/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
 | [2294-minimum-time-to-complete-trips](https://github.com/tripSat7/Leetcode/tree/master/2294-minimum-time-to-complete-trips) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
