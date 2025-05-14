@@ -28,7 +28,8 @@ public class Solution {
             if (Math.abs(nums[i] - nums[i + 1]) <= threshold) {
                 count++;
                 i += 2;
-            } else {
+            } 
+            else {
                 i++;
             }
             
