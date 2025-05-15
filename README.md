@@ -56,6 +56,7 @@ Collection of solved LeetCode questions
 | [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
+| [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/tripSat7/Leetcode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2294-minimum-time-to-complete-trips](https://github.com/tripSat7/Leetcode/tree/master/2294-minimum-time-to-complete-trips) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
@@ -94,6 +95,7 @@ Collection of solved LeetCode questions
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/tripSat7/Leetcode/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
+| [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/tripSat7/Leetcode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2294-minimum-time-to-complete-trips](https://github.com/tripSat7/Leetcode/tree/master/2294-minimum-time-to-complete-trips) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/tripSat7/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
@@ -307,6 +309,7 @@ Collection of solved LeetCode questions
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/tripSat7/Leetcode/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/tripSat7/Leetcode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2366-maximum-bags-with-full-capacity-of-rocks](https://github.com/tripSat7/Leetcode/tree/master/2366-maximum-bags-with-full-capacity-of-rocks) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
