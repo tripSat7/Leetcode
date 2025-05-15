@@ -26,7 +26,7 @@ class Solution {
         int ops = 0;
 
         for (int num : nums) {
-            ops += (num - 1)/x;
+            ops += (num + x -1)/x - 1;
             
             if (ops > maxOperations) {
                 return false;
