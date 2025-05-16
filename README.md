@@ -14,6 +14,7 @@ Collection of solved LeetCode questions
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/tripSat7/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/tripSat7/Leetcode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/tripSat7/Leetcode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/tripSat7/Leetcode/tree/master/0198-house-robber) |
 | [0238-product-of-array-except-self](https://github.com/tripSat7/Leetcode/tree/master/0238-product-of-array-except-self) |
@@ -83,6 +84,7 @@ Collection of solved LeetCode questions
 ## Binary Search
 |  |
 | ------- |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0300-longest-increasing-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/tripSat7/Leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
