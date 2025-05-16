@@ -7,7 +7,7 @@ class Solution {
             if (nums[mid] == target) return true;
 
             if (nums[low] == nums[mid]) {
-                low++;;
+                low++;
                 continue;
             }
 
