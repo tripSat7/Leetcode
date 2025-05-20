@@ -49,6 +49,7 @@ Collection of solved LeetCode questions
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/tripSat7/Leetcode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/tripSat7/Leetcode/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
@@ -99,6 +100,7 @@ Collection of solved LeetCode questions
 | [0907-koko-eating-bananas](https://github.com/tripSat7/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/tripSat7/Leetcode/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
@@ -123,6 +125,7 @@ Collection of solved LeetCode questions
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
+| [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
@@ -224,6 +227,7 @@ Collection of solved LeetCode questions
 | [1170-shortest-common-supersequence](https://github.com/tripSat7/Leetcode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/tripSat7/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/tripSat7/Leetcode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1512-design-underground-system](https://github.com/tripSat7/Leetcode/tree/master/1512-design-underground-system) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
@@ -521,6 +525,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0802-k-th-smallest-prime-fraction](https://github.com/tripSat7/Leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
+| [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
 | [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
@@ -565,4 +570,8 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/tripSat7/Leetcode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+## Trie
+|  |
+| ------- |
+| [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 <!---LeetCode Topics End-->
