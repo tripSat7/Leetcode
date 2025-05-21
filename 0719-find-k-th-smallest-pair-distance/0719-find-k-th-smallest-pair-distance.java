@@ -1,31 +1,35 @@
 class Solution {
-
-    public int smallestDistancePair(int[] nums, int k) {
-        int arrayLength = nums.length;
-
-        int maxElement = Integer.MIN_VALUE;
-        for (int num : nums) {
-            maxElement = Math.max(maxElement, num);
-        }
-
-        int[] distanceBucket = new int[maxElement + 1];
-
-        for (int i = 0; i < arrayLength; ++i) {
-            for (int j = i + 1; j < arrayLength; ++j) {
-                int distance = Math.abs(nums[i] - nums[j]);
-
-                ++distanceBucket[distance];
+    public int smallestDistancePair(int[] numbers, int k) {
+        Arrays.sort(numbers);
+        int min = 0;
+        int max = numbers[numbers.length - 1] - numbers[0];
+        
+        while (min < max) {
+            int mid = min + (max - min) / 2;
+            int pairsCount = countPairs(numbers, mid);
+            
+            if(pairsCount < k) {
+                min = mid + 1;
+            } 
+            else{
+                max = mid;
             }
         }
+        
+        return min;
+    }
 
-        for (int dist = 0; dist <= maxElement; ++dist) {
-            k -= distanceBucket[dist];
-
-            if (k <= 0) {
-                return dist;
+    private int countPairs(int[] numbers, int targetDistance) {
+        int count = 0;
+        int left = 0;
+        
+        for (int right = 1; right < numbers.length; right++) {
+            while (numbers[right] - numbers[left] > targetDistance) {
+                left++;
             }
+            count += right - left;
         }
-
-        return -1;
+        
+        return count;
     }
 }
