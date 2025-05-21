@@ -2,7 +2,7 @@ class Solution {
 
     public long countFairPairs(int[] nums, int lower, int upper){
         Arrays.sort(nums);
-        return lower_bound(nums, upper + 1) - lower_bound(nums, lower);
+        return lower_bound(nums, upper) - lower_bound(nums, lower - 1);
     }
 
     private long lower_bound(int[] nums, int value){
@@ -10,7 +10,7 @@ class Solution {
         long result = 0;
         while(left < right){
             int sum = nums[left] + nums[right];
-            if(sum < value){
+            if(sum <= value){
                 result += (right - left);
                 left++;
             } 
