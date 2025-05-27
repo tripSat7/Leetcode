@@ -34,6 +34,7 @@ Collection of solved LeetCode questions
 | [0525-contiguous-array](https://github.com/tripSat7/Leetcode/tree/master/0525-contiguous-array) |
 | [0554-brick-wall](https://github.com/tripSat7/Leetcode/tree/master/0554-brick-wall) |
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/tripSat7/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/tripSat7/Leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
@@ -213,6 +214,7 @@ Collection of solved LeetCode questions
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
@@ -220,6 +222,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 ## String
 |  |
 | ------- |
@@ -474,6 +477,7 @@ Collection of solved LeetCode questions
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
 | [0652-find-duplicate-subtrees](https://github.com/tripSat7/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
@@ -494,6 +498,7 @@ Collection of solved LeetCode questions
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0322-coin-change](https://github.com/tripSat7/Leetcode/tree/master/0322-coin-change) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/tripSat7/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
