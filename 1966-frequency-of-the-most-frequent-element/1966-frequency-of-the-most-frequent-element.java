@@ -5,10 +5,9 @@ class Solution {
         long total = 0;
 
         for(int right = 0; right < nums.length; right++){
-            long target = nums[right];
-            total += target;
+            total += nums[right];
 
-            while(target * (right - left + 1) > total + k){
+            while((long)nums[right] * (right - left + 1) > total + k){
                 total = total - nums[left];
                 left++;
             }
