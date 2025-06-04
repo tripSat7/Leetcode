@@ -92,6 +92,7 @@ Collection of solved LeetCode questions
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3463-alternating-groups-i](https://github.com/tripSat7/Leetcode/tree/master/3463-alternating-groups-i) |
 | [3483-alternating-groups-ii](https://github.com/tripSat7/Leetcode/tree/master/3483-alternating-groups-ii) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 | [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
 | [3790-fruits-into-baskets-ii](https://github.com/tripSat7/Leetcode/tree/master/3790-fruits-into-baskets-ii) |
@@ -178,6 +179,7 @@ Collection of solved LeetCode questions
 | [2334-number-of-flowers-in-full-bloom](https://github.com/tripSat7/Leetcode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/tripSat7/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## Hash Table
 |  |
 | ------- |
@@ -216,6 +218,7 @@ Collection of solved LeetCode questions
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/tripSat7/Leetcode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 | [3570-count-of-substrings-containing-every-vowel-and-k-consonants-i](https://github.com/tripSat7/Leetcode/tree/master/3570-count-of-substrings-containing-every-vowel-and-k-consonants-i) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## Matrix
 |  |
 | ------- |
@@ -368,6 +371,7 @@ Collection of solved LeetCode questions
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/tripSat7/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
 ## Counting
 |  |
@@ -396,6 +400,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [1212-sequential-digits](https://github.com/tripSat7/Leetcode/tree/master/1212-sequential-digits) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -434,6 +439,7 @@ Collection of solved LeetCode questions
 | [1250-longest-common-subsequence](https://github.com/tripSat7/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/tripSat7/Leetcode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## Memoization
 |  |
 | ------- |
