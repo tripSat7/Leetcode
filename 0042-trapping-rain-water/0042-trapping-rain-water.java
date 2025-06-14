@@ -17,10 +17,12 @@ class Solution {
         }
 		
 		for (int i = 0; i < n; i++){
-            //System.out.println(left[i]+" : "+right[i]+" : "+arr[i]);
             water += Math.min(left[i], right[i]) - arr[i];
         }
 			
 		return water;
     }
 }
+
+//Time complexity: O(n)
+//Space : O(n) extra space
