@@ -10,10 +10,10 @@ class Solution {
             if (height[left] > leftMax) leftMax = height[left]; 
             if (height[right] > rightMax) rightMax = height[right];
             if (leftMax < rightMax) {
-                ans += Math.max(0, leftMax - height[left]); 
+                ans += leftMax - height[left]; 
                 left++; 
             } else {
-                ans += Math.max(0, rightMax - height[right]); 
+                ans += rightMax - height[right]; 
                 right--; 
             }
         }
