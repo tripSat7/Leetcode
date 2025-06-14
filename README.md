@@ -15,6 +15,7 @@ Collection of solved LeetCode questions
 | [0075-sort-colors](https://github.com/tripSat7/Leetcode/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/tripSat7/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0120-triangle](https://github.com/tripSat7/Leetcode/tree/master/0120-triangle) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/tripSat7/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/tripSat7/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/tripSat7/Leetcode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -432,6 +433,7 @@ Collection of solved LeetCode questions
 | [0096-unique-binary-search-trees](https://github.com/tripSat7/Leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0120-triangle](https://github.com/tripSat7/Leetcode/tree/master/0120-triangle) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/tripSat7/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/tripSat7/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/tripSat7/Leetcode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
