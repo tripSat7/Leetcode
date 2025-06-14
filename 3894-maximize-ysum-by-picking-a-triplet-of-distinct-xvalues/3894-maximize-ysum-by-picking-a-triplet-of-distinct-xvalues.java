@@ -11,6 +11,7 @@ class Solution {
         }
 
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+
         for (int val : map.values()) {
             maxHeap.add(val);
         }
@@ -23,3 +24,11 @@ class Solution {
         return sum;
     }
 }
+
+/* Time complexity
+map.values() takes O(m), where m is the number of unique keys .
+maxHeap O(log m) per insertion.
+ O(m log m)
+
+ Total time complexity = O(n + mlogm)
+*/
