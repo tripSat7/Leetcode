@@ -100,6 +100,7 @@ Collection of solved LeetCode questions
 | [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
 | [3790-fruits-into-baskets-ii](https://github.com/tripSat7/Leetcode/tree/master/3790-fruits-into-baskets-ii) |
+| [3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues](https://github.com/tripSat7/Leetcode/tree/master/3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues) |
 ## Binary Search
 |  |
 | ------- |
@@ -166,6 +167,7 @@ Collection of solved LeetCode questions
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
+| [3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues](https://github.com/tripSat7/Leetcode/tree/master/3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -228,6 +230,7 @@ Collection of solved LeetCode questions
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/tripSat7/Leetcode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 | [3570-count-of-substrings-containing-every-vowel-and-k-consonants-i](https://github.com/tripSat7/Leetcode/tree/master/3570-count-of-substrings-containing-every-vowel-and-k-consonants-i) |
 | [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+| [3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues](https://github.com/tripSat7/Leetcode/tree/master/3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues) |
 ## Matrix
 |  |
 | ------- |
@@ -391,6 +394,7 @@ Collection of solved LeetCode questions
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/tripSat7/Leetcode/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3751-maximum-frequency-after-subarray-operation](https://github.com/tripSat7/Leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 | [3779-eat-pizzas](https://github.com/tripSat7/Leetcode/tree/master/3779-eat-pizzas) |
+| [3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues](https://github.com/tripSat7/Leetcode/tree/master/3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues) |
 ## Counting
 |  |
 | ------- |
@@ -607,6 +611,7 @@ Collection of solved LeetCode questions
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
 | [3759-choose-k-elements-with-maximum-sum](https://github.com/tripSat7/Leetcode/tree/master/3759-choose-k-elements-with-maximum-sum) |
+| [3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues](https://github.com/tripSat7/Leetcode/tree/master/3894-maximize-ysum-by-picking-a-triplet-of-distinct-xvalues) |
 ## Backtracking
 |  |
 | ------- |
