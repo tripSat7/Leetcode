@@ -31,6 +31,7 @@ Collection of solved LeetCode questions
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/tripSat7/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/tripSat7/Leetcode/tree/master/0322-coin-change) |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0354-russian-doll-envelopes](https://github.com/tripSat7/Leetcode/tree/master/0354-russian-doll-envelopes) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0416-partition-equal-subset-sum](https://github.com/tripSat7/Leetcode/tree/master/0416-partition-equal-subset-sum) |
@@ -143,6 +144,7 @@ Collection of solved LeetCode questions
 | [0075-sort-colors](https://github.com/tripSat7/Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0354-russian-doll-envelopes](https://github.com/tripSat7/Leetcode/tree/master/0354-russian-doll-envelopes) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/tripSat7/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0778-reorganize-string](https://github.com/tripSat7/Leetcode/tree/master/0778-reorganize-string) |
@@ -200,6 +202,7 @@ Collection of solved LeetCode questions
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0523-continuous-subarray-sum](https://github.com/tripSat7/Leetcode/tree/master/0523-continuous-subarray-sum) |
@@ -401,6 +404,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0778-reorganize-string](https://github.com/tripSat7/Leetcode/tree/master/0778-reorganize-string) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
@@ -607,6 +611,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0778-reorganize-string](https://github.com/tripSat7/Leetcode/tree/master/0778-reorganize-string) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/tripSat7/Leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
@@ -656,6 +661,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/tripSat7/Leetcode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 ## Trie
 |  |
@@ -669,4 +675,12 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
