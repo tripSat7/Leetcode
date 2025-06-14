@@ -1,17 +1,14 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        int r = grid.length;
-        int c = grid[0].length;
-        Set<String> visited = new HashSet<>();
-
-        int directions[][] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        int m = grid.length;
+        int n = grid[0].length;
         int res = 0;
-        for(int i = 0; i < r; i++){
-            for(int j = 0; j < c; j++){ 
-                String st = i + "," + j;
-                if(grid[i][j] == '1' && !visited.contains(st)){
+
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < n; j++){
+                if(grid[i][j] == '1'){
+                    dfs(grid, i, j);
                     res++;
-                    bfs(i, j, grid, visited, directions);
                 }
             }
         }
@@ -19,24 +16,28 @@ class Solution {
         return res;
     }
 
-    public void bfs(int r, int c, char[][] grid, Set<String> visited, int directions[][]){
-        Queue<int []> q = new LinkedList<>();
-        q.add(new int[]{r, c});
-        visited.add(r+ "," + c);
+    public void dfs(char[][] grid, int i, int j){
 
-        while(!q.isEmpty()){
-            int temp[] = q.poll();
-            int row = temp[0], col = temp[1];
-
-            for(int direction[] : directions){
-                int nr = row + direction[0], nc = col + direction[1];
-
-                if(nr >= 0 && nr < grid.length && nc >= 0 && nc < grid[0].length && grid[nr][nc] == '1' && !visited.contains(nr + "," + nc)){
-                    visited.add(nr + "," + nc);
-                    q.add(new int[]{nr, nc});
-                }
-            }
+        if(grid[i][j] == '0'){
+            return;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        grid[i][j] = '0';
+        if(i + 1 < m){
+            dfs(grid, i+1, j);
         }
 
+        if(i - 1 >= 0){
+            dfs(grid, i-1, j);
+        }
+
+        if(j + 1 < n){
+            dfs(grid, i, j+1);
+        }
+
+        if(j - 1 >= 0){
+            dfs(grid, i, j-1);
+        }
     }
 }
