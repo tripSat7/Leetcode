@@ -1,34 +1,39 @@
 class Solution {
     public int maxSumDistinctTriplet(int[] x, int[] y) {
-        HashMap<Integer, Integer> map = new HashMap<>();
+        int a = 0, b = 0, c = 0;
+        int ind1 = 0, ind2 = 0, ind3 = 0;
 
-        for(int i = 0; i < x.length; i++){
-            map.put(x[i], Math.max(y[i], map.getOrDefault(x[i], 0) ) );
+        for (int i = 0; i < x.length; i++) {
+            if (x[i] == ind1) {
+                a = Math.max(a, y[i]);
+            } 
+            else if (x[i] == ind2) {
+                b = Math.max(b, y[i]);
+            } 
+            else if (x[i] == ind3) {
+                c = Math.max(c, y[i]);
+            } 
+            else if (y[i] > a || y[i] > b || y[i] > c) {
+                int mini = Math.min(a, Math.min(b, c));
+                if (mini == a) {
+                    a = y[i];
+                    ind1 = x[i];
+                }
+                else if (mini == b) {
+                    b = y[i];
+                    ind2 = x[i];
+                } 
+                else {
+                    c = y[i];
+                    ind3 = x[i];
+                }
+            }
         }
 
-        if(map.size() < 3){
-            return -1;
-        }
-
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
-
-        for (int val : map.values()) {
-            maxHeap.add(val);
-        }
-
-        int sum = 0;
-        for (int i = 0; i < 3; i++) {
-            sum += maxHeap.poll();
-        }
-
-        return sum;
+        return (a == 0 || b == 0 || c == 0) ? -1 : (a + b + c);
     }
 }
 
-/* Time complexity
-map.values() takes O(m), where m is the number of unique keys .
-maxHeap O(log m) per insertion.
- O(m log m)
-
- Total time complexity = O(n + mlogm)
+/* Time complexity : O(n)
+space : O(1)
 */
