@@ -191,6 +191,7 @@ Collection of solved LeetCode questions
 | [0073-set-matrix-zeroes](https://github.com/tripSat7/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0076-minimum-window-substring](https://github.com/tripSat7/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -279,6 +280,7 @@ Collection of solved LeetCode questions
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -634,6 +636,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/tripSat7/Leetcode/tree/master/0116-populating-next-right-pointers-in-each-node) |
+| [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Divide and Conquer
 |  |
@@ -648,4 +651,8 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
