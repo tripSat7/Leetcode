@@ -1,33 +1,42 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        int rowLength = grid.length;
-        int columnLength = grid[0].length;
-        int noOfIsnlands =0;
+        int r = grid.length;
+        int c = grid[0].length;
+        Set<String> visited = new HashSet<>();
 
-        for(int r=0; r< rowLength;r++){
-            for(int c=0; c< columnLength;c++){
-                if(grid[r][c] == '1'){
-                    checkIsland(grid,r,c);
-                    noOfIsnlands++;
+        int directions[][] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        int res = 0;
+        for(int i = 0; i < r; i++){
+            for(int j = 0; j < c; j++){ 
+                String st = i + "," + j;
+                if(grid[i][j] == '1' && !visited.contains(st)){
+                    res++;
+                    bfs(i, j, grid, visited, directions);
                 }
             }
         }
-       return noOfIsnlands;
+
+        return res;
     }
 
-    public void checkIsland(char[][] grid, int row, int column){
-        int rowLength = grid.length;
-        int columnLength = grid[0].length;
+    public void bfs(int r, int c, char[][] grid, Set<String> visited, int directions[][]){
+        Queue<int []> q = new LinkedList<>();
+        q.add(new int[]{r, c});
+        visited.add(r+ "," + c);
 
-        if( row < 0 || column <0 || row >= rowLength || column >= columnLength ||
-            grid[row][column] == '0'){
-                return;
+        while(!q.isEmpty()){
+            int temp[] = q.poll();
+            int row = temp[0], col = temp[1];
+
+            for(int direction[] : directions){
+                int nr = row + direction[0], nc = col + direction[1];
+
+                if(nr >= 0 && nr < grid.length && nc >= 0 && nc < grid[0].length && grid[nr][nc] == '1' && !visited.contains(nr + "," + nc)){
+                    visited.add(nr + "," + nc);
+                    q.add(new int[]{nr, nc});
+                }
             }
-        
-        grid[row][column]='0';
-        checkIsland(grid, row+1, column);
-        checkIsland(grid, row-1, column);
-        checkIsland(grid, row, column-1);
-        checkIsland(grid, row, column+1);
+        }
+
     }
 }
