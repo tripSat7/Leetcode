@@ -7,7 +7,7 @@ class Solution {
         for(int end = 0; end < ans.length; end ++){
             arr[ans[end] - 'A']++;
             maxFreq = Math.max(maxFreq, arr[ans[end] - 'A']);
-            while(end - beg + 1 > k + maxFreq){
+            while(end - beg + 1 - maxFreq > k){
                 arr[ans[beg] - 'A']--;
                 beg ++;
             }
