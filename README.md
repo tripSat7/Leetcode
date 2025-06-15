@@ -11,6 +11,7 @@ Collection of solved LeetCode questions
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/tripSat7/Leetcode/tree/master/0045-jump-game-ii) |
+| [0049-group-anagrams](https://github.com/tripSat7/Leetcode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/tripSat7/Leetcode/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
@@ -143,6 +144,7 @@ Collection of solved LeetCode questions
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/tripSat7/Leetcode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/tripSat7/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/tripSat7/Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
@@ -199,6 +201,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
+| [0049-group-anagrams](https://github.com/tripSat7/Leetcode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/tripSat7/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0076-minimum-window-substring](https://github.com/tripSat7/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -269,6 +272,7 @@ Collection of solved LeetCode questions
 | [0022-generate-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
+| [0049-group-anagrams](https://github.com/tripSat7/Leetcode/tree/master/0049-group-anagrams) |
 | [0072-edit-distance](https://github.com/tripSat7/Leetcode/tree/master/0072-edit-distance) |
 | [0076-minimum-window-substring](https://github.com/tripSat7/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
