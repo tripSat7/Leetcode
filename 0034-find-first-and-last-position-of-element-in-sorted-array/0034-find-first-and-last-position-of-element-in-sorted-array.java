@@ -36,3 +36,5 @@ class Solution {
         return bound;
     }
 }
+//TC : O(logn)
+//SC : O(1)
