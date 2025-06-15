@@ -18,7 +18,7 @@ class Solution {
             near = far + 1;
             far = farthest;
 
-            // Increment jump count
+            // either way 1 step or we move to farthest so incrementing
             jumps++;
         }
 
