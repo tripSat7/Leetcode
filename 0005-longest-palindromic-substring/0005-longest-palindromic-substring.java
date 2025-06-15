@@ -1,31 +1,36 @@
-class Solution {
+public class Solution {
     public String longestPalindrome(String s) {
-        for (int length = s.length(); length > 0; length--) {
-            for (int start = 0; start <= s.length() - length; start++) {
-                if (check(start, start + length, s)) {
-                    return s.substring(start, start + length);
-                }
+        if (s.length() <= 1) {
+            return s;
+        }
+
+        String maxStr = s.substring(0, 1);
+
+        for (int i = 0; i < s.length() - 1; i++) {
+            // Check for odd-length palindromes (centered at i)
+            String odd = expandFromCenter(s, i, i);
+            // Check for even-length palindromes
+            String even = expandFromCenter(s, i, i + 1);
+
+            if (odd.length() > maxStr.length()) {
+                maxStr = odd;
+            }
+            if (even.length() > maxStr.length()) {
+                maxStr = even;
             }
         }
 
-        return "";
+        return maxStr;
     }
 
-    private boolean check(int i, int j, String s) {
-        int left = i;
-        int right = j - 1;
-
-        while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) {
-                return false;
-            }
-
-            left++;
-            right--;
+    private String expandFromCenter(String s, int left, int right) {
+        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+            left--;
+            right++;
         }
-
-        return true;
+        return s.substring(left + 1, right);
     }
 }
-//TC : O(n^3)
-//space : O(1)
+
+//TC : O(n^2)
+//SC : O(1)
