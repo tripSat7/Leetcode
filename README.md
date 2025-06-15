@@ -265,6 +265,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/tripSat7/Leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0022-generate-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0022-generate-parentheses) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/tripSat7/Leetcode/tree/master/0072-edit-distance) |
 | [0076-minimum-window-substring](https://github.com/tripSat7/Leetcode/tree/master/0076-minimum-window-substring) |
@@ -438,6 +439,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/tripSat7/Leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0022-generate-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
@@ -627,6 +629,7 @@ Collection of solved LeetCode questions
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0022-generate-parentheses) |
 | [0095-unique-binary-search-trees-ii](https://github.com/tripSat7/Leetcode/tree/master/0095-unique-binary-search-trees-ii) |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
 | [0494-target-sum](https://github.com/tripSat7/Leetcode/tree/master/0494-target-sum) |
