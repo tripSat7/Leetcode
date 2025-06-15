@@ -262,6 +262,7 @@ Collection of solved LeetCode questions
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/tripSat7/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/tripSat7/Leetcode/tree/master/0072-edit-distance) |
 | [0076-minimum-window-substring](https://github.com/tripSat7/Leetcode/tree/master/0076-minimum-window-substring) |
@@ -349,6 +350,7 @@ Collection of solved LeetCode questions
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/tripSat7/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0075-sort-colors](https://github.com/tripSat7/Leetcode/tree/master/0075-sort-colors) |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
@@ -433,6 +435,7 @@ Collection of solved LeetCode questions
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/tripSat7/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
