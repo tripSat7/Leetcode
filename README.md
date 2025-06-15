@@ -24,6 +24,7 @@ Collection of solved LeetCode questions
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/tripSat7/Leetcode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/tripSat7/Leetcode/tree/master/0130-surrounded-regions) |
+| [0135-candy](https://github.com/tripSat7/Leetcode/tree/master/0135-candy) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/tripSat7/Leetcode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
@@ -389,6 +390,7 @@ Collection of solved LeetCode questions
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/tripSat7/Leetcode/tree/master/0045-jump-game-ii) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/tripSat7/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0135-candy](https://github.com/tripSat7/Leetcode/tree/master/0135-candy) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/tripSat7/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0778-reorganize-string](https://github.com/tripSat7/Leetcode/tree/master/0778-reorganize-string) |
 | [0797-rabbits-in-forest](https://github.com/tripSat7/Leetcode/tree/master/0797-rabbits-in-forest) |
