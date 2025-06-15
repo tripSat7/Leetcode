@@ -17,9 +17,9 @@ class Solution {
         
         // Add '(' if any are left
         if(left > 0){
-            int len = s.length();
+            int len = s.length(); // Save current length to backtrack
             generation(res, s.append("("), left-1, right);
-            s.setLength(len);
+            s.setLength(len); // Backtrack: restore previous state
         }
 
         //Add ')' only if it won't unbalance the string
