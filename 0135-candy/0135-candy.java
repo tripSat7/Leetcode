@@ -1,34 +1,42 @@
-//Time complexity : O(n)
-//Space complexity : O(n)
-public class Solution {
+// TC : O(n)
+// SC : O(1)
+
+class Solution {
     public int candy(int[] ratings) {
-        int sum = 0;
-        int[] left2right = new int[ratings.length];
-        int[] right2left = new int[ratings.length];
+        int res = 1, i = 1;
+        int n = ratings.length;
 
-        // Every child gets at least one candy
-        Arrays.fill(left2right, 1);
-        Arrays.fill(right2left, 1);
+        while (i < n) {
 
-        // Left to right: ensure higher rated child gets more candy than left neighbor
-        for (int i = 1; i < ratings.length; i++) {
-            if (ratings[i] > ratings[i - 1]) {
-                left2right[i] = left2right[i - 1] + 1;
+            // If ratings are equal, give 1 candy and move on
+            if (ratings[i] == ratings[i - 1]) {
+                res++;
+                i++;
+                continue;
+            }
+
+            // Handle strictly increasing sequence (uphill)
+            int peak = 1;
+            while (i < n && ratings[i] > ratings[i - 1]) {
+                peak++;
+                res += peak;
+                i++;
+            }
+
+            // Handle strictly decreasing sequence (downhill)
+            int downPeak = 1;
+            while (i < n && ratings[i - 1] > ratings[i]) {
+                res += downPeak;
+                downPeak++;
+                i++;
+            }
+
+            // If the downPeak > peak, we didn't give enough candies at the peak to satisfy the decreasing side.
+            if (downPeak > peak) {
+                res += downPeak - peak;
             }
         }
 
-        // Right to left: ensure higher rated child gets more candy than right neighbor
-        for (int i = ratings.length - 2; i >= 0; i--) {
-            if (ratings[i] > ratings[i + 1]) {
-                right2left[i] = right2left[i + 1] + 1;
-            }
-        }
-
-        // Final candy count: take max from both directions for each child
-        for (int i = 0; i < ratings.length; i++) {
-            sum += Math.max(left2right[i], right2left[i]);
-        }
-
-        return sum;
+        return res;
     }
 }
