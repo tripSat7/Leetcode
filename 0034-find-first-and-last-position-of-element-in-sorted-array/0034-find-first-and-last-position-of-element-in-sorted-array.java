@@ -1,40 +1,51 @@
-class Solution {
+public class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int first = findBound(nums, target, true);   // find first (left) index
-        int last = findBound(nums, target, false);   // find last (right) index
-        return new int[] {first, last};
+        int[] res = new int[2];
+        res[0] = findFirst(nums, target);
+        res[1] = findLast(nums, target);
+        return res;
     }
 
-    // Helper function to find boundary
-    private int findBound(int[] nums, int target, boolean isFirst) {
-        int left = 0, right = nums.length - 1;
-        int bound = -1;
+    private int findFirst(int[] nums, int target){
+        int leftBound = -1;
+        int left = 0;
+        int right = nums.length - 1;
+        while(left <= right){
+            int mid = (left + right) / 2;
 
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
-            if (nums[mid] == target) {
-                bound = mid; // potential answer
-
-                // Keep searching to the left (if finding first)
-                if (isFirst) {
-                    right = mid - 1;
-                }
-                // Keep searching to the right (if finding last)
-                else {
-                    left = mid + 1;
-                }
-            } 
-            else if (nums[mid] < target) {
+            if(nums[mid] >= target){
+                right = mid - 1;
+            }else{
                 left = mid + 1;
+            }
+
+            if(nums[mid] == target){
+                leftBound = mid;
             } 
-            else {
+        }
+        return leftBound;
+    }
+
+    private int findLast(int[] nums, int target){
+        int rightBound = -1;
+        int left = 0;
+        int right = nums.length - 1;
+        while(left <= right){
+            int mid = (left + right) / 2;
+            if(nums[mid] <= target){
+                left = mid + 1;
+            }else{
                 right = mid - 1;
             }
-        }
 
-        return bound;
+            if(nums[mid] == target){
+                rightBound = mid;
+            } 
+        }
+        return rightBound;
     }
 }
+
+
 //TC : O(logn)
 //SC : O(1)
