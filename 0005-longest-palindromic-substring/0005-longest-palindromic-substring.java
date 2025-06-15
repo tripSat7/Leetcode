@@ -27,3 +27,5 @@ class Solution {
         return true;
     }
 }
+//TC : O(n^3)
+//space : O(1)
