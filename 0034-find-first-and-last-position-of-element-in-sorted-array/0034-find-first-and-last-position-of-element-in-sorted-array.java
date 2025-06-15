@@ -1,49 +1,38 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int []res = new int[2];
-        res[0] = -1;
-        res[1] = -1;
-        if(nums.length == 0){
-            return new int[]{-1,-1};
-        }
-        else if(nums.length == 1){
-            if(nums[0] == target){
-                return new int[]{0,0};
-            }
-        }
-        else{
-            int left = 0, right = nums.length-1;
-            boolean flag = false;
-            while(left <= right){
-                int mid = left + (right-left)/2;
-                if(nums[mid] >= target){
-                    right = mid - 1;    
-                }
-                else{
-                    left = mid + 1;
-                }
-                
-                if(nums[mid] == target){
-                    res[0] = mid;
-                }
-            }
-            
-            left = 0; right = nums.length-1;
-            while(left <= right){
-                int mid = left + (right-left)/2;
-                if(nums[mid] <= target){
-                    left = mid + 1;    
-                }
-                else{
+        int first = findBound(nums, target, true);   // find first (left) index
+        int last = findBound(nums, target, false);   // find last (right) index
+        return new int[] {first, last};
+    }
+
+    // Helper function to find boundary
+    private int findBound(int[] nums, int target, boolean isFirst) {
+        int left = 0, right = nums.length - 1;
+        int bound = -1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] == target) {
+                bound = mid; // potential answer
+
+                // Keep searching to the left (if finding first)
+                if (isFirst) {
                     right = mid - 1;
                 }
-                
-                if(nums[mid] == target){
-                    res[1] = mid;
+                // Keep searching to the right (if finding last)
+                else {
+                    left = mid + 1;
                 }
-            }     
+            } 
+            else if (nums[mid] < target) {
+                left = mid + 1;
+            } 
+            else {
+                right = mid - 1;
+            }
         }
-        
-        return res;
+
+        return bound;
     }
 }
