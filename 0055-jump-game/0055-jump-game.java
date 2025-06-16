@@ -1,31 +1,19 @@
-// TC: O(n^2)
-// SC: O(n)
-
-enum Index {
-    GOOD,
-    BAD,
-    UNKNOWN,
-}
+// TC: O(n)
+// SC: O(1)
 
 public class Solution {
     public boolean canJump(int[] nums) {
-        Index[] memo = new Index[nums.length];
+        int lastPos = nums.length - 1; // Start from the last index
 
-        for (int i = 0; i < memo.length; i++) {
-            memo[i] = Index.UNKNOWN;
-        }
-        memo[memo.length - 1] = Index.GOOD;
-
-        for (int i = nums.length - 2; i >= 0; i--) {
-            int furthestJump = Math.min(i + nums[i], nums.length - 1);
-            for (int j = i + 1; j <= furthestJump; j++) {
-                if (memo[j] == Index.GOOD) {
-                    memo[i] = Index.GOOD;
-                    break;
-                }
+        // Traverse backwards to find if we can reach lastPos from earlier indices
+        for (int i = nums.length - 1; i >= 0; i--) {
+            // If the current position can reach or go beyond lastPos
+            if (i + nums[i] >= lastPos) {
+                lastPos = i; // Update lastPos to current index
             }
         }
 
-        return memo[0] == Index.GOOD;
+        // If we’ve moved lastPos all the way back to 0, it’s reachable
+        return lastPos == 0;
     }
 }
