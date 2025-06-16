@@ -14,6 +14,7 @@ Collection of solved LeetCode questions
 | [0045-jump-game-ii](https://github.com/tripSat7/Leetcode/tree/master/0045-jump-game-ii) |
 | [0048-rotate-image](https://github.com/tripSat7/Leetcode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/tripSat7/Leetcode/tree/master/0049-group-anagrams) |
+| [0055-jump-game](https://github.com/tripSat7/Leetcode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/tripSat7/Leetcode/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
@@ -400,6 +401,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/tripSat7/Leetcode/tree/master/0045-jump-game-ii) |
+| [0055-jump-game](https://github.com/tripSat7/Leetcode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/tripSat7/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0135-candy](https://github.com/tripSat7/Leetcode/tree/master/0135-candy) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/tripSat7/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
@@ -465,6 +467,7 @@ Collection of solved LeetCode questions
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/tripSat7/Leetcode/tree/master/0045-jump-game-ii) |
+| [0055-jump-game](https://github.com/tripSat7/Leetcode/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0064-minimum-path-sum) |
