@@ -6,12 +6,13 @@ class Solution {
             int mid = (low + high) / 2;
             if (nums[mid] == target) return true;
 
-            if (nums[low] == nums[mid]) {
+            if (nums[low] == nums[mid] && nums[mid] == nums[high]) {// for this case: 3,1,2,3,3,3,3
                 low++;
+                high--;
                 continue;
             }
 
-            if (nums[low] <= nums[mid]) {
+            if (nums[low] <= nums[mid]) { //left subarray sorted
                 if (nums[low] <= target && target <= nums[mid]){
                     high = mid - 1;
                 }
@@ -19,7 +20,7 @@ class Solution {
                     low = mid + 1;
                 } 
             } 
-            else {
+            else { //right subarray sorted
                 if (nums[mid] <= target && target <= nums[high]){
                     low = mid + 1;  
                 }
