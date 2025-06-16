@@ -1,23 +1,22 @@
 // Time Complexity: O(m * n)
-// Space Complexity: O(m * n) for dp table
+// Space Complexity: O(n) for dp table
 
 public class Solution {
     public int uniquePaths(int m, int n) {
-        // Create DP table with extra row and column to avoid boundary checks
-        int[][] dp = new int[m + 1][n + 1];
+    
+        int[] dp = new int[n];
+        Arrays.fill(dp, 1); // Only one way to reach destination from last row
 
-        // Base case: only 1 way to reach bottom-right cell from itself
-        dp[m - 1][n - 1] = 1;
-
-        // Fill the table from bottom-right to top-left
-        for (int i = m - 1; i >= 0; i--) {
-            for (int j = n - 1; j >= 0; j--) {
-                // Add paths from the cell below and the cell to the right
-                dp[i][j] += dp[i + 1][j] + dp[i][j + 1];
+        // Start from the second-last row upwards
+        for (int i = m - 2; i >= 0; i--) {
+            // Move from second-last column to the left
+            for (int j = n - 2; j >= 0; j--) {
+                // Add paths from the cell to the right
+                dp[j] += dp[j + 1];
             }
         }
 
-        // The result is the number of unique paths from top-left
-        return dp[0][0];
+        // dp[0] will hold the result for top-left cell
+        return dp[0];
     }
 }
