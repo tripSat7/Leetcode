@@ -1,37 +1,20 @@
+// TC : O(m + n)
+
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
 
+        int row = 0;
+        int col = matrix[0].length - 1;
         
-        
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        int up = 0, down = rows-1;
-        int left = 0, right = cols-1;
-        
-        while(up <= down){
-            int mid = up + (down - up)/2;
-            if(matrix[mid][0] == target){
+        while (row < matrix.length && col >= 0) {
+            if (matrix[row][col] == target) {
                 return true;
-            }
-            else if(matrix[mid][0] < target){
-                up = mid+1;
-            }
-            else{
-                down = mid-1;
-            }
-        }
-        while(left <= right && down >= 0){
-            
-            int mid = left + (right - left)/2;
-            if(matrix[down][mid] == target){
-                return true;
-            }
-            else if(matrix[down][mid] < target){
-                left = mid + 1;
-                
-            }
-            else{
-                right = mid-1;
+            } 
+            else if (target < matrix[row][col]) {
+                col--;
+            } 
+            else {
+                row++;
             }
         }
         
