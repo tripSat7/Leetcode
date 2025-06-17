@@ -321,6 +321,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
+| [0155-min-stack](https://github.com/tripSat7/Leetcode/tree/master/0155-min-stack) |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -402,6 +403,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
+| [0155-min-stack](https://github.com/tripSat7/Leetcode/tree/master/0155-min-stack) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 ## Greedy
