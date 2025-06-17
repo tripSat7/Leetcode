@@ -38,6 +38,7 @@ Collection of solved LeetCode questions
 | [0213-house-robber-ii](https://github.com/tripSat7/Leetcode/tree/master/0213-house-robber-ii) |
 | [0238-product-of-array-except-self](https://github.com/tripSat7/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0240-search-a-2d-matrix-ii](https://github.com/tripSat7/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0252-meeting-rooms](https://github.com/tripSat7/Leetcode/tree/master/0252-meeting-rooms) |
 | [0300-longest-increasing-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/tripSat7/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
@@ -160,6 +161,7 @@ Collection of solved LeetCode questions
 | [0056-merge-intervals](https://github.com/tripSat7/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/tripSat7/Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
+| [0252-meeting-rooms](https://github.com/tripSat7/Leetcode/tree/master/0252-meeting-rooms) |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0354-russian-doll-envelopes](https://github.com/tripSat7/Leetcode/tree/master/0354-russian-doll-envelopes) |
