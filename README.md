@@ -295,6 +295,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/tripSat7/Leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0008-string-to-integer-atoi](https://github.com/tripSat7/Leetcode/tree/master/0008-string-to-integer-atoi) |
 | [0022-generate-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
