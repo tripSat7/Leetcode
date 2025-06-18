@@ -1,3 +1,5 @@
+// Time Complexity: O(N * M), worst case the entire grid needs to be traversed
+// Space Complexity: O(N)
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         
