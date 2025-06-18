@@ -55,17 +55,17 @@ class LRUCache {
     }
 
     // Helper: add node right after head
-    private void addToFront(Node node) {
-        node.next = head.next;
-        node.prev = head;
-        head.next.prev = node;
-        head.next = node;
+    private void addToFront(Node addnode) {
+        addnode.next = head.next;
+        addnode.prev = head;
+        head.next.prev = addnode;
+        head.next = addnode;
     }
 
     // Helper: unlink node from list
-    private void remove(Node node) {
-        node.prev.next = node.next;
-        node.next.prev = node.prev;
+    private void remove(Node remNode) {
+        remNode.prev.next = remNode.next;
+        remNode.next.prev = remNode.prev;
     }
 }
 
