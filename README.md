@@ -229,6 +229,7 @@ Collection of solved LeetCode questions
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0424-longest-repeating-character-replacement](https://github.com/tripSat7/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0460-lfu-cache](https://github.com/tripSat7/Leetcode/tree/master/0460-lfu-cache) |
 | [0523-continuous-subarray-sum](https://github.com/tripSat7/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0525-contiguous-array](https://github.com/tripSat7/Leetcode/tree/master/0525-contiguous-array) |
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
@@ -330,6 +331,7 @@ Collection of solved LeetCode questions
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0460-lfu-cache](https://github.com/tripSat7/Leetcode/tree/master/0460-lfu-cache) |
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
 | [1512-design-underground-system](https://github.com/tripSat7/Leetcode/tree/master/1512-design-underground-system) |
 | [2104-operations-on-tree](https://github.com/tripSat7/Leetcode/tree/master/2104-operations-on-tree) |
@@ -711,6 +713,7 @@ Collection of solved LeetCode questions
 | [0092-reverse-linked-list-ii](https://github.com/tripSat7/Leetcode/tree/master/0092-reverse-linked-list-ii) |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/tripSat7/Leetcode/tree/master/0116-populating-next-right-pointers-in-each-node) |
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
+| [0460-lfu-cache](https://github.com/tripSat7/Leetcode/tree/master/0460-lfu-cache) |
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Divide and Conquer
 |  |
@@ -732,6 +735,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
+| [0460-lfu-cache](https://github.com/tripSat7/Leetcode/tree/master/0460-lfu-cache) |
 ## Bucket Sort
 |  |
 | ------- |
