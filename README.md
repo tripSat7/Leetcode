@@ -255,6 +255,7 @@ Collection of solved LeetCode questions
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/tripSat7/Leetcode/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/tripSat7/Leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/tripSat7/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/tripSat7/Leetcode/tree/master/2677-cousins-in-binary-tree-ii) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/tripSat7/Leetcode/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/tripSat7/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
@@ -323,6 +324,7 @@ Collection of solved LeetCode questions
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/tripSat7/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/tripSat7/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/tripSat7/Leetcode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 | [3570-count-of-substrings-containing-every-vowel-and-k-consonants-i](https://github.com/tripSat7/Leetcode/tree/master/3570-count-of-substrings-containing-every-vowel-and-k-consonants-i) |
@@ -418,6 +420,7 @@ Collection of solved LeetCode questions
 | [0155-min-stack](https://github.com/tripSat7/Leetcode/tree/master/0155-min-stack) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/tripSat7/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 ## Greedy
 |  |
 | ------- |
@@ -442,6 +445,7 @@ Collection of solved LeetCode questions
 | [2366-maximum-bags-with-full-capacity-of-rocks](https://github.com/tripSat7/Leetcode/tree/master/2366-maximum-bags-with-full-capacity-of-rocks) |
 | [2487-optimal-partition-of-string](https://github.com/tripSat7/Leetcode/tree/master/2487-optimal-partition-of-string) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/tripSat7/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/tripSat7/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
 | [2600-maximum-tastiness-of-candy-basket](https://github.com/tripSat7/Leetcode/tree/master/2600-maximum-tastiness-of-candy-basket) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/tripSat7/Leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
