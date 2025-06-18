@@ -1,20 +1,22 @@
+// Time Complexity: O(1) for both get and put operations (amortized)
+// Space Complexity: O(capacity) for the hashmap and linked list nodes
+
 class LRUCache {
 
-    class Node{
-        int key;
-        int val;
-        Node next, prev;
-
-        Node(int key, int val){
-            this.key = key;
-            this.val = val;
+    // Doubly-linked list node
+    class Node {
+        int key, val;
+        Node prev, next;
+        Node(int k, int v){ 
+            key = k; 
+            val = v; 
         }
     }
 
-    Node head = new Node(-1, -1);
-    Node tail = new Node(-1, -1);
-    HashMap<Integer, Node> map = new HashMap<>();
-    int capacity;
+    private int capacity;
+    private Map<Integer, Node> map = new HashMap<>();
+    private Node head = new Node(-1, -1);  // Dummy head
+    private Node tail = new Node(-1, -1);  // Dummy tail
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
@@ -23,57 +25,50 @@ class LRUCache {
     }
     
     public int get(int key) {
-        if(!map.containsKey(key)){
-            return -1;
-        }
+        // If not present, return -1
+        if (!map.containsKey(key)) return -1;
 
-        Node remNode = map.get(key);
-        int res = remNode.val;
-        map.remove(key);
-        remove(remNode);
-
-        addNode(remNode);
-        map.put(key, remNode);
-
-        return res;
+        // Move accessed node to front (most recently used)
+        Node node = map.get(key);
+        remove(node);
+        addToFront(node);
+        return node.val;
     }
     
     public void put(int key, int value) {
-        if(map.containsKey(key)){
-            Node remNode = map.get(key);
-            remove(remNode);
+        // If key exists, remove old node
+        if (map.containsKey(key)) {
+            Node old = map.get(key);
+            remove(old);
             map.remove(key);
         }
-
-        if(map.size() == capacity){
-            map.remove(tail.prev.key);
-            remove(tail.prev);
+        // If at capacity, evict least recently used (tail.prev)
+        if (map.size() == capacity) {
+            Node lru = tail.prev;
+            remove(lru);
+            map.remove(lru.key);
         }
-
-        Node newNode = new Node(key, value);
-        addNode(newNode);
-        map.put(key, newNode);
+        // Insert new node at front
+        Node node = new Node(key, value);
+        addToFront(node);
+        map.put(key, node);
     }
 
-    public void addNode(Node newNode){
-        Node temp = newNode;
-
-        temp.prev = head;
-        temp.next = head.next;
-
-        temp.next.prev = temp;
-
-        head.next = temp;
+    // Helper: add node right after head
+    private void addToFront(Node node) {
+        node.next = head.next;
+        node.prev = head;
+        head.next.prev = node;
+        head.next = node;
     }
 
-    public void remove(Node remNode){
-        Node prevNode = remNode.prev;
-        Node nextNode = remNode.next;
-
-        prevNode.next = nextNode;
-        nextNode.prev = prevNode;
+    // Helper: unlink node from list
+    private void remove(Node node) {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
     }
 }
+
 
 /**
  * Your LRUCache object will be instantiated and called as such:
