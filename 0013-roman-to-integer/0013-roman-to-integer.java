@@ -1,49 +1,33 @@
+// TC : O(n), n = length of string
+// SC : O(1)
+
+// Intuition: when a smaller value appears before a larger value, it represents subtraction, 
+// and while when a smaller value appears after or equal to a larger value, it represents addition.
 class Solution {
     public int romanToInt(String s) {
-        char ch[] = s.toCharArray();
-        int res=0;
-        for(int i=0; i<ch.length; i++){
-            if(ch[i]=='I'){
-                if(i+1<ch.length && ch[i+1]=='V'){
-                    res = res + 4;
-                    i+=1;
-                }else if(i+1<ch.length && ch[i+1]=='X'){
-                    res = res + 9;
-                    i+=1;
-                }else{
-                    res = res + 1;
-                }
-            }else if(ch[i]=='X'){
-                if(i+1<ch.length && ch[i+1]=='L'){
-                    res = res + 40;
-                    i++;
-                }else if(i+1<ch.length && ch[i+1]=='C'){
-                    res = res + 90;
-                    i++;
-                }else{
-                    res = res + 10;
-                }
-            }else if(ch[i]=='C'){
-                if(i+1<ch.length && ch[i+1]=='D'){
-                    res = res + 400;
-                    i++;
-                }else if(i+1<ch.length && ch[i+1]=='M'){
-                    res = res + 900;
-                    i++;
-                }else{
-                    res = res + 100;
-                }
-            }else if(ch[i]=='V'){
-                res+=5;
-            }else if(ch[i]=='L'){
-                res+=50;
-            }else if(ch[i]=='D'){
-                res+=500;
-            }else{
-                res+=1000;
+        Map<Character, Integer> m = new HashMap<>();
+        
+        m.put('I', 1);
+        m.put('V', 5);
+        m.put('X', 10);
+        m.put('L', 50);
+        m.put('C', 100);
+        m.put('D', 500);
+        m.put('M', 1000);
+        
+        int ans = 0;
+        
+        // Iterate through the string, checking for subtraction cases
+        for (int i = 0; i < s.length(); i++) {
+            // If the current character is less than the next, subtract it (e.g., IV, IX)
+            if (i < s.length() - 1 && m.get(s.charAt(i)) < m.get(s.charAt(i + 1))) {
+                ans -= m.get(s.charAt(i));
+            } else {
+                // Otherwise, add its value
+                ans += m.get(s.charAt(i));
             }
         }
-            
-        return res;
+        
+        return ans;
     }
 }
