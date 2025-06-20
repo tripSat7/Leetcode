@@ -72,6 +72,7 @@ Collection of solved LeetCode questions
 | [0945-snakes-and-ladders](https://github.com/tripSat7/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0974-reorder-data-in-log-files](https://github.com/tripSat7/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1036-rotting-oranges](https://github.com/tripSat7/Leetcode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1072-next-greater-node-in-linked-list](https://github.com/tripSat7/Leetcode/tree/master/1072-next-greater-node-in-linked-list) |
@@ -175,6 +176,7 @@ Collection of solved LeetCode questions
 | [0802-k-th-smallest-prime-fraction](https://github.com/tripSat7/Leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
+| [0974-reorder-data-in-log-files](https://github.com/tripSat7/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -317,6 +319,7 @@ Collection of solved LeetCode questions
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0583-delete-operation-for-two-strings](https://github.com/tripSat7/Leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0778-reorganize-string](https://github.com/tripSat7/Leetcode/tree/master/0778-reorganize-string) |
+| [0974-reorder-data-in-log-files](https://github.com/tripSat7/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1170-shortest-common-supersequence](https://github.com/tripSat7/Leetcode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/tripSat7/Leetcode/tree/master/1250-longest-common-subsequence) |
