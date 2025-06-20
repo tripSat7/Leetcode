@@ -220,6 +220,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0012-integer-to-roman](https://github.com/tripSat7/Leetcode/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/tripSat7/Leetcode/tree/master/0013-roman-to-integer) |
 | [0036-valid-sudoku](https://github.com/tripSat7/Leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/tripSat7/Leetcode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/tripSat7/Leetcode/tree/master/0073-set-matrix-zeroes) |
@@ -299,6 +300,7 @@ Collection of solved LeetCode questions
 | [0005-longest-palindromic-substring](https://github.com/tripSat7/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0008-string-to-integer-atoi](https://github.com/tripSat7/Leetcode/tree/master/0008-string-to-integer-atoi) |
 | [0012-integer-to-roman](https://github.com/tripSat7/Leetcode/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/tripSat7/Leetcode/tree/master/0013-roman-to-integer) |
 | [0022-generate-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
@@ -362,6 +364,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0012-integer-to-roman](https://github.com/tripSat7/Leetcode/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/tripSat7/Leetcode/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/tripSat7/Leetcode/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0096-unique-binary-search-trees](https://github.com/tripSat7/Leetcode/tree/master/0096-unique-binary-search-trees) |
