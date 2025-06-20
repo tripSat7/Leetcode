@@ -15,6 +15,7 @@ Collection of solved LeetCode questions
 | [0045-jump-game-ii](https://github.com/tripSat7/Leetcode/tree/master/0045-jump-game-ii) |
 | [0048-rotate-image](https://github.com/tripSat7/Leetcode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/tripSat7/Leetcode/tree/master/0049-group-anagrams) |
+| [0053-maximum-subarray](https://github.com/tripSat7/Leetcode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/tripSat7/Leetcode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/tripSat7/Leetcode/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
@@ -503,6 +504,7 @@ Collection of solved LeetCode questions
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/tripSat7/Leetcode/tree/master/0045-jump-game-ii) |
+| [0053-maximum-subarray](https://github.com/tripSat7/Leetcode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/tripSat7/Leetcode/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/tripSat7/Leetcode/tree/master/0063-unique-paths-ii) |
@@ -741,6 +743,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/tripSat7/Leetcode/tree/master/0004-median-of-two-sorted-arrays) |
+| [0053-maximum-subarray](https://github.com/tripSat7/Leetcode/tree/master/0053-maximum-subarray) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0240-search-a-2d-matrix-ii](https://github.com/tripSat7/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
