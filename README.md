@@ -317,6 +317,7 @@ Collection of solved LeetCode questions
 | [0079-word-search](https://github.com/tripSat7/Leetcode/tree/master/0079-word-search) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
+| [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
 | [0412-fizz-buzz](https://github.com/tripSat7/Leetcode/tree/master/0412-fizz-buzz) |
 | [0424-longest-repeating-character-replacement](https://github.com/tripSat7/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -377,6 +378,7 @@ Collection of solved LeetCode questions
 | [0048-rotate-image](https://github.com/tripSat7/Leetcode/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0096-unique-binary-search-trees](https://github.com/tripSat7/Leetcode/tree/master/0096-unique-binary-search-trees) |
+| [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0412-fizz-buzz](https://github.com/tripSat7/Leetcode/tree/master/0412-fizz-buzz) |
 | [0523-continuous-subarray-sum](https://github.com/tripSat7/Leetcode/tree/master/0523-continuous-subarray-sum) |
@@ -435,6 +437,7 @@ Collection of solved LeetCode questions
 | [0032-longest-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/tripSat7/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0155-min-stack](https://github.com/tripSat7/Leetcode/tree/master/0155-min-stack) |
+| [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
 | [1072-next-greater-node-in-linked-list](https://github.com/tripSat7/Leetcode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/tripSat7/Leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/tripSat7/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
@@ -727,6 +730,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
+| [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
 ## Simulation
 |  |
 | ------- |
