@@ -1,51 +1,57 @@
+// Time Complexity: O(n) Each element is processed at most twice
+// Space Complexity: O(1)
+
 class Solution {
-    public int firstMissingPositive(int[] arr) {
-     
-        int ptr = 0;
-        int size = arr.length;
-        for(int j = 0; j < size; j++){
-            if(arr[j] <= 0){
-                arr[j] = -1;
-            }
-            if(arr[j] == 1){
-                ptr = 1;
-                arr[j] = -1;
+    public int firstMissingPositive(int[] nums) {
+        int n = nums.length;
+        boolean foundOne = false;
+
+        // Mark unusable values and check if '1' exists
+        for (int i = 0; i < n; i++) {
+            if (nums[i] == 1) {
+                foundOne = true;  // Track if '1' is present
+                nums[i] = -1;     // Temporarily mark as processed
+            } 
+            else if (nums[i] <= 0) {
+                nums[i] = -1;     // Replace non-positive with -1
             }
         }
-        
-        if(ptr == 0){
-            return 1;
-        }
+        // If '1' is missing, that's our answer
+        if (!foundOne) return 1;
+
         int i = 0;
-        while(i < size){
-            int idx = arr[i] - 1;
-            
-            if(idx < 0 || idx >= size){
+        // Mark indices corresponding to positive numbers found in array
+        while (i < n) {
+            int idx = nums[i] - 1; // Intended index for the value
+
+            // Ignore already marked, out of bounds, or -1 values
+            if (idx < 0 || idx >= n) {
                 i++;
                 continue;
             }
-            if(arr[idx] == 0){
+            if (nums[idx] == 0) {
                 i++;
-            }
-            else{
-                int temp = arr[idx];
-                arr[idx] = 0;
-                 if (idx > i) { 
-                    arr[i] = temp; 
-                } 
-                else { 
-                    i++; 
+            } 
+            else {
+                int temp = nums[idx];
+                nums[idx] = 0; // Mark that this number exists in array
+                if (idx > i) { 
+                    nums[i] = temp; // Bring new candidate forward to process at i
+                }
+                else {
+                    i++; // No more processing at this position
                 }
             }
         }
-        
-        
-        for(i = 1 ; i  < size ; i++){
-            if(arr[i] != 0){
-                return i+1;
+
+        // Find first index > 0 that's not marked zero — that's the answer
+        for (i = 1; i < n; i++) {
+            if (nums[i] != 0) {
+                return i + 1; // Index + 1 is the missing positive
             }
         }
-        
-        return size+1;
+
+        // If all numbers 1 to n are present, return n + 1
+        return n + 1;
     }
 }
