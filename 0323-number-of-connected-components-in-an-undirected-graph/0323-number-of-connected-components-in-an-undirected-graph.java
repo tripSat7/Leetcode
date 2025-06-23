@@ -1,40 +1,59 @@
-// TC : O(E + V)
-// SC : O(E + V)
+// Time Complexity: O(α(N)) per find/union, where α is the inverse Ackermann function (almost constant time for practical N)
+// Space Complexity: O(N), where N is the number of nodes
 
-public class Solution {
-    public int countComponents(int n, int[][] edges) {
-        List<List<Integer>> adj = new ArrayList<>();
-        boolean[] visit = new boolean[n];
+class UnionFind {
+    int[] parent;
+    int[] rank; // Or use size, both are fine
+
+    public UnionFind(int n) {
+        parent = new int[n];
+        rank = new int[n];
         for (int i = 0; i < n; i++) {
-            adj.add(new ArrayList<>());
+            parent[i] = i; // Each node is its own parent initially
+            rank[i] = 1;   // Initial rank/size is 1
         }
-        for (int[] edge : edges) {
-            adj.get(edge[0]).add(edge[1]);
-            adj.get(edge[1]).add(edge[0]);
-        }
-
-        int res = 0;
-        for (int node = 0; node < n; node++) {
-            if (!visit[node]) {
-                bfs(adj, visit, node);
-                res++;
-            }
-        }
-        return res;
     }
 
-    private void bfs(List<List<Integer>> adj, boolean[] visit, int node) {
-        Queue<Integer> q = new LinkedList<>();
-        q.offer(node);
-        visit[node] = true;
-        while (!q.isEmpty()) {
-            int cur = q.poll();
-            for (int nei : adj.get(cur)) {
-                if (!visit[nei]) {
-                    visit[nei] = true;
-                    q.offer(nei);
-                }
+    // Recursive find with full path compression
+    public int find(int node) {
+        if (node != parent[node]) {
+            parent[node] = find(parent[node]); // Flatten the path directly to root
+        }
+        return parent[node];
+    }
+
+    // Union by rank (attach smaller tree to bigger)
+    public boolean union(int u, int v) {
+        int rootU = find(u);
+        int rootV = find(v);
+
+        if (rootU == rootV) {
+            return false; // Already connected
+        }
+
+        // Attach smaller rank tree under bigger...make sure rootU is always the bigger one
+        if (rank[rootV] > rank[rootU]) {
+            int temp = rootU;
+            rootU = rootV;
+            rootV = temp;
+        }
+        parent[rootV] = rootU;    // Merge sets
+        rank[rootU] += rank[rootV]; // Update rank/size
+        return true; // Union was successful
+    }
+}
+
+// Example usage for connected components in a graph
+public class Solution {
+    public int countComponents(int n, int[][] edges) {
+        UnionFind uf = new UnionFind(n);
+        int components = n;
+        for (int[] edge : edges) {
+            // If union happened, decrease components count
+            if (uf.union(edge[0], edge[1])) {
+                components--;
             }
         }
+        return components;
     }
 }
