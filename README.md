@@ -239,6 +239,7 @@ Collection of solved LeetCode questions
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0387-first-unique-character-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/tripSat7/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0460-lfu-cache](https://github.com/tripSat7/Leetcode/tree/master/0460-lfu-cache) |
@@ -321,6 +322,7 @@ Collection of solved LeetCode questions
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
+| [0387-first-unique-character-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0412-fizz-buzz](https://github.com/tripSat7/Leetcode/tree/master/0412-fizz-buzz) |
 | [0424-longest-repeating-character-replacement](https://github.com/tripSat7/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -484,6 +486,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0387-first-unique-character-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0778-reorganize-string](https://github.com/tripSat7/Leetcode/tree/master/0778-reorganize-string) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [2129-number-of-pairs-of-interchangeable-rectangles](https://github.com/tripSat7/Leetcode/tree/master/2129-number-of-pairs-of-interchangeable-rectangles) |
@@ -792,4 +795,8 @@ Collection of solved LeetCode questions
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/tripSat7/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
+## Queue
+|  |
+| ------- |
+| [0387-first-unique-character-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 <!---LeetCode Topics End-->
