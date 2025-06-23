@@ -16,18 +16,24 @@ public class Solution {
         int res = 0;
         for (int node = 0; node < n; node++) {
             if (!visit[node]) {
-                dfs(adj, visit, node);
+                bfs(adj, visit, node);
                 res++;
             }
         }
         return res;
     }
 
-    private void dfs(List<List<Integer>> adj, boolean[] visit, int node) {
+    private void bfs(List<List<Integer>> adj, boolean[] visit, int node) {
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(node);
         visit[node] = true;
-        for (int neigh : adj.get(node)) {
-            if (!visit[neigh]) {
-                dfs(adj, visit, neigh);
+        while (!q.isEmpty()) {
+            int cur = q.poll();
+            for (int nei : adj.get(cur)) {
+                if (!visit[nei]) {
+                    visit[nei] = true;
+                    q.offer(nei);
+                }
             }
         }
     }
