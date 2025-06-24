@@ -44,7 +44,7 @@ class Solution {
         // Process queue: for each available item, reduce dependencies of its neighbors
         while (!queue.isEmpty()) {
             String node = queue.poll();
-            
+
             if (recipesSet.contains(node)) {
                 result.add(node);      // Only recipes are part of the answer
             }
