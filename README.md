@@ -757,6 +757,7 @@ Collection of solved LeetCode questions
 ## Recursion
 |  |
 | ------- |
+| [0025-reverse-nodes-in-k-group](https://github.com/tripSat7/Leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0044-wildcard-matching](https://github.com/tripSat7/Leetcode/tree/master/0044-wildcard-matching) |
 | [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
 ## Simulation
@@ -776,6 +777,7 @@ Collection of solved LeetCode questions
 ## Linked List
 |  |
 | ------- |
+| [0025-reverse-nodes-in-k-group](https://github.com/tripSat7/Leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0092-reverse-linked-list-ii](https://github.com/tripSat7/Leetcode/tree/master/0092-reverse-linked-list-ii) |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/tripSat7/Leetcode/tree/master/0116-populating-next-right-pointers-in-each-node) |
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
