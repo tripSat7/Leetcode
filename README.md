@@ -51,6 +51,7 @@ Collection of solved LeetCode questions
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/tripSat7/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/tripSat7/Leetcode/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0348-design-tic-tac-toe](https://github.com/tripSat7/Leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0354-russian-doll-envelopes](https://github.com/tripSat7/Leetcode/tree/master/0354-russian-doll-envelopes) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0416-partition-equal-subset-sum](https://github.com/tripSat7/Leetcode/tree/master/0416-partition-equal-subset-sum) |
@@ -248,6 +249,7 @@ Collection of solved LeetCode questions
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0347-top-k-frequent-elements](https://github.com/tripSat7/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0348-design-tic-tac-toe](https://github.com/tripSat7/Leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0387-first-unique-character-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/tripSat7/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
@@ -302,6 +304,7 @@ Collection of solved LeetCode questions
 | [0200-number-of-islands](https://github.com/tripSat7/Leetcode/tree/master/0200-number-of-islands) |
 | [0240-search-a-2d-matrix-ii](https://github.com/tripSat7/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0348-design-tic-tac-toe](https://github.com/tripSat7/Leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0417-pacific-atlantic-water-flow](https://github.com/tripSat7/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/tripSat7/Leetcode/tree/master/0733-flood-fill) |
@@ -371,6 +374,7 @@ Collection of solved LeetCode questions
 | [0155-min-stack](https://github.com/tripSat7/Leetcode/tree/master/0155-min-stack) |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0348-design-tic-tac-toe](https://github.com/tripSat7/Leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0460-lfu-cache](https://github.com/tripSat7/Leetcode/tree/master/0460-lfu-cache) |
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
@@ -766,6 +770,7 @@ Collection of solved LeetCode questions
 ## Simulation
 |  |
 | ------- |
+| [0348-design-tic-tac-toe](https://github.com/tripSat7/Leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0412-fizz-buzz](https://github.com/tripSat7/Leetcode/tree/master/0412-fizz-buzz) |
 | [2551-apply-operations-to-an-array](https://github.com/tripSat7/Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [3790-fruits-into-baskets-ii](https://github.com/tripSat7/Leetcode/tree/master/3790-fruits-into-baskets-ii) |
