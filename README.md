@@ -83,6 +83,7 @@ Collection of solved LeetCode questions
 | [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/tripSat7/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1072-next-greater-node-in-linked-list](https://github.com/tripSat7/Leetcode/tree/master/1072-next-greater-node-in-linked-list) |
+| [1108-analyze-user-website-visit-pattern](https://github.com/tripSat7/Leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/tripSat7/Leetcode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -189,6 +190,7 @@ Collection of solved LeetCode questions
 | [0917-boats-to-save-people](https://github.com/tripSat7/Leetcode/tree/master/0917-boats-to-save-people) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [0974-reorder-data-in-log-files](https://github.com/tripSat7/Leetcode/tree/master/0974-reorder-data-in-log-files) |
+| [1108-analyze-user-website-visit-pattern](https://github.com/tripSat7/Leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -264,6 +266,7 @@ Collection of solved LeetCode questions
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/tripSat7/Leetcode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
+| [1108-analyze-user-website-visit-pattern](https://github.com/tripSat7/Leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/tripSat7/Leetcode/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1512-design-underground-system](https://github.com/tripSat7/Leetcode/tree/master/1512-design-underground-system) |
