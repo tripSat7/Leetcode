@@ -1,4 +1,4 @@
-// Time Complexity: O(n^2) (due to nested linear scan for previous job, can be optimized to O(n log n) with binary search)
+// Time Complexity: O(n log n)
 // Space Complexity: O(n)
 
 public class Solution {
@@ -13,24 +13,35 @@ public class Solution {
         Arrays.sort(jobs, (a, b) -> a[1] - b[1]); // Sort by end time
 
         int[] dp = new int[n];
-        dp[0] = jobs[0][2]; // Base case: only the first job
+        dp[0] = jobs[0][2];
 
         for (int i = 1; i < n; i++) {
             int take = jobs[i][2];
-            int last = -1;
-            // Find last job that doesn't overlap
-            for (int j = i - 1; j >= 0; j--) {
-                if (jobs[j][1] <= jobs[i][0]) {
-                    last = j;
-                    break;
-                }
-            }
+            int last = binarySearch(jobs, i, jobs[i][0]);
+
             if (last != -1) {
-                take += dp[last]; // Add profit from last compatible job
+                take += dp[last];
             }
-            int skip = dp[i - 1]; // Skip current job
-            dp[i] = Math.max(take, skip); // Max profit at this point
+            
+            int skip = dp[i - 1];
+            dp[i] = Math.max(take, skip);
         }
-        return dp[n - 1]; // Max profit using all jobs
+        return dp[n - 1];
+    }
+
+    // Find the last job that ends <= startTime, among jobs[0...right-1]
+    private int binarySearch(int[][] jobs, int right, int startTime) {
+        int left = 0, res = -1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (jobs[mid][1] <= startTime) {
+                res = mid;
+                left = mid + 1;
+            } 
+            else {
+                right = mid;
+            }
+        }
+        return res;
     }
 }
