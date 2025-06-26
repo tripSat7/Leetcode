@@ -30,6 +30,7 @@ Collection of solved LeetCode questions
 | [0073-set-matrix-zeroes](https://github.com/tripSat7/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/tripSat7/Leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/tripSat7/Leetcode/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/tripSat7/Leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/tripSat7/Leetcode/tree/master/0079-word-search) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/tripSat7/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0120-triangle](https://github.com/tripSat7/Leetcode/tree/master/0120-triangle) |
@@ -399,6 +400,7 @@ Collection of solved LeetCode questions
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/tripSat7/Leetcode/tree/master/0078-subsets) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1568-pseudo-palindromic-paths-in-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1568-pseudo-palindromic-paths-in-a-binary-tree) |
@@ -759,6 +761,7 @@ Collection of solved LeetCode questions
 | [0040-combination-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/tripSat7/Leetcode/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/tripSat7/Leetcode/tree/master/0047-permutations-ii) |
+| [0078-subsets](https://github.com/tripSat7/Leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/tripSat7/Leetcode/tree/master/0079-word-search) |
 | [0095-unique-binary-search-trees-ii](https://github.com/tripSat7/Leetcode/tree/master/0095-unique-binary-search-trees-ii) |
 | [0113-path-sum-ii](https://github.com/tripSat7/Leetcode/tree/master/0113-path-sum-ii) |
