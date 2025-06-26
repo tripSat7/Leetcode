@@ -3,24 +3,25 @@
 
 class Solution {
     public List<List<Integer>> combinationSum(int[] nums, int target) {
-        List<List<Integer>> list = new ArrayList<>();
-        //Arrays.sort(nums); // Optional: helps with early stopping if needed
-        backtrack(list, new ArrayList<>(), nums, target, 0);
-        return list;
+        List<List<Integer>> res = new ArrayList<>();
+        
+        backtrack(res, new ArrayList<>(), nums, target, 0);
+        return res;
     }
 
     // Helper function to build combinations recursively
-    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, int remain, int start) {
+    private void backtrack(List<List<Integer>> res, List<Integer> tempList, int[] nums, int remain, int start) {
         if(remain < 0) {
             return; // Exceeded the sum, stop exploring this path
         } 
         else if(remain == 0) {
-            list.add(new ArrayList<>(tempList)); // Found a valid combination
+            res.add(new ArrayList<>(tempList)); // Found a valid combination
         } 
         else { 
+            
             for(int i = start; i < nums.length; i++) {
                 tempList.add(nums[i]); // Choose nums[i]
-                backtrack(list, tempList, nums, remain - nums[i], i); // Not i+1; reuse the same element
+                backtrack(res, tempList, nums, remain - nums[i], i); // Not i+1; reuse the same element
                 tempList.remove(tempList.size() - 1); // Backtrack, remove last choice
             }
         }
