@@ -4,7 +4,7 @@
 class Solution {
     public List<List<Integer>> combinationSum(int[] nums, int target) {
         List<List<Integer>> list = new ArrayList<>();
-        Arrays.sort(nums); // Optional: helps with early stopping if needed
+        //Arrays.sort(nums); // Optional: helps with early stopping if needed
         backtrack(list, new ArrayList<>(), nums, target, 0);
         return list;
     }
@@ -26,5 +26,5 @@ class Solution {
         }
 
     }
-    
+
 }
