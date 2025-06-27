@@ -52,6 +52,7 @@ Collection of solved LeetCode questions
 | [0240-search-a-2d-matrix-ii](https://github.com/tripSat7/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0252-meeting-rooms](https://github.com/tripSat7/Leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/tripSat7/Leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0287-find-the-duplicate-number](https://github.com/tripSat7/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0304-range-sum-query-2d-immutable](https://github.com/tripSat7/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/tripSat7/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
@@ -148,6 +149,7 @@ Collection of solved LeetCode questions
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/tripSat7/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/tripSat7/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0287-find-the-duplicate-number](https://github.com/tripSat7/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0354-russian-doll-envelopes](https://github.com/tripSat7/Leetcode/tree/master/0354-russian-doll-envelopes) |
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
@@ -403,6 +405,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0078-subsets](https://github.com/tripSat7/Leetcode/tree/master/0078-subsets) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
+| [0287-find-the-duplicate-number](https://github.com/tripSat7/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/tripSat7/Leetcode/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1568-pseudo-palindromic-paths-in-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1568-pseudo-palindromic-paths-in-a-binary-tree) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/tripSat7/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -458,6 +461,7 @@ Collection of solved LeetCode questions
 | [0075-sort-colors](https://github.com/tripSat7/Leetcode/tree/master/0075-sort-colors) |
 | [0202-happy-number](https://github.com/tripSat7/Leetcode/tree/master/0202-happy-number) |
 | [0253-meeting-rooms-ii](https://github.com/tripSat7/Leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0287-find-the-duplicate-number](https://github.com/tripSat7/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0295-find-median-from-data-stream](https://github.com/tripSat7/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/tripSat7/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
