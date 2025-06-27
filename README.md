@@ -615,6 +615,7 @@ Collection of solved LeetCode questions
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/tripSat7/Leetcode/tree/master/0116-populating-next-right-pointers-in-each-node) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0129-sum-root-to-leaf-numbers](https://github.com/tripSat7/Leetcode/tree/master/0129-sum-root-to-leaf-numbers) |
+| [0199-binary-tree-right-side-view](https://github.com/tripSat7/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/tripSat7/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -648,6 +649,7 @@ Collection of solved LeetCode questions
 | [0124-binary-tree-maximum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0129-sum-root-to-leaf-numbers](https://github.com/tripSat7/Leetcode/tree/master/0129-sum-root-to-leaf-numbers) |
 | [0130-surrounded-regions](https://github.com/tripSat7/Leetcode/tree/master/0130-surrounded-regions) |
+| [0199-binary-tree-right-side-view](https://github.com/tripSat7/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/tripSat7/Leetcode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/tripSat7/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
@@ -678,6 +680,7 @@ Collection of solved LeetCode questions
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/tripSat7/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/tripSat7/Leetcode/tree/master/0116-populating-next-right-pointers-in-each-node) |
 | [0130-surrounded-regions](https://github.com/tripSat7/Leetcode/tree/master/0130-surrounded-regions) |
+| [0199-binary-tree-right-side-view](https://github.com/tripSat7/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/tripSat7/Leetcode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0322-coin-change](https://github.com/tripSat7/Leetcode/tree/master/0322-coin-change) |
@@ -718,6 +721,7 @@ Collection of solved LeetCode questions
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/tripSat7/Leetcode/tree/master/0116-populating-next-right-pointers-in-each-node) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0129-sum-root-to-leaf-numbers](https://github.com/tripSat7/Leetcode/tree/master/0129-sum-root-to-leaf-numbers) |
+| [0199-binary-tree-right-side-view](https://github.com/tripSat7/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/tripSat7/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
