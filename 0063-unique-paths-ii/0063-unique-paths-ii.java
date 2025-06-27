@@ -1,47 +1,32 @@
-// Time Complexity: O(m * n) — each cell is visited once due to memoization
-// Space Complexity: O(m * n) — for the dp table and recursion stack
-
+// Time Complexity: O(m * n)
+// Space Complexity: O(m * n)
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        int m = obstacleGrid.length, n = obstacleGrid[0].length;
+        int[][] dp = new int[m][n];
 
-        int m = obstacleGrid.length;
-        int n = obstacleGrid[0].length;
+        // If starting cell is not blocked, set dp[0][0] = 1
+        if (obstacleGrid[0][0] == 0){
+            dp[0][0] = 1;
+        } 
 
-        // If destination cell is an obstacle, no path is possible
-        if(obstacleGrid[m-1][n-1] == 1){
-            return 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (obstacleGrid[i][j] == 1) {
+                    dp[i][j] = 0; // Obstacle cell
+                } 
+                else {
+                    // If not the first row, add paths from above
+                    if (i > 0){
+                        dp[i][j] += dp[i-1][j];
+                    } 
+                    // If not the first column, add paths from left
+                    if (j > 0){
+                        dp[i][j] += dp[i][j-1];
+                    } 
+                }
+            }
         }
-
-        int dp[][] = new int[m][n];
-        for(int i = 0; i < m; i++){
-            Arrays.fill(dp[i], -1); // Initialize DP table with -1 (unvisited)
-        }
-
-        // Start from top-left corner
-        return helper(0, 0, m, n, dp, obstacleGrid);
-    }
-
-    // Recursive helper with memoization
-    public int helper(int i, int j, int m, int n, int dp[][], int[][] obstacleGrid){
-        // Reached destination cell
-        if(i == m-1 && j == n-1){
-            return 1;
-        }
-        // Out of bounds
-        if(i >= m || j >= n){
-            return 0;
-        }
-        // Hit an obstacle
-        if(obstacleGrid[i][j] == 1){
-            return dp[i][j] = 0;
-        }
-        // Already computed
-        if(dp[i][j] != -1){
-            return dp[i][j];
-        }
-
-        // Move down and right
-        int res = helper(i+1, j, m, n, dp, obstacleGrid) + helper(i, j+1, m, n, dp, obstacleGrid);
-        return dp[i][j] = res; // Memoize and return result
+        return dp[m-1][n-1];
     }
 }
