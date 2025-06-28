@@ -669,6 +669,7 @@ Collection of solved LeetCode questions
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/tripSat7/Leetcode/tree/master/0733-flood-fill) |
+| [0820-find-eventual-safe-states](https://github.com/tripSat7/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
@@ -696,6 +697,7 @@ Collection of solved LeetCode questions
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/tripSat7/Leetcode/tree/master/0733-flood-fill) |
+| [0820-find-eventual-safe-states](https://github.com/tripSat7/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [0945-snakes-and-ladders](https://github.com/tripSat7/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1036-rotting-oranges](https://github.com/tripSat7/Leetcode/tree/master/1036-rotting-oranges) |
@@ -789,6 +791,7 @@ Collection of solved LeetCode questions
 |  |
 | ------- |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/tripSat7/Leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0820-find-eventual-safe-states](https://github.com/tripSat7/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/tripSat7/Leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
 ## Recursion
@@ -863,5 +866,6 @@ Collection of solved LeetCode questions
 ## Topological Sort
 |  |
 | ------- |
+| [0820-find-eventual-safe-states](https://github.com/tripSat7/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/tripSat7/Leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
