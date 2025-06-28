@@ -1,52 +1,57 @@
-// Time Complexity: O(V + E) where V is number of nodes and E is number of edges
-//   - Each node and edge is visited once in DFS
-// Space Complexity: O(V) for the recursion stack and marking arrays
+// Time Complexity: O(V + E), where V = number of nodes, E = number of edges
+// Space Complexity: O(V + E) for reversed adjacency list, queue, and marking arrays
 
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n = graph.length;
-        int[] vis = new int[n];     // Marks if a node has been visited
-        int[] pathVis = new int[n]; // Marks if a node is on the current DFS path
-        int[] check = new int[n];   // Marks if a node is safe (1) or not safe (0)
+        int[] indegree = new int[n];        // Outdegree in the original graph
+        List<List<Integer>> adj = new ArrayList<>(); // Reversed graph
 
-        // Run DFS for every node
+        // Initialize adjacency list for reversed graph
         for (int i = 0; i < n; i++) {
-            if (vis[i] == 0) {
-                dfs(i, graph, vis, pathVis, check);
+            adj.add(new ArrayList<>());
+        }
+
+        // Build reversed graph and count reversed indegrees
+        for (int i = 0; i < n; i++) {
+            for (int node : graph[i]) {
+                adj.get(node).add(i); // Reverse the edge direction
+                indegree[i]++;        // Count indegree in the reversed graph
             }
         }
 
-        List<Integer> res = new ArrayList<>();
-        // Collect all safe nodes
+        Queue<Integer> q = new LinkedList<>();
+        // All terminal nodes are initially safe
         for (int i = 0; i < n; i++) {
-            if (check[i] == 1) {
-                res.add(i);
+            if (indegree[i] == 0) {
+                q.add(i);
             }
         }
-        return res;
-    }
+        System.out.println(adj);
+        System.out.println(q);
+        boolean[] safe = new boolean[n]; // Marks whether each node is safe
 
-    // DFS to detect cycles and mark safe nodes
-    public boolean dfs(int node, int[][] graph, int[] vis, int[] pathVis, int[] check) {
-        vis[node] = 1;        // Mark node as visited
-        pathVis[node] = 1;    // Mark node on current path
-        check[node] = 0;      // Assume node is unsafe until proven otherwise
+        
+        while (!q.isEmpty()) {
+            int node = q.poll();
+            safe[node] = true; // Mark node as safe
 
-        // Traverse all neighbors
-        for (int it : graph[node]) {
-            if (vis[it] == 0) {
-                // If a cycle is found in the subtree, propagate up
-                if (dfs(it, graph, vis, pathVis, check)) {
-                    return true;
+            // For each predecessor in reversed graph
+            for (int neighbor : adj.get(node)) {
+                indegree[neighbor]--; // Remove the edge to the now-safe node
+                if (indegree[neighbor] == 0) {
+                    q.add(neighbor); // This node is now also safe
                 }
-            } else if (pathVis[it] == 1) {
-                // Found a cycle (back edge)
-                return true;
             }
         }
 
-        check[node] = 1;      // Mark as safe if no cycle found
-        pathVis[node] = 0;    // Remove from current path (backtrack)
-        return false;         // No cycle detected
+        // Collect all nodes determined to be safe
+        List<Integer> safeNodes = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            if (safe[i]) {
+                safeNodes.add(i);
+            }
+        }
+        return safeNodes;
     }
 }
