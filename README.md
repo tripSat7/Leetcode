@@ -63,6 +63,7 @@ Collection of solved LeetCode questions
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0416-partition-equal-subset-sum](https://github.com/tripSat7/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/tripSat7/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0472-concatenated-words](https://github.com/tripSat7/Leetcode/tree/master/0472-concatenated-words) |
 | [0494-target-sum](https://github.com/tripSat7/Leetcode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/tripSat7/Leetcode/tree/master/0518-coin-change-ii) |
 | [0523-continuous-subarray-sum](https://github.com/tripSat7/Leetcode/tree/master/0523-continuous-subarray-sum) |
@@ -355,6 +356,7 @@ Collection of solved LeetCode questions
 | [0412-fizz-buzz](https://github.com/tripSat7/Leetcode/tree/master/0412-fizz-buzz) |
 | [0424-longest-repeating-character-replacement](https://github.com/tripSat7/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0472-concatenated-words](https://github.com/tripSat7/Leetcode/tree/master/0472-concatenated-words) |
 | [0516-longest-palindromic-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0535-encode-and-decode-tinyurl](https://github.com/tripSat7/Leetcode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0583-delete-operation-for-two-strings](https://github.com/tripSat7/Leetcode/tree/master/0583-delete-operation-for-two-strings) |
@@ -586,6 +588,7 @@ Collection of solved LeetCode questions
 | [0337-house-robber-iii](https://github.com/tripSat7/Leetcode/tree/master/0337-house-robber-iii) |
 | [0354-russian-doll-envelopes](https://github.com/tripSat7/Leetcode/tree/master/0354-russian-doll-envelopes) |
 | [0416-partition-equal-subset-sum](https://github.com/tripSat7/Leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0472-concatenated-words](https://github.com/tripSat7/Leetcode/tree/master/0472-concatenated-words) |
 | [0494-target-sum](https://github.com/tripSat7/Leetcode/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/tripSat7/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/tripSat7/Leetcode/tree/master/0518-coin-change-ii) |
@@ -665,6 +668,7 @@ Collection of solved LeetCode questions
 | [0337-house-robber-iii](https://github.com/tripSat7/Leetcode/tree/master/0337-house-robber-iii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/tripSat7/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0437-path-sum-iii](https://github.com/tripSat7/Leetcode/tree/master/0437-path-sum-iii) |
+| [0472-concatenated-words](https://github.com/tripSat7/Leetcode/tree/master/0472-concatenated-words) |
 | [0652-find-duplicate-subtrees](https://github.com/tripSat7/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/tripSat7/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0695-max-area-of-island](https://github.com/tripSat7/Leetcode/tree/master/0695-max-area-of-island) |
@@ -838,6 +842,7 @@ Collection of solved LeetCode questions
 ## Trie
 |  |
 | ------- |
+| [0472-concatenated-words](https://github.com/tripSat7/Leetcode/tree/master/0472-concatenated-words) |
 | [0692-top-k-frequent-words](https://github.com/tripSat7/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 ## Data Stream
