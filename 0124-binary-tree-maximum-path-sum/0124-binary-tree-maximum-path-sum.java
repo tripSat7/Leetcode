@@ -13,24 +13,26 @@
  *     }
  * }
  */
+// TC : O(n) 
+// SC : O(1)
 
 public class Solution {
+    int maxSum;
 
     public int maxPathSum(TreeNode root) {
-        int[] res = new int[]{root.val};
-        dfs(root, res);
-        return res[0];
+        maxSum = root.val;
+        dfs(root);
+        return maxSum;
     }
 
-    private int dfs(TreeNode root, int[] res) {
-        if (root == null) {
+    private int dfs(TreeNode root) {
+        if (root == null){
             return 0;
-        }
+        } 
+        int left = Math.max(dfs(root.left), 0);
+        int right = Math.max(dfs(root.right), 0);
 
-        int leftMax = Math.max(dfs(root.left, res), 0);
-        int rightMax = Math.max(dfs(root.right, res), 0);
-
-        res[0] = Math.max(res[0], root.val + leftMax + rightMax);
-        return root.val + Math.max(leftMax, rightMax);
+        maxSum = Math.max(maxSum, root.val + left + right);
+        return root.val + Math.max(left, right);
     }
 }
