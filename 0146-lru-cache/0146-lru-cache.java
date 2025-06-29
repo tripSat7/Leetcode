@@ -1,6 +1,6 @@
 // Time Complexity: O(1) for both get and put operations (amortized)
 // Space Complexity: O(capacity) for the hashmap and linked list nodes
-
+// approach - doubly ended linked list..most recently used at head and least recently used at tail
 class LRUCache {
 
     // Doubly-linked list node
