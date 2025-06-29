@@ -1,6 +1,8 @@
 // Time Complexity: O(V + E), where V = number of nodes, E = number of edges
 // Space Complexity: O(V + E) for reversed adjacency list, queue, and marking arrays
 
+// Approach - From terminal nodes you can find out the safe nodes, so by reversing the edges of the graph and then applying a topological sort, you get all the safe nodes. 
+
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n = graph.length;
