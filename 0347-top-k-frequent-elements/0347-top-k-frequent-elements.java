@@ -1,35 +1,38 @@
+// Time Complexity: O(N)
+// Space Complexity: O(N)
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        // O(1) time
-        if (k == nums.length) {
-            return nums;
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int num : nums) {
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
-        
-        // 1. Build hash map: character and how often it appears
-        // O(N) time
-        Map<Integer, Integer> count = new HashMap();
-        for (int n: nums) {
-          count.put(n, count.getOrDefault(n, 0) + 1);
+        // Bucket sort: freq from 1 up to nums.length
+        List<Integer>[] buckets = new List[nums.length + 1];
+        for (int key : freq.keySet()) {
+            int count = freq.get(key);
+            if (buckets[count] == null){
+                buckets[count] = new ArrayList<>();
+            } 
+            buckets[count].add(key);
         }
-
-        // initialize min heap : 'the less frequent element first'
-        Queue<Integer> heap = new PriorityQueue<>((n1, n2) -> count.get(n1) - count.get(n2));
-
-        // 2. Keep k top frequent elements in the heap
-        // O(N log k) < O(N log N) time
-        for (int n: count.keySet()) {
-            heap.add(n);
-            if (heap.size() > k) {
-                heap.poll(); 
-            }   
+        List<Integer> result = new ArrayList<>();
+        // Collect results from high frequency to low, stop at k
+        for (int i = buckets.length - 1; i >= 0 && result.size() < k; i--) {
+            if (buckets[i] != null) {
+                for (int num : buckets[i]) {
+                    result.add(num);
+                    if (result.size() == k){
+                        break;
+                    } 
+                }
+            }
         }
-
-        // 3. Build an output array
-        // O(k log k) time
-        int[] top = new int[k];
-        for(int i = k - 1; i >= 0; --i) {
-            top[i] = heap.poll();
+        // Convert result list to int[]
+        int[] topK = new int[k];
+        for (int i = 0; i < k; i++) {
+            topK[i] = result.get(i);
         }
-        return top;
+        return topK;
     }
+
 }
