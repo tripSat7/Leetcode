@@ -40,6 +40,7 @@ Collection of solved LeetCode questions
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/tripSat7/Leetcode/tree/master/0130-surrounded-regions) |
 | [0135-candy](https://github.com/tripSat7/Leetcode/tree/master/0135-candy) |
+| [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/tripSat7/Leetcode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
@@ -258,6 +259,7 @@ Collection of solved LeetCode questions
 | [0073-set-matrix-zeroes](https://github.com/tripSat7/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0076-minimum-window-substring](https://github.com/tripSat7/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
@@ -350,6 +352,7 @@ Collection of solved LeetCode questions
 | [0076-minimum-window-substring](https://github.com/tripSat7/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0079-word-search](https://github.com/tripSat7/Leetcode/tree/master/0079-word-search) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
+| [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
 | [0387-first-unique-character-in-a-string](https://github.com/tripSat7/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
@@ -579,6 +582,7 @@ Collection of solved LeetCode questions
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/tripSat7/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/tripSat7/Leetcode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/tripSat7/Leetcode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/tripSat7/Leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/tripSat7/Leetcode/tree/master/0213-house-robber-ii) |
@@ -608,6 +612,7 @@ Collection of solved LeetCode questions
 ## Memoization
 |  |
 | ------- |
+| [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
 | [1236-n-th-tribonacci-number](https://github.com/tripSat7/Leetcode/tree/master/1236-n-th-tribonacci-number) |
 ## Combinatorics
 |  |
@@ -842,6 +847,7 @@ Collection of solved LeetCode questions
 ## Trie
 |  |
 | ------- |
+| [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
 | [0472-concatenated-words](https://github.com/tripSat7/Leetcode/tree/master/0472-concatenated-words) |
 | [0692-top-k-frequent-words](https://github.com/tripSat7/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
