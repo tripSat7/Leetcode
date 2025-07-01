@@ -1,3 +1,5 @@
+// Approach :  initialize three slots (a, b, c) to store the top 3 values and their corresponding unique x[i] values (ind1, ind2, ind3).
+
 class Solution {
     public int maxSumDistinctTriplet(int[] x, int[] y) {
         int a = 0, b = 0, c = 0;
