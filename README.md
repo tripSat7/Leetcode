@@ -89,6 +89,7 @@ Collection of solved LeetCode questions
 | [0945-snakes-and-ladders](https://github.com/tripSat7/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0971-shortest-bridge](https://github.com/tripSat7/Leetcode/tree/master/0971-shortest-bridge) |
 | [0974-reorder-data-in-log-files](https://github.com/tripSat7/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1036-rotting-oranges](https://github.com/tripSat7/Leetcode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
@@ -328,6 +329,7 @@ Collection of solved LeetCode questions
 | [0733-flood-fill](https://github.com/tripSat7/Leetcode/tree/master/0733-flood-fill) |
 | [0945-snakes-and-ladders](https://github.com/tripSat7/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [0967-minimum-falling-path-sum](https://github.com/tripSat7/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0971-shortest-bridge](https://github.com/tripSat7/Leetcode/tree/master/0971-shortest-bridge) |
 | [1036-rotting-oranges](https://github.com/tripSat7/Leetcode/tree/master/1036-rotting-oranges) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [2145-grid-game](https://github.com/tripSat7/Leetcode/tree/master/2145-grid-game) |
@@ -683,6 +685,7 @@ Collection of solved LeetCode questions
 | [0733-flood-fill](https://github.com/tripSat7/Leetcode/tree/master/0733-flood-fill) |
 | [0820-find-eventual-safe-states](https://github.com/tripSat7/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [0904-leaf-similar-trees](https://github.com/tripSat7/Leetcode/tree/master/0904-leaf-similar-trees) |
+| [0971-shortest-bridge](https://github.com/tripSat7/Leetcode/tree/master/0971-shortest-bridge) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/tripSat7/Leetcode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1484-linked-list-in-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
@@ -711,6 +714,7 @@ Collection of solved LeetCode questions
 | [0733-flood-fill](https://github.com/tripSat7/Leetcode/tree/master/0733-flood-fill) |
 | [0820-find-eventual-safe-states](https://github.com/tripSat7/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [0945-snakes-and-ladders](https://github.com/tripSat7/Leetcode/tree/master/0945-snakes-and-ladders) |
+| [0971-shortest-bridge](https://github.com/tripSat7/Leetcode/tree/master/0971-shortest-bridge) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/tripSat7/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1036-rotting-oranges](https://github.com/tripSat7/Leetcode/tree/master/1036-rotting-oranges) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/tripSat7/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
