@@ -102,6 +102,7 @@ Collection of solved LeetCode questions
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/tripSat7/Leetcode/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
+| [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/tripSat7/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/tripSat7/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1675-magnetic-force-between-two-balls](https://github.com/tripSat7/Leetcode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/tripSat7/Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
@@ -456,6 +457,7 @@ Collection of solved LeetCode questions
 | [0718-maximum-length-of-repeated-subarray](https://github.com/tripSat7/Leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/tripSat7/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/tripSat7/Leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
 | [2017-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/tripSat7/Leetcode/tree/master/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [2134-maximize-the-confusion-of-an-exam](https://github.com/tripSat7/Leetcode/tree/master/2134-maximize-the-confusion-of-an-exam) |
