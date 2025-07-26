@@ -263,6 +263,7 @@ Collection of solved LeetCode questions
 | [0128-longest-consecutive-sequence](https://github.com/tripSat7/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
 | [0146-lru-cache](https://github.com/tripSat7/Leetcode/tree/master/0146-lru-cache) |
+| [0166-fraction-to-recurring-decimal](https://github.com/tripSat7/Leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0169-majority-element](https://github.com/tripSat7/Leetcode/tree/master/0169-majority-element) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0202-happy-number](https://github.com/tripSat7/Leetcode/tree/master/0202-happy-number) |
@@ -357,6 +358,7 @@ Collection of solved LeetCode questions
 | [0079-word-search](https://github.com/tripSat7/Leetcode/tree/master/0079-word-search) |
 | [0115-distinct-subsequences](https://github.com/tripSat7/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0139-word-break](https://github.com/tripSat7/Leetcode/tree/master/0139-word-break) |
+| [0166-fraction-to-recurring-decimal](https://github.com/tripSat7/Leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0187-repeated-dna-sequences](https://github.com/tripSat7/Leetcode/tree/master/0187-repeated-dna-sequences) |
 | [0212-word-search-ii](https://github.com/tripSat7/Leetcode/tree/master/0212-word-search-ii) |
 | [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
@@ -429,6 +431,7 @@ Collection of solved LeetCode questions
 | [0048-rotate-image](https://github.com/tripSat7/Leetcode/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/tripSat7/Leetcode/tree/master/0062-unique-paths) |
 | [0096-unique-binary-search-trees](https://github.com/tripSat7/Leetcode/tree/master/0096-unique-binary-search-trees) |
+| [0166-fraction-to-recurring-decimal](https://github.com/tripSat7/Leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0202-happy-number](https://github.com/tripSat7/Leetcode/tree/master/0202-happy-number) |
 | [0224-basic-calculator](https://github.com/tripSat7/Leetcode/tree/master/0224-basic-calculator) |
 | [0380-insert-delete-getrandom-o1](https://github.com/tripSat7/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
