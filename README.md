@@ -96,6 +96,7 @@ Collection of solved LeetCode questions
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/tripSat7/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1072-next-greater-node-in-linked-list](https://github.com/tripSat7/Leetcode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/tripSat7/Leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
+| [1184-car-pooling](https://github.com/tripSat7/Leetcode/tree/master/1184-car-pooling) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/tripSat7/Leetcode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/tripSat7/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
@@ -208,6 +209,7 @@ Collection of solved LeetCode questions
 | [0959-3sum-with-multiplicity](https://github.com/tripSat7/Leetcode/tree/master/0959-3sum-with-multiplicity) |
 | [0974-reorder-data-in-log-files](https://github.com/tripSat7/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/tripSat7/Leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
+| [1184-car-pooling](https://github.com/tripSat7/Leetcode/tree/master/1184-car-pooling) |
 | [1253-sort-the-matrix-diagonally](https://github.com/tripSat7/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/tripSat7/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
@@ -241,6 +243,7 @@ Collection of solved LeetCode questions
 | [0560-subarray-sum-equals-k](https://github.com/tripSat7/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0713-subarray-product-less-than-k](https://github.com/tripSat7/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [1046-max-consecutive-ones-iii](https://github.com/tripSat7/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1184-car-pooling](https://github.com/tripSat7/Leetcode/tree/master/1184-car-pooling) |
 | [1370-count-number-of-nice-subarrays](https://github.com/tripSat7/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/tripSat7/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/tripSat7/Leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
@@ -784,6 +787,7 @@ Collection of solved LeetCode questions
 | [0692-top-k-frequent-words](https://github.com/tripSat7/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/tripSat7/Leetcode/tree/master/0778-reorganize-string) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/tripSat7/Leetcode/tree/master/0802-k-th-smallest-prime-fraction) |
+| [1184-car-pooling](https://github.com/tripSat7/Leetcode/tree/master/1184-car-pooling) |
 | [1397-search-suggestions-system](https://github.com/tripSat7/Leetcode/tree/master/1397-search-suggestions-system) |
 | [1762-furthest-building-you-can-reach](https://github.com/tripSat7/Leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/tripSat7/Leetcode/tree/master/2590-maximum-star-sum-of-a-graph) |
@@ -829,6 +833,7 @@ Collection of solved LeetCode questions
 | ------- |
 | [0348-design-tic-tac-toe](https://github.com/tripSat7/Leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0412-fizz-buzz](https://github.com/tripSat7/Leetcode/tree/master/0412-fizz-buzz) |
+| [1184-car-pooling](https://github.com/tripSat7/Leetcode/tree/master/1184-car-pooling) |
 | [2551-apply-operations-to-an-array](https://github.com/tripSat7/Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [3790-fruits-into-baskets-ii](https://github.com/tripSat7/Leetcode/tree/master/3790-fruits-into-baskets-ii) |
 ## Segment Tree
