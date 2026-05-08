@@ -1,18 +1,19 @@
 class Solution {
-
     public int minOperations(int[] nums) {
+        int i = 0, j = 2;
         int count = 0;
-        for (int i = 2; i < nums.length; i++) {
-            if (nums[i - 2] == 0) {
+        while(j < nums.length){
+            if(nums[i] == 0){
+                nums[i] = 1;
+                nums[i+1] = nums[i+1] == 0 ? 1 : 0;
+                nums[j] = nums[j] == 0? 1 : 0;
+                
                 count++;
-                nums[i - 2] = nums[i - 2] ^ 1;
-                nums[i - 1] = nums[i - 1] ^ 1;
-                nums[i] = nums[i] ^ 1;
             }
+            j++;
+            i++;
         }
-        int sum = 0;
-        for (int num : nums) sum += num;
-        if (sum == nums.length) return count;
-        return -1;
+        if(nums[i] != 1 || nums[i+1] != 1) return -1;
+        return count;
     }
 }
